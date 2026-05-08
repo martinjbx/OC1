@@ -1,12 +1,12 @@
 {
-  "last_update": "2026-05-08T16:51:37.391522",
+  "last_update": "2026-05-08T21:54:32.665788",
   "structure": {
     "signals": 0,
     "scanned": 0
   },
   "minervini": {
-    "candidates_7_plus": 104,
+    "candidates_7_plus": 0,
     "candidates_all_8": 0,
-    "scanned": 664
+    "scanned": 0
   }
 }
