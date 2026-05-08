@@ -33,11 +33,13 @@ jobs:
         run: |
           cd screener
           python run_daily_json.py
+          # Copy JSON output to docs/data for GitHub Pages
+          cp dashboard/data/*.json ../docs/data/
       
       - name: Commit and push results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add screener/dashboard/data/*.json
+          git add docs/data/*.json
           git diff --quiet && git diff --staged --quiet || \
             (git commit -m "📊 Daily screener results - $(date +'%Y-%m-%d')" && git push)
