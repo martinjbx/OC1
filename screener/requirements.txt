@@ -7,9 +7,6 @@ yfinance>=0.2.38
 pandas>=2.2.0
 numpy>=1.26.0
 
-# Technical indicators
-pandas-ta
-
 # Database
 # (sqlite3 is in Python stdlib)
 
