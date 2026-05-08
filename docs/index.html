@@ -214,40 +214,38 @@
     
     <script>
         async function loadData() {
+            // Load summary
             try {
-                // Load summary
                 const summary = await fetch('data/summary.json').then(r => r.json());
-                
-                // Update last update time
                 const updateDate = new Date(summary.last_update);
                 document.getElementById('lastUpdate').textContent = 
                     `Last updated: ${updateDate.toLocaleString()}`;
-                
-                // Update summary cards
-                document.getElementById('structureSignals').textContent = 
-                    summary.structure.signals;
-                document.getElementById('structureScanned').textContent = 
-                    `${summary.structure.scanned} tickers scanned`;
-                
-                document.getElementById('minervini7Plus').textContent = 
-                    summary.minervini.candidates_7_plus;
-                document.getElementById('minerviniScanned').textContent = 
-                    `${summary.minervini.scanned} tickers scanned`;
-                
-                document.getElementById('minervini8').textContent = 
-                    summary.minervini.candidates_all_8;
-                
-                // Load structure signals
+                document.getElementById('structureSignals').textContent = summary.structure.signals;
+                document.getElementById('structureScanned').textContent = `${summary.structure.scanned} tickers scanned`;
+                document.getElementById('minervini7Plus').textContent = summary.minervini.candidates_7_plus;
+                document.getElementById('minerviniScanned').textContent = `${summary.minervini.scanned} tickers scanned`;
+                document.getElementById('minervini8').textContent = summary.minervini.candidates_all_8;
+            } catch (error) {
+                console.error('Error loading summary:', error);
+                document.getElementById('lastUpdate').textContent = 'Error loading summary';
+            }
+
+            // Load structure signals
+            try {
                 const structure = await fetch('data/structure_latest.json').then(r => r.json());
                 renderStructureTable(structure.signals);
-                
-                // Load Minervini candidates
+            } catch (error) {
+                console.error('Error loading structure data:', error);
+                document.getElementById('structureTable').innerHTML = '<div class="no-data">No data available</div>';
+            }
+
+            // Load Minervini candidates
+            try {
                 const minervini = await fetch('data/minervini_latest.json').then(r => r.json());
                 renderMinerviniTable(minervini.top_candidates);
-                
             } catch (error) {
-                console.error('Error loading data:', error);
-                document.getElementById('lastUpdate').textContent = 'Error loading data';
+                console.error('Error loading Minervini data:', error);
+                document.getElementById('minerviniTable').innerHTML = '<div class="no-data">No data available</div>';
             }
         }
         
