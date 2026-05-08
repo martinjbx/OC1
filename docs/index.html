@@ -5,29 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Screener Dashboard</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #0f172a;
             color: #e2e8f0;
             padding: 20px;
         }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
+
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        header { text-align: center; margin-bottom: 40px; }
+
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
@@ -36,26 +26,23 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
-        .last-update {
-            color: #94a3b8;
-            font-size: 0.9em;
-        }
-        
+
+        .last-update { color: #94a3b8; font-size: 0.9em; }
+
         .summary-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             margin-bottom: 40px;
         }
-        
+
         .card {
             background: #1e293b;
             border-radius: 12px;
             padding: 24px;
             border: 1px solid #334155;
         }
-        
+
         .card h3 {
             color: #cbd5e1;
             font-size: 0.9em;
@@ -63,38 +50,23 @@
             letter-spacing: 0.5px;
             margin-bottom: 12px;
         }
-        
-        .card-value {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #10b981;
-        }
-        
-        .card-subtitle {
-            color: #64748b;
-            font-size: 0.85em;
-            margin-top: 8px;
-        }
-        
+
+        .card-value { font-size: 2.5em; font-weight: bold; color: #10b981; }
+        .card-subtitle { color: #64748b; font-size: 0.85em; margin-top: 8px; }
+
         .section {
             background: #1e293b;
             border-radius: 12px;
             padding: 24px;
             margin-bottom: 30px;
             border: 1px solid #334155;
+            overflow-x: auto;
         }
-        
-        .section h2 {
-            color: #f1f5f9;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
+
+        .section h2 { color: #f1f5f9; margin-bottom: 20px; font-size: 1.5em; }
+
+        table { width: 100%; border-collapse: collapse; }
+
         th {
             background: #0f172a;
             padding: 12px;
@@ -102,31 +74,25 @@
             font-weight: 600;
             color: #cbd5e1;
             border-bottom: 2px solid #334155;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
         }
-        
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #334155;
-        }
-        
-        tr:hover {
-            background: #334155;
-        }
-        
-        .ticker {
-            font-weight: bold;
-            color: #60a5fa;
-            font-size: 1.1em;
-        }
-        
-        .positive {
-            color: #10b981;
-        }
-        
-        .negative {
-            color: #ef4444;
-        }
-        
+
+        th:hover { color: #60a5fa; }
+
+        th .sort-icon { margin-left: 6px; opacity: 0.4; font-size: 0.8em; }
+        th.sort-asc .sort-icon::after { content: '▲'; opacity: 1; }
+        th.sort-desc .sort-icon::after { content: '▼'; opacity: 1; }
+        th:not(.sort-asc):not(.sort-desc) .sort-icon::after { content: '⇅'; }
+
+        td { padding: 12px; border-bottom: 1px solid #334155; }
+        tr:hover { background: #334155; }
+
+        .ticker { font-weight: bold; color: #60a5fa; font-size: 1.1em; }
+        .positive { color: #10b981; }
+        .negative { color: #ef4444; }
+
         .rs-badge {
             display: inline-block;
             padding: 4px 8px;
@@ -134,210 +100,227 @@
             font-size: 0.85em;
             font-weight: bold;
         }
-        
+
         .rs-95 { background: #10b981; color: white; }
         .rs-85 { background: #3b82f6; color: white; }
         .rs-75 { background: #f59e0b; color: white; }
-        
-        .no-data {
-            text-align: center;
-            padding: 40px;
-            color: #64748b;
-        }
-        
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #94a3b8;
-        }
-        
+
+        .no-data { text-align: center; padding: 40px; color: #64748b; }
+        .loading { text-align: center; padding: 40px; color: #94a3b8; }
+
         @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            h1 {
-                font-size: 1.8em;
-            }
-            
-            .card-value {
-                font-size: 2em;
-            }
-            
-            table {
-                font-size: 0.85em;
-            }
+            body { padding: 10px; }
+            h1 { font-size: 1.8em; }
+            .card-value { font-size: 2em; }
+            table { font-size: 0.8em; }
+            th, td { padding: 8px 6px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📈 Stock Screener Dashboard</h1>
-            <div class="last-update" id="lastUpdate">Loading...</div>
-        </header>
-        
-        <div class="summary-cards" id="summaryCards">
-            <div class="card">
-                <h3>Structure Signals</h3>
-                <div class="card-value" id="structureSignals">-</div>
-                <div class="card-subtitle" id="structureScanned">-</div>
-            </div>
-            
-            <div class="card">
-                <h3>Minervini 7/8+</h3>
-                <div class="card-value" id="minervini7Plus">-</div>
-                <div class="card-subtitle" id="minerviniScanned">-</div>
-            </div>
-            
-            <div class="card">
-                <h3>Minervini 8/8</h3>
-                <div class="card-value" id="minervini8">-</div>
-                <div class="card-subtitle">Perfect score</div>
-            </div>
+<div class="container">
+    <header>
+        <h1>📈 Stock Screener Dashboard</h1>
+        <div class="last-update" id="lastUpdate">Loading...</div>
+    </header>
+
+    <div class="summary-cards">
+        <div class="card">
+            <h3>Structure Signals</h3>
+            <div class="card-value" id="structureSignals">-</div>
+            <div class="card-subtitle" id="structureScanned">-</div>
         </div>
-        
-        <div class="section">
-            <h2>🎯 Structure Break Signals</h2>
-            <div id="structureTable">
-                <div class="loading">Loading...</div>
-            </div>
+        <div class="card">
+            <h3>Minervini 7/8+</h3>
+            <div class="card-value" id="minervini7Plus">-</div>
+            <div class="card-subtitle" id="minerviniScanned">-</div>
         </div>
-        
-        <div class="section">
-            <h2>⭐ Top Minervini Candidates</h2>
-            <div id="minerviniTable">
-                <div class="loading">Loading...</div>
-            </div>
+        <div class="card">
+            <h3>Minervini 8/8</h3>
+            <div class="card-value" id="minervini8">-</div>
+            <div class="card-subtitle">Perfect score</div>
         </div>
     </div>
-    
-    <script>
-        async function loadData() {
-            // Load summary
-            try {
-                const summary = await fetch('data/summary.json').then(r => r.json());
-                const updateDate = new Date(summary.last_update);
-                document.getElementById('lastUpdate').textContent = 
-                    `Last updated: ${updateDate.toLocaleString()}`;
-                document.getElementById('structureSignals').textContent = summary.structure.signals;
-                document.getElementById('structureScanned').textContent = `${summary.structure.scanned} tickers scanned`;
-                document.getElementById('minervini7Plus').textContent = summary.minervini.candidates_7_plus;
-                document.getElementById('minerviniScanned').textContent = `${summary.minervini.scanned} tickers scanned`;
-                document.getElementById('minervini8').textContent = summary.minervini.candidates_all_8;
-            } catch (error) {
-                console.error('Error loading summary:', error);
-                document.getElementById('lastUpdate').textContent = 'Error loading summary';
-            }
 
-            // Load structure signals
-            try {
-                const structure = await fetch('data/structure_latest.json').then(r => r.json());
-                renderStructureTable(structure.signals);
-            } catch (error) {
-                console.error('Error loading structure data:', error);
-                document.getElementById('structureTable').innerHTML = '<div class="no-data">No data available</div>';
-            }
+    <div class="section">
+        <h2>🎯 Structure Break Signals</h2>
+        <div id="structureTable"><div class="loading">Loading...</div></div>
+    </div>
 
-            // Load Minervini candidates
-            try {
-                const minervini = await fetch('data/minervini_latest.json').then(r => r.json());
-                renderMinerviniTable(minervini.top_candidates);
-            } catch (error) {
-                console.error('Error loading Minervini data:', error);
-                document.getElementById('minerviniTable').innerHTML = '<div class="no-data">No data available</div>';
-            }
+    <div class="section">
+        <h2>⭐ Top Minervini Candidates</h2>
+        <div id="minerviniTable"><div class="loading">Loading...</div></div>
+    </div>
+</div>
+
+<script>
+    // Cache-bust fetches so GitHub Pages doesn't serve stale files
+    function fetchJSON(url) {
+        return fetch(url + '?t=' + Date.now()).then(r => {
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
+        });
+    }
+
+    // ── Sorting state ──────────────────────────────────────────────
+    const sortState = { minervini: { col: null, dir: 1 }, structure: { col: null, dir: 1 } };
+    let minerviniData = [];
+    let structureData = [];
+
+    // ── Data loading ───────────────────────────────────────────────
+    async function loadData() {
+        try {
+            const summary = await fetchJSON('data/summary.json');
+            const updateDate = new Date(summary.last_update);
+            document.getElementById('lastUpdate').textContent =
+                'Last updated: ' + updateDate.toLocaleString();
+            document.getElementById('structureSignals').textContent = summary.structure.signals;
+            document.getElementById('structureScanned').textContent = summary.structure.scanned + ' tickers scanned';
+            document.getElementById('minervini7Plus').textContent = summary.minervini.candidates_7_plus;
+            document.getElementById('minerviniScanned').textContent = summary.minervini.scanned + ' tickers scanned';
+            document.getElementById('minervini8').textContent = summary.minervini.candidates_all_8;
+        } catch (e) {
+            document.getElementById('lastUpdate').textContent = 'Error loading summary: ' + e.message;
         }
-        
-        function renderStructureTable(signals) {
-            const container = document.getElementById('structureTable');
-            
-            if (signals.length === 0) {
-                container.innerHTML = '<div class="no-data">No signals found</div>';
-                return;
-            }
-            
-            let html = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Ticker</th>
-                            <th>Price</th>
-                            <th>SMMA 15</th>
-                            <th>SMMA 29</th>
-                            <th>RSI</th>
-                            <th>Volume</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-            
-            signals.forEach(signal => {
-                html += `
-                    <tr>
-                        <td class="ticker">${signal.ticker}</td>
-                        <td>$${signal.price.toFixed(2)}</td>
-                        <td>${signal.smma15.toFixed(2)}</td>
-                        <td>${signal.smma29.toFixed(2)}</td>
-                        <td>${signal.rsi.toFixed(1)}</td>
-                        <td>${signal.volume_surge ? '🔥' : '-'}</td>
-                    </tr>
-                `;
-            });
-            
-            html += '</tbody></table>';
-            container.innerHTML = html;
+
+        try {
+            const s = await fetchJSON('data/structure_latest.json');
+            structureData = s.signals || [];
+            renderStructureTable();
+        } catch (e) {
+            document.getElementById('structureTable').innerHTML = '<div class="no-data">No data available</div>';
         }
-        
-        function renderMinerviniTable(candidates) {
-            const container = document.getElementById('minerviniTable');
-            
-            if (candidates.length === 0) {
-                container.innerHTML = '<div class="no-data">No candidates found</div>';
-                return;
-            }
-            
-            let html = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Ticker</th>
-                            <th>Price</th>
-                            <th>% from High</th>
-                            <th>RS Rating</th>
-                            <th>1Y Return</th>
-                            <th>Criteria</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-            
-            candidates.forEach(candidate => {
-                const rsClass = candidate.rs_rating >= 90 ? 'rs-95' : 
-                               candidate.rs_rating >= 80 ? 'rs-85' : 'rs-75';
-                const pctClass = candidate.pct_from_high >= -5 ? 'positive' : '';
-                
-                html += `
-                    <tr>
-                        <td class="ticker">${candidate.ticker}</td>
-                        <td>$${candidate.price.toFixed(2)}</td>
-                        <td class="${pctClass}">${candidate.pct_from_high.toFixed(1)}%</td>
-                        <td><span class="rs-badge ${rsClass}">${candidate.rs_rating}</span></td>
-                        <td class="positive">+${candidate.stock_return_1y.toFixed(1)}%</td>
-                        <td>${candidate.criteria_passed}/8 ${candidate.all_criteria_met ? '✅' : ''}</td>
-                    </tr>
-                `;
-            });
-            
-            html += '</tbody></table>';
-            container.innerHTML = html;
+
+        try {
+            const m = await fetchJSON('data/minervini_latest.json');
+            minerviniData = m.top_candidates || [];
+            renderMinerviniTable();
+        } catch (e) {
+            document.getElementById('minerviniTable').innerHTML = '<div class="no-data">No data available</div>';
         }
-        
-        // Load data on page load
-        loadData();
-        
-        // Refresh every 5 minutes
-        setInterval(loadData, 5 * 60 * 1000);
-    </script>
+    }
+
+    // ── Sorting helper ─────────────────────────────────────────────
+    function sortTable(tableId, data, colIndex, getValue) {
+        const state = sortState[tableId];
+        if (state.col === colIndex) {
+            state.dir *= -1;
+        } else {
+            state.col = colIndex;
+            state.dir = 1;
+        }
+        data.sort((a, b) => {
+            const va = getValue(a), vb = getValue(b);
+            return typeof va === 'string'
+                ? va.localeCompare(vb) * state.dir
+                : (va - vb) * state.dir;
+        });
+
+        // Update header arrows
+        const table = document.querySelector('#' + tableId + 'Table table');
+        if (!table) return;
+        table.querySelectorAll('th').forEach((th, i) => {
+            th.classList.remove('sort-asc', 'sort-desc');
+            if (i === colIndex) th.classList.add(state.dir === 1 ? 'sort-asc' : 'sort-desc');
+        });
+    }
+
+    // ── Structure table ────────────────────────────────────────────
+    const structureCols = [
+        { label: 'Ticker',  get: r => r.ticker },
+        { label: 'Price',   get: r => r.price },
+        { label: 'SMMA 15', get: r => r.smma15 },
+        { label: 'SMMA 29', get: r => r.smma29 },
+        { label: 'RSI',     get: r => r.rsi },
+        { label: 'Volume',  get: r => r.volume_surge ? 1 : 0 },
+    ];
+
+    function renderStructureTable() {
+        const container = document.getElementById('structureTable');
+        if (!structureData.length) {
+            container.innerHTML = '<div class="no-data">No signals found today</div>';
+            return;
+        }
+
+        const headCells = structureCols.map((c, i) =>
+            `<th onclick="sortAndRender('structure', ${i})">${c.label}<span class="sort-icon"></span></th>`
+        ).join('');
+
+        const rows = structureData.map(s => `
+            <tr>
+                <td class="ticker">${s.ticker}</td>
+                <td>$${s.price.toFixed(2)}</td>
+                <td>${s.smma15.toFixed(2)}</td>
+                <td>${s.smma29.toFixed(2)}</td>
+                <td>${s.rsi.toFixed(1)}</td>
+                <td>${s.volume_surge ? '🔥' : '-'}</td>
+            </tr>`).join('');
+
+        container.innerHTML = `<table><thead><tr>${headCells}</tr></thead><tbody>${rows}</tbody></table>`;
+
+        // Re-apply sort indicator if active
+        if (sortState.structure.col !== null) {
+            const ths = container.querySelectorAll('th');
+            const dir = sortState.structure.dir;
+            ths[sortState.structure.col].classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        }
+    }
+
+    // ── Minervini table ────────────────────────────────────────────
+    const minerviniCols = [
+        { label: 'Ticker',      get: r => r.ticker },
+        { label: 'Price',       get: r => r.price },
+        { label: '% from High', get: r => r.pct_from_high },
+        { label: 'RS Rating',   get: r => r.rs_rating },
+        { label: '1Y Return',   get: r => r.stock_return_1y },
+        { label: 'Criteria',    get: r => r.criteria_passed },
+    ];
+
+    function renderMinerviniTable() {
+        const container = document.getElementById('minerviniTable');
+        if (!minerviniData.length) {
+            container.innerHTML = '<div class="no-data">No candidates found</div>';
+            return;
+        }
+
+        const headCells = minerviniCols.map((c, i) =>
+            `<th onclick="sortAndRender('minervini', ${i})">${c.label}<span class="sort-icon"></span></th>`
+        ).join('');
+
+        const rows = minerviniData.map(c => {
+            const rsClass = c.rs_rating >= 90 ? 'rs-95' : c.rs_rating >= 80 ? 'rs-85' : 'rs-75';
+            const pctClass = c.pct_from_high >= -5 ? 'positive' : 'negative';
+            return `
+            <tr>
+                <td class="ticker">${c.ticker}</td>
+                <td>$${c.price.toFixed(2)}</td>
+                <td class="${pctClass}">${c.pct_from_high.toFixed(1)}%</td>
+                <td><span class="rs-badge ${rsClass}">${c.rs_rating}</span></td>
+                <td class="positive">+${c.stock_return_1y.toFixed(1)}%</td>
+                <td>${c.criteria_passed}/8 ${c.all_criteria_met ? '✅' : ''}</td>
+            </tr>`;
+        }).join('');
+
+        container.innerHTML = `<table><thead><tr>${headCells}</tr></thead><tbody>${rows}</tbody></table>`;
+
+        if (sortState.minervini.col !== null) {
+            const ths = container.querySelectorAll('th');
+            const dir = sortState.minervini.dir;
+            ths[sortState.minervini.col].classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        }
+    }
+
+    // ── Sort + re-render ───────────────────────────────────────────
+    function sortAndRender(tableId, colIndex) {
+        const cols = tableId === 'minervini' ? minerviniCols : structureCols;
+        const data = tableId === 'minervini' ? minerviniData : structureData;
+        sortTable(tableId, data, colIndex, cols[colIndex].get);
+        tableId === 'minervini' ? renderMinerviniTable() : renderStructureTable();
+    }
+
+    // ── Init ───────────────────────────────────────────────────────
+    loadData();
+    setInterval(loadData, 5 * 60 * 1000);
+</script>
 </body>
 </html>
