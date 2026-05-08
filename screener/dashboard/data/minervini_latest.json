@@ -1,0 +1,458 @@
+{
+  "scan_date": "2026-05-08T16:51:37.389717",
+  "total_scanned": 664,
+  "candidates_7_plus": 104,
+  "candidates_all_8": 0,
+  "top_candidates": [
+    {
+      "ticker": "TER",
+      "price": 360.02,
+      "pct_from_high": -14.7,
+      "rs_rating": 95,
+      "stock_return_1y": 370.3,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "NEM",
+      "price": 115.95,
+      "pct_from_high": -13.9,
+      "rs_rating": 95,
+      "stock_return_1y": 122.3,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "GEV",
+      "price": 1036.57,
+      "pct_from_high": -12.3,
+      "rs_rating": 95,
+      "stock_return_1y": 163.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "ALB",
+      "price": 200.78,
+      "pct_from_high": -9.1,
+      "rs_rating": 95,
+      "stock_return_1y": 255.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "MCHP",
+      "price": 98.14,
+      "pct_from_high": -7.3,
+      "rs_rating": 95,
+      "stock_return_1y": 105.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "MCHP",
+      "price": 98.14,
+      "pct_from_high": -7.3,
+      "rs_rating": 95,
+      "stock_return_1y": 105.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "VLO",
+      "price": 241.24,
+      "pct_from_high": -6.6,
+      "rs_rating": 95,
+      "stock_return_1y": 104.0,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "CIEN",
+      "price": 547.14,
+      "pct_from_high": -6.3,
+      "rs_rating": 95,
+      "stock_return_1y": 631.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "DD",
+      "price": 49.53,
+      "pct_from_high": -5.6,
+      "rs_rating": 95,
+      "stock_return_1y": 82.4,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "HAL",
+      "price": 40.14,
+      "pct_from_high": -5.5,
+      "rs_rating": 95,
+      "stock_return_1y": 103.8,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "GLW",
+      "price": 187.84,
+      "pct_from_high": -5.3,
+      "rs_rating": 95,
+      "stock_return_1y": 323.2,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "MRVL",
+      "price": 166.73,
+      "pct_from_high": -5.2,
+      "rs_rating": 95,
+      "stock_return_1y": 190.1,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "CMI",
+      "price": 682.04,
+      "pct_from_high": -5.0,
+      "rs_rating": 95,
+      "stock_return_1y": 126.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "MRNA",
+      "price": 56.58,
+      "pct_from_high": -5.0,
+      "rs_rating": 95,
+      "stock_return_1y": 132.1,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "C",
+      "price": 128.2,
+      "pct_from_high": -4.8,
+      "rs_rating": 95,
+      "stock_return_1y": 83.0,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "NXT",
+      "price": 125.54,
+      "pct_from_high": -4.7,
+      "rs_rating": 95,
+      "stock_return_1y": 181.5,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "JBL",
+      "price": 355.42,
+      "pct_from_high": -4.6,
+      "rs_rating": 95,
+      "stock_return_1y": 130.6,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "PWR",
+      "price": 755.0,
+      "pct_from_high": -4.3,
+      "rs_rating": 95,
+      "stock_return_1y": 131.6,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "VTRS",
+      "price": 16.77,
+      "pct_from_high": -4.3,
+      "rs_rating": 95,
+      "stock_return_1y": 93.1,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "KLAC",
+      "price": 1857.84,
+      "pct_from_high": -4.2,
+      "rs_rating": 95,
+      "stock_return_1y": 166.2,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "KLAC",
+      "price": 1857.84,
+      "pct_from_high": -4.2,
+      "rs_rating": 95,
+      "stock_return_1y": 166.2,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "CTEC",
+      "price": 68.7,
+      "pct_from_high": -3.9,
+      "rs_rating": 95,
+      "stock_return_1y": 122.4,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "FIX",
+      "price": 1940.66,
+      "pct_from_high": -3.8,
+      "rs_rating": 95,
+      "stock_return_1y": 343.2,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "IBKR",
+      "price": 84.03,
+      "pct_from_high": -3.8,
+      "rs_rating": 95,
+      "stock_return_1y": 83.1,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "ON",
+      "price": 101.85,
+      "pct_from_high": -3.8,
+      "rs_rating": 95,
+      "stock_return_1y": 156.1,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "MPWR",
+      "price": 1601.99,
+      "pct_from_high": -3.6,
+      "rs_rating": 95,
+      "stock_return_1y": 152.2,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "STLD",
+      "price": 235.02,
+      "pct_from_high": -3.6,
+      "rs_rating": 95,
+      "stock_return_1y": 83.8,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "MPWR",
+      "price": 1602.0,
+      "pct_from_high": -3.6,
+      "rs_rating": 95,
+      "stock_return_1y": 152.2,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "CAT",
+      "price": 901.51,
+      "pct_from_high": -3.2,
+      "rs_rating": 95,
+      "stock_return_1y": 181.0,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "NUE",
+      "price": 227.83,
+      "pct_from_high": -3.2,
+      "rs_rating": 95,
+      "stock_return_1y": 100.3,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "EME",
+      "price": 922.61,
+      "pct_from_high": -3.1,
+      "rs_rating": 95,
+      "stock_return_1y": 110.0,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "WDC",
+      "price": 471.2,
+      "pct_from_high": -2.6,
+      "rs_rating": 95,
+      "stock_return_1y": 968.2,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "WDC",
+      "price": 471.8,
+      "pct_from_high": -2.5,
+      "rs_rating": 95,
+      "stock_return_1y": 969.6,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "SNDK",
+      "price": 1492.71,
+      "pct_from_high": -2.3,
+      "rs_rating": 95,
+      "stock_return_1y": 3971.8,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "MU",
+      "price": 727.38,
+      "pct_from_high": -2.0,
+      "rs_rating": 95,
+      "stock_return_1y": 756.3,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "KEYS",
+      "price": 359.7,
+      "pct_from_high": -2.0,
+      "rs_rating": 95,
+      "stock_return_1y": 136.3,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "STX",
+      "price": 786.82,
+      "pct_from_high": -1.9,
+      "rs_rating": 95,
+      "stock_return_1y": 727.6,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "STX",
+      "price": 787.09,
+      "pct_from_high": -1.9,
+      "rs_rating": 95,
+      "stock_return_1y": 727.9,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "AVGO",
+      "price": 429.77,
+      "pct_from_high": -1.8,
+      "rs_rating": 95,
+      "stock_return_1y": 108.5,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "LRCX",
+      "price": 292.77,
+      "pct_from_high": -1.8,
+      "rs_rating": 95,
+      "stock_return_1y": 293.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "AVGO",
+      "price": 429.8,
+      "pct_from_high": -1.8,
+      "rs_rating": 95,
+      "stock_return_1y": 108.5,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "MU",
+      "price": 728.45,
+      "pct_from_high": -1.8,
+      "rs_rating": 95,
+      "stock_return_1y": 757.5,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "LRCX",
+      "price": 293.01,
+      "pct_from_high": -1.7,
+      "rs_rating": 95,
+      "stock_return_1y": 294.1,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "GNRC",
+      "price": 268.02,
+      "pct_from_high": -1.6,
+      "rs_rating": 95,
+      "stock_return_1y": 122.3,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "RIO",
+      "price": 104.69,
+      "pct_from_high": -1.5,
+      "rs_rating": 95,
+      "stock_return_1y": 86.3,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "ASML",
+      "price": 1546.25,
+      "pct_from_high": -1.3,
+      "rs_rating": 95,
+      "stock_return_1y": 120.1,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "NVDA",
+      "price": 215.29,
+      "pct_from_high": -1.2,
+      "rs_rating": 95,
+      "stock_return_1y": 83.5,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "AMD",
+      "price": 440.88,
+      "pct_from_high": -1.2,
+      "rs_rating": 95,
+      "stock_return_1y": 333.5,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "DELL",
+      "price": 245.09,
+      "pct_from_high": -1.2,
+      "rs_rating": 95,
+      "stock_return_1y": 158.6,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    },
+    {
+      "ticker": "AMD",
+      "price": 441.01,
+      "pct_from_high": -1.1,
+      "rs_rating": 95,
+      "stock_return_1y": 333.6,
+      "criteria_passed": 7,
+      "all_criteria_met": false
+    }
+  ]
+}

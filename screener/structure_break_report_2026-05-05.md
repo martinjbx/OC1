@@ -1,0 +1,169 @@
+# Structure Break + SMMA 15/29 Screener Report
+**Date:** May 5, 2026  
+**Universe:** 667 tickers (S&P 500 + Nasdaq 100 + FTSE 100)
+
+---
+
+## 📊 Summary
+
+### Strict Screener (All Criteria)
+**Result: 0 signals**
+
+The full strategy requires ALL conditions simultaneously:
+- ✅ Bullish structure break (close above recent lower high)
+- ✅ SMMA 15 crossed above SMMA 29 recently
+- ✅ Both SMAs trending upward
+- ✅ RSI shifted from <50 to >50 within last 10 bars
+- ✅ SMAs not flat
+- ✅ Not in range midpoint
+
+**Filter Funnel:**
+- 653 tickers with sufficient data (97.9%)
+- 18 with bullish structure breaks (2.7%)
+- 1 with SMMA crossover (0.1%)
+- 0 with RSI shift requirement
+
+**Bottleneck:** The combination of structure break + SMMA cross + RSI shift happening simultaneously is extremely rare in current market conditions.
+
+---
+
+## ⭐ Best Candidates (Meeting 2+ Criteria)
+
+### Top 10 Near-Trigger Setups
+
+| Ticker | Price | RSI | Criteria Met |
+|--------|-------|-----|--------------|
+| **ITRK.L** | $5,090.00 | 71 | Structure✓, Cross✓, RSI✓ |
+| **TROW** | $104.11 | 75 | Structure✓, Cross✓, NearCross |
+| **SWKS** | $72.56 | 78 | Structure✓, Cross✓ |
+| **DOGE-USD** | $0.11 | 77 | Structure✓, Cross✓, NearCross |
+| **EXPD** | $153.08 | 59 | Structure✓, NearCross, RSI✓ |
+| **UDR** | $36.94 | 66 | Structure✓, NearCross, RSI✓ |
+| **TECH** | $56.68 | 53 | Structure✓, NearCross, RSI✓ |
+| **CRWD** | $476.53 | 66 | Cross✓, NearCross, RSI✓ |
+| **CVS** | $80.69 | 58 | Cross✓, NearCross, RSI✓ |
+| **ORCL** | $185.35 | 65 | Cross✓, NearCross, RSI✓ |
+
+---
+
+## 🔹 Detailed Categories
+
+### Bullish Structure Breaks (18 tickers)
+Tickers that broke above recent lower high:
+
+**Strong Momentum:**
+- NUE ($232.07, RSI: 85) - Steel/materials
+- SWKS ($72.56, RSI: 78) - Semiconductors
+- DOGE-USD ($0.11, RSI: 77) - Crypto
+- TROW ($104.11, RSI: 75) - Asset management
+
+**High Quality:**
+- ADI ($404.77, RSI: 70) - Analog Devices
+- CMI ($674.88, RSI: 69) - Cummins
+- FFIV ($339.90, RSI: 69) - F5 Networks
+- ITRK.L ($5,090.00, RSI: 71) - Intertek Group
+
+### Recent SMMA Crossovers (67 tickers)
+SMMA 15 crossed above SMMA 29 in last 10 days:
+
+**Notable:**
+- AAPL ($284.18, RSI: 67)
+- QCOM ($186.55, RSI: 78)
+- NXPI ($292.35, RSI: 80)
+- CDNS ($353.63, RSI: 70)
+- CRWD ($476.53, RSI: 66)
+- PANW ($183.98, RSI: 62)
+
+### Ready to Cross (178 tickers)
+SMMA 15 within 2% of SMMA 29 (below):
+
+**Large Caps Poised:**
+- MSFT ($411.38, gap: -0.5%, RSI: 53)
+- TSLA ($389.37, gap: -1.9%, RSI: 55)
+- V ($322.03, gap: -0.2%, RSI: 57)
+- MA ($497.08, gap: -1.0%, RSI: 45)
+
+### RSI Momentum Shift (189 tickers)
+RSI shifted from <50 to >50 (momentum building):
+
+**High Quality + Momentum:**
+- LLY ($988.87, RSI: 62)
+- COST ($1,016.42, RSI: 58)
+- AMAT ($410.82, RSI: 61)
+- ORCL ($185.35, RSI: 65)
+
+---
+
+## 💡 Actionable Insights
+
+### Ready Now (1-2 criteria missing)
+Watch these tickers closely - they could trigger within 1-3 days:
+
+**High Priority:**
+1. **ITRK.L** - Meets 3/6 criteria (Structure + Cross + RSI)
+2. **TROW** - Meets 3/6 criteria (Structure + Cross + Near)
+3. **CRWD** - Meets 3/6 criteria (Cross + Near + RSI)
+4. **ORCL** - Meets 3/6 criteria (Cross + Near + RSI)
+
+**Watchlist:**
+- EXPD, UDR, TECH - Have structure breaks, waiting for SMMA cross
+- MSFT, TSLA - Very close to SMMA cross, need RSI shift
+
+### Strategy Observations
+
+**Current Market State:**
+- Structure breaks are rare (only 2.7% of tickers)
+- SMMA crossovers are more common (10% recently)
+- RSI momentum is building (28% showing shift)
+- 27% of tickers are positioned near SMMA cross
+
+**Recommendation:**
+Consider a **two-tier approach:**
+
+**Tier 1 (Conservative):** Wait for all 6 criteria → 0 signals currently
+
+**Tier 2 (Moderate):** Accept tickers meeting 4-5 criteria:
+- Must have: Structure break OR SMMA cross
+- Must have: RSI shift
+- Plus: SMAs trending + not flat
+
+This would identify ~10-15 setups vs 0.
+
+**Tier 3 (Aggressive):** Accept tickers meeting 3+ criteria → 90 candidates
+
+---
+
+## 📝 Notes
+
+**Code Location:**
+- Main screener: `screener/src/structure_screener.py`
+- Diagnostic: `screener/run_structure_diagnostic.py`
+- Watchlist: `screener/run_structure_watchlist.py`
+- Runner: `screener/run_structure_screener.py`
+
+**To Re-run:**
+```bash
+cd screener
+source venv/bin/activate
+python3 run_structure_screener.py      # Full strict screener
+python3 run_structure_diagnostic.py    # Filter funnel analysis
+python3 run_structure_watchlist.py     # Near-trigger candidates
+```
+
+**Performance:**
+- Runtime: ~60 seconds for 667 tickers
+- Data source: Yahoo Finance (6 months daily)
+- Swing definition: 2 bars on each side
+
+---
+
+## 🎯 Next Steps
+
+1. **Monitor top candidates** (ITRK.L, TROW, CRWD, ORCL) daily
+2. **Adjust strategy** if too conservative (consider 4-5 criteria instead of 6)
+3. **Backtest** the relaxed criteria to validate edge
+4. **Set alerts** for tickers close to crossing (MSFT, TSLA, etc.)
+
+---
+
+*Generated by OpenClaw Structure Break Screener*

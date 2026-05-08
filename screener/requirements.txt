@@ -1,0 +1,17 @@
+# Investment Screener Dependencies
+
+# Data fetching
+yfinance>=0.2.38
+
+# Data analysis
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Technical indicators
+pandas-ta>=0.3.14b
+
+# Database
+# (sqlite3 is in Python stdlib)
+
+# Optional: accelerated performance
+# ta-lib  # Requires system package: apt install ta-lib (may add later)

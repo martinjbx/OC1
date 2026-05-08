@@ -1,0 +1,3 @@
+# Don't ignore data directory - we want to commit JSON files
+!data/
+!data/*.json

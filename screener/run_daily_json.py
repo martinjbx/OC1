@@ -1,0 +1,168 @@
+#!/usr/bin/env python3
+"""
+Daily screener runner that outputs JSON for dashboard
+No AI tokens - pure Python cron job
+"""
+
+import sys
+import json
+from pathlib import Path
+from datetime import datetime
+import pandas as pd
+import yfinance as yf
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# Add src and parent to path
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from structure_screener import run_structure_screen
+from minervini_sepa_screener import scan_ticker as minervini_scan_ticker
+
+def run_structure_json():
+    """Run structure screener and return JSON"""
+    print("Running structure screener...")
+    results = run_structure_screen(max_tickers=None, verbose=False)
+    
+    signals = []
+    for signal in results['signals']:
+        signals.append({
+            'ticker': str(signal['ticker']),
+            'price': float(signal['price']),
+            'smma15': float(signal['smma15']),
+            'smma29': float(signal['smma29']),
+            'rsi': float(signal['rsi']),
+            'volume_surge': bool(signal.get('volume_surge', False))
+        })
+    
+    return {
+        'scan_date': datetime.utcnow().isoformat(),
+        'total_scanned': results['stats']['total_scanned'],
+        'signals_found': results['stats']['signals_found'],
+        'signals': signals
+    }
+
+def run_minervini_json():
+    """Run Minervini screener and return JSON"""
+    print("Running Minervini screener...")
+    
+    # Load tickers
+    ticker_file = Path(__file__).parent / "tickers.csv"
+    tickers_df = pd.read_csv(ticker_file, encoding='utf-8-sig')
+    tickers = tickers_df['Symbol'].dropna().tolist()
+    
+    print(f"Loaded {len(tickers)} tickers")
+    
+    # Download S&P 500 benchmark data
+    print("Downloading SPY benchmark...")
+    spy = yf.Ticker('SPY')
+    spy_data = spy.history(period='1y')
+    
+    # Scan in parallel
+    print("Scanning tickers...")
+    results = []
+    
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        futures = {executor.submit(minervini_scan_ticker, ticker, spy_data, False): ticker 
+                  for ticker in tickers}
+        
+        for i, future in enumerate(as_completed(futures), 1):
+            ticker = futures[future]
+            try:
+                _, passes, criteria, stock_data = future.result()
+                
+                if stock_data:
+                    results.append(stock_data)
+                    
+                if i % 50 == 0:
+                    print(f"Progress: {i}/{len(tickers)}")
+                    
+            except Exception as e:
+                # Silently skip errors
+                pass
+    
+    # Extract candidates (convert numpy types to Python types)
+    candidates = []
+    for stock in results:
+        if stock['criteria_passed'] >= 7:
+            candidates.append({
+                'ticker': str(stock['ticker']),
+                'price': float(stock['price']),
+                'pct_from_high': float(stock['pct_from_high']),
+                'rs_rating': int(stock['rs_rating']),
+                'stock_return_1y': float(stock['stock_return_1y']),
+                'criteria_passed': int(stock['criteria_passed']),
+                'all_criteria_met': bool(stock['all_criteria_met'])
+            })
+    
+    # Sort by RS rating, then proximity to high
+    candidates.sort(key=lambda x: (x['rs_rating'], -x['pct_from_high']), reverse=True)
+    
+    return {
+        'scan_date': datetime.utcnow().isoformat(),
+        'total_scanned': len(results),
+        'candidates_7_plus': len(candidates),
+        'candidates_all_8': len([c for c in candidates if c['all_criteria_met']]),
+        'top_candidates': candidates[:50]  # Top 50
+    }
+
+def main():
+    output_dir = Path(__file__).parent / "dashboard" / "data"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Run structure screener
+    try:
+        structure_data = run_structure_json()
+        structure_file = output_dir / "structure_latest.json"
+        with open(structure_file, 'w') as f:
+            json.dump(structure_data, f, indent=2)
+        print(f"✅ Structure results: {structure_file}")
+    except Exception as e:
+        print(f"❌ Structure screener failed: {e}")
+        structure_data = {
+            'scan_date': datetime.utcnow().isoformat(),
+            'total_scanned': 0,
+            'signals_found': 0,
+            'signals': []
+        }
+    
+    # Run Minervini screener
+    try:
+        minervini_data = run_minervini_json()
+        minervini_file = output_dir / "minervini_latest.json"
+        with open(minervini_file, 'w') as f:
+            json.dump(minervini_data, f, indent=2)
+        print(f"✅ Minervini results: {minervini_file}")
+    except Exception as e:
+        print(f"❌ Minervini screener failed: {e}")
+        minervini_data = {
+            'scan_date': datetime.utcnow().isoformat(),
+            'total_scanned': 0,
+            'candidates_7_plus': 0,
+            'candidates_all_8': 0,
+            'top_candidates': []
+        }
+    
+    # Create combined summary
+    summary = {
+        'last_update': datetime.utcnow().isoformat(),
+        'structure': {
+            'signals': structure_data['signals_found'],
+            'scanned': structure_data['total_scanned']
+        },
+        'minervini': {
+            'candidates_7_plus': minervini_data['candidates_7_plus'],
+            'candidates_all_8': minervini_data['candidates_all_8'],
+            'scanned': minervini_data['total_scanned']
+        }
+    }
+    
+    summary_file = output_dir / "summary.json"
+    with open(summary_file, 'w') as f:
+        json.dump(summary, f, indent=2)
+    print(f"✅ Summary: {summary_file}")
+    
+    print("\n🎉 All screeners complete!")
+
+if __name__ == "__main__":
+    main()
