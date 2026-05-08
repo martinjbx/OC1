@@ -27,18 +27,18 @@ def run_structure_json():
     signals = []
     for signal in results['signals']:
         signals.append({
-            'ticker': str(signal['ticker']),
-            'price': float(signal['price']),
-            'smma15': float(signal['smma15']),
-            'smma29': float(signal['smma29']),
-            'rsi': float(signal['rsi']),
+            'ticker': str(signal.get('ticker', '')),
+            'price': float(signal.get('price', 0)),
+            'smma15': float(signal.get('smma_15', signal.get('smma15', 0))),
+            'smma29': float(signal.get('smma_29', signal.get('smma29', 0))),
+            'rsi': float(signal.get('rsi', 0)),
             'volume_surge': bool(signal.get('volume_surge', False))
         })
     
     return {
         'scan_date': datetime.utcnow().isoformat(),
-        'total_scanned': results['stats']['total_scanned'],
-        'signals_found': results['stats']['signals_found'],
+        'total_scanned': results.get('total_screened', 0),
+        'signals_found': len(signals),
         'signals': signals
     }
 
@@ -53,16 +53,26 @@ def run_minervini_json():
     
     print(f"Loaded {len(tickers)} tickers")
     
-    # Download S&P 500 benchmark data
+    # Download S&P 500 benchmark data (with retry on rate limit)
     print("Downloading SPY benchmark...")
-    spy = yf.Ticker('SPY')
-    spy_data = spy.history(period='1y')
+    spy_data = None
+    for attempt in range(5):
+        try:
+            spy = yf.Ticker('SPY')
+            spy_data = spy.history(period='1y')
+            if len(spy_data) > 0:
+                break
+        except Exception as e:
+            print(f"SPY attempt {attempt+1} failed: {e}, retrying in 30s...")
+            import time; time.sleep(30)
+    if spy_data is None or len(spy_data) == 0:
+        raise Exception("Could not fetch SPY benchmark data after 5 attempts")
     
     # Scan in parallel
     print("Scanning tickers...")
     results = []
     
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         futures = {executor.submit(minervini_scan_ticker, ticker, spy_data, False): ticker 
                   for ticker in tickers}
         
@@ -126,6 +136,11 @@ def main():
             'signals': []
         }
     
+    # Brief pause between screeners to avoid rate limits
+    import time
+    print("Pausing 60s between screeners to avoid rate limits...")
+    time.sleep(60)
+
     # Run Minervini screener
     try:
         minervini_data = run_minervini_json()
