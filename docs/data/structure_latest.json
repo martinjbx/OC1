@@ -1,6 +1,31 @@
 {
-  "scan_date": "2026-05-08T16:51:37.391522",
-  "total_scanned": 667,
-  "signals_found": 0,
-  "signals": []
+  "scan_date": "2026-05-08T23:58:26.110021",
+  "total_scanned": 3711,
+  "signals_found": 3,
+  "signals": [
+    {
+      "ticker": "FWONK",
+      "price": 94.44999694824219,
+      "smma15": 88.29526112365127,
+      "smma29": 88.08958594146299,
+      "rsi": 63.808576986912094,
+      "volume_surge": false
+    },
+    {
+      "ticker": "UAVS",
+      "price": 1.1699999570846558,
+      "smma15": 1.0667109290751329,
+      "smma29": 1.0655980891367252,
+      "rsi": 58.14235327102816,
+      "volume_surge": false
+    },
+    {
+      "ticker": "ORA",
+      "price": 121.66999816894531,
+      "smma15": 114.02667640644673,
+      "smma29": 113.63403321247849,
+      "rsi": 60.39943067006956,
+      "volume_surge": false
+    }
+  ]
 }
