@@ -162,6 +162,34 @@
         });
     }
 
+    // ── Composite score helpers ──────────────────────────────────────
+    function calcStructureScore(s) {
+        const rsi = s.rsi || 0;
+        const rsiScore  = Math.min(Math.max((rsi - 50) / 20 * 50, 0), 50);
+        const smmaGap   = ((s.smma15 - s.smma29) / s.smma29) * 100;
+        const smmaScore = Math.min(Math.max(smmaGap / 5 * 30, 0), 30);
+        const volScore  = s.volume_surge ? 20 : 0;
+        return Math.round(rsiScore + smmaScore + volScore);
+    }
+
+    function calcMinerviniScore(c) {
+        const criteriaScore = (c.criteria_passed / 8) * 40;
+        const rsScore       = (c.rs_rating / 100) * 35;
+        const proxScore     = Math.max((25 + c.pct_from_high) / 25 * 15, 0);
+        const returnScore   = Math.min(c.stock_return_1y / 200, 1) * 10;
+        return Math.round(criteriaScore + rsScore + proxScore + returnScore);
+    }
+
+    // ── Deduplication ─────────────────────────────────────────────────
+    function dedupe(arr, key) {
+        const seen = new Set();
+        return arr.filter(item => {
+            if (seen.has(item[key])) return false;
+            seen.add(item[key]);
+            return true;
+        });
+    }
+
     // ── Sorting state ──────────────────────────────────────────────
     const sortState = { minervini: { col: null, dir: 1 }, structure: { col: null, dir: 1 } };
     let minerviniData = [];
@@ -185,7 +213,11 @@
 
         try {
             const s = await fetchJSON('data/structure_latest.json');
-            structureData = s.signals || [];
+            // Deduplicate by ticker, add composite score, default sort best→worst
+            const raw = dedupe(s.signals || [], 'ticker');
+            structureData = raw
+                .map(r => ({ ...r, composite: calcStructureScore(r) }))
+                .sort((a, b) => b.composite - a.composite);
             renderStructureTable();
         } catch (e) {
             document.getElementById('structureTable').innerHTML = '<div class="no-data">No data available</div>';
@@ -193,7 +225,11 @@
 
         try {
             const m = await fetchJSON('data/minervini_latest.json');
-            minerviniData = m.top_candidates || [];
+            // Deduplicate by ticker, add composite score, default sort best→worst
+            const raw = dedupe(m.top_candidates || [], 'ticker');
+            minerviniData = raw
+                .map(c => ({ ...c, composite: calcMinerviniScore(c) }))
+                .sort((a, b) => b.composite - a.composite);
             renderMinerviniTable();
         } catch (e) {
             document.getElementById('minerviniTable').innerHTML = '<div class="no-data">No data available</div>';
@@ -227,12 +263,13 @@
 
     // ── Structure table ────────────────────────────────────────────
     const structureCols = [
-        { label: 'Ticker',  get: r => r.ticker },
-        { label: 'Price',   get: r => r.price },
-        { label: 'SMMA 15', get: r => r.smma15 },
-        { label: 'SMMA 29', get: r => r.smma29 },
-        { label: 'RSI',     get: r => r.rsi },
-        { label: 'Volume',  get: r => r.volume_surge ? 1 : 0 },
+        { label: 'Ticker',    get: r => r.ticker },
+        { label: 'Price',     get: r => r.price },
+        { label: 'SMMA 15',  get: r => r.smma15 },
+        { label: 'SMMA 29',  get: r => r.smma29 },
+        { label: 'RSI',       get: r => r.rsi },
+        { label: 'Volume',    get: r => r.volume_surge ? 1 : 0 },
+        { label: 'Score ▾',  get: r => r.composite },
     ];
 
     function renderStructureTable() {
@@ -246,7 +283,9 @@
             `<th onclick="sortAndRender('structure', ${i})">${c.label}<span class="sort-icon"></span></th>`
         ).join('');
 
-        const rows = structureData.map(s => `
+        const rows = structureData.map(s => {
+            const scoreClass = s.composite >= 85 ? 'rs-95' : s.composite >= 70 ? 'rs-85' : 'rs-75';
+            return `
             <tr>
                 <td class="ticker">${s.ticker}</td>
                 <td>$${s.price.toFixed(2)}</td>
@@ -254,7 +293,9 @@
                 <td>${s.smma29.toFixed(2)}</td>
                 <td>${s.rsi.toFixed(1)}</td>
                 <td>${s.volume_surge ? '🔥' : '-'}</td>
-            </tr>`).join('');
+                <td><span class="rs-badge ${scoreClass}">${s.composite}</span></td>
+            </tr>`;
+        }).join('');
 
         container.innerHTML = `<table><thead><tr>${headCells}</tr></thead><tbody>${rows}</tbody></table>`;
 
@@ -274,6 +315,7 @@
         { label: 'RS Rating',   get: r => r.rs_rating },
         { label: '1Y Return',   get: r => r.stock_return_1y },
         { label: 'Criteria',    get: r => r.criteria_passed },
+        { label: 'Score ▾',    get: r => r.composite },
     ];
 
     function renderMinerviniTable() {
@@ -288,8 +330,9 @@
         ).join('');
 
         const rows = minerviniData.map(c => {
-            const rsClass = c.rs_rating >= 90 ? 'rs-95' : c.rs_rating >= 80 ? 'rs-85' : 'rs-75';
-            const pctClass = c.pct_from_high >= -5 ? 'positive' : 'negative';
+            const rsClass    = c.rs_rating  >= 90 ? 'rs-95' : c.rs_rating  >= 80 ? 'rs-85' : 'rs-75';
+            const scoreClass = c.composite >= 85 ? 'rs-95' : c.composite >= 75 ? 'rs-85' : 'rs-75';
+            const pctClass   = c.pct_from_high >= -5 ? 'positive' : 'negative';
             return `
             <tr>
                 <td class="ticker">${c.ticker}</td>
@@ -298,6 +341,7 @@
                 <td><span class="rs-badge ${rsClass}">${c.rs_rating}</span></td>
                 <td class="positive">+${c.stock_return_1y.toFixed(1)}%</td>
                 <td>${c.criteria_passed}/8 ${c.all_criteria_met ? '✅' : ''}</td>
+                <td><span class="rs-badge ${scoreClass}">${c.composite}</span></td>
             </tr>`;
         }).join('');
 

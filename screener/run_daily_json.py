@@ -105,6 +105,15 @@ def run_minervini_json():
                 'all_criteria_met': bool(stock['all_criteria_met'])
             })
     
+    # Deduplicate by ticker (keep highest criteria_passed, then highest RS)
+    seen = {}
+    for c in candidates:
+        ticker = c['ticker']
+        if ticker not in seen or c['criteria_passed'] > seen[ticker]['criteria_passed'] or \
+           (c['criteria_passed'] == seen[ticker]['criteria_passed'] and c['rs_rating'] > seen[ticker]['rs_rating']):
+            seen[ticker] = c
+    candidates = list(seen.values())
+
     # Sort by RS rating, then proximity to high
     candidates.sort(key=lambda x: (x['rs_rating'], -x['pct_from_high']), reverse=True)
     
