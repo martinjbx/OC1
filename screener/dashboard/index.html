@@ -269,20 +269,23 @@
         }
 
         function calcMinerviniScore(candidate) {
-            // Criteria passed: 8/8 = 40 pts
             const criteriaScore = (candidate.criteria_passed / 8) * 40;
-
-            // RS Rating 0-100 → 0-35 pts
-            const rsScore = (candidate.rs_rating / 100) * 35;
-
-            // Proximity to 52w high: pct_from_high in [-25, 0] → 0-15 pts
-            const proxScore = Math.max((25 + candidate.pct_from_high) / 25 * 15, 0);
-
-            // 1Y Return (capped at 200%) → 0-10 pts
-            const returnScore = Math.min(candidate.stock_return_1y / 200, 1) * 10;
-
+            const rsScore       = (candidate.rs_rating / 100) * 35;
+            const proxScore     = Math.max((25 + candidate.pct_from_high) / 25 * 15, 0);
+            const returnScore   = Math.min(candidate.stock_return_1y / 200, 1) * 10;
             return Math.round(criteriaScore + rsScore + proxScore + returnScore);
         }
+
+        // Rank by proximity to backtested sweet-spot (85-89 = rank 1)
+        function calcMinerviniRank(composite) {
+            if (composite >= 85 && composite <= 89) return 1;
+            if (composite >= 90)                   return 2;
+            if (composite >= 80)                   return 3;
+            if (composite >= 75)                   return 4;
+            if (composite >= 70)                   return 5;
+            return 6;
+        }
+        const rankLabel = ['','🥇','🥈','🥉','4','5','6'];
 
         // ── Table renderers ─────────────────────────────────────────────────
 
@@ -340,35 +343,40 @@
                 return;
             }
 
-            // Add composite score and sort best → worst
-            const scored = candidates.map(c => ({ ...c, composite: calcMinerviniScore(c) }));
-            scored.sort((a, b) => b.composite - a.composite);
+            // Add composite + rank, sort by rank then score
+            const scored = candidates
+                .map(c => ({ ...c, composite: calcMinerviniScore(c) }))
+                .map(c => ({ ...c, rank: calcMinerviniRank(c.composite) }))
+                .sort((a, b) => a.rank !== b.rank ? a.rank - b.rank : b.composite - a.composite);
             
             let html = `
                 <table>
                     <thead>
                         <tr>
+                            <th>Rank</th>
                             <th>Ticker</th>
                             <th>Price</th>
                             <th>% from High</th>
                             <th>RS Rating</th>
                             <th>1Y Return</th>
                             <th>Criteria</th>
-                            <th>Score ▾</th>
+                            <th>Score</th>
                         </tr>
                     </thead>
                     <tbody>
             `;
             
             scored.forEach(candidate => {
-                const rsClass = candidate.rs_rating >= 90 ? 'rs-95' : 
-                               candidate.rs_rating >= 80 ? 'rs-85' : 'rs-75';
-                const pctClass = candidate.pct_from_high >= -5 ? 'positive' : '';
-                const scoreClass = candidate.composite >= 85 ? 'rs-95' :
-                                   candidate.composite >= 75 ? 'rs-85' : 'rs-75';
+                const rsClass    = candidate.rs_rating >= 90 ? 'rs-95' :
+                                   candidate.rs_rating >= 80 ? 'rs-85' : 'rs-75';
+                const pctClass   = candidate.pct_from_high >= -5 ? 'positive' : '';
+                const scoreClass = (candidate.composite >= 85 && candidate.composite <= 89) ? 'rs-95' :
+                                    candidate.composite >= 80 ? 'rs-85' : 'rs-75';
+                const rl = rankLabel[candidate.rank] || candidate.rank;
                 
                 html += `
                     <tr>
+                        <td style="text-align:center;font-size:1.1em">${rl}</td>
                         <td class="ticker">${candidate.ticker}</td>
                         <td>$${candidate.price.toFixed(2)}</td>
                         <td class="${pctClass}">${candidate.pct_from_high.toFixed(1)}%</td>

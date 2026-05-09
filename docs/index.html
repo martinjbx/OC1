@@ -180,6 +180,17 @@
         return Math.round(criteriaScore + rsScore + proxScore + returnScore);
     }
 
+    // Rank by proximity to backtested sweet-spot (85-89 = rank 1)
+    function calcMinerviniRank(composite) {
+        if (composite >= 85 && composite <= 89) return 1;  // sweet spot
+        if (composite >= 90)                   return 2;  // good but late-stage
+        if (composite >= 80)                   return 3;
+        if (composite >= 75)                   return 4;
+        if (composite >= 70)                   return 5;
+        return 6;
+    }
+    const rankLabel = ['','🥇','🥈','🥉','4','5','6'];
+
     // ── Deduplication ─────────────────────────────────────────────────
     function dedupe(arr, key) {
         const seen = new Set();
@@ -225,11 +236,12 @@
 
         try {
             const m = await fetchJSON('data/minervini_latest.json');
-            // Deduplicate by ticker, add composite score, default sort best→worst
+            // Deduplicate, add composite + rank, default sort by rank then score
             const raw = dedupe(m.top_candidates || [], 'ticker');
             minerviniData = raw
                 .map(c => ({ ...c, composite: calcMinerviniScore(c) }))
-                .sort((a, b) => b.composite - a.composite);
+                .map(c => ({ ...c, rank: calcMinerviniRank(c.composite) }))
+                .sort((a, b) => a.rank !== b.rank ? a.rank - b.rank : b.composite - a.composite);
             renderMinerviniTable();
         } catch (e) {
             document.getElementById('minerviniTable').innerHTML = '<div class="no-data">No data available</div>';
@@ -309,13 +321,14 @@
 
     // ── Minervini table ────────────────────────────────────────────
     const minerviniCols = [
+        { label: 'Rank',        get: r => r.rank },
         { label: 'Ticker',      get: r => r.ticker },
         { label: 'Price',       get: r => r.price },
         { label: '% from High', get: r => r.pct_from_high },
         { label: 'RS Rating',   get: r => r.rs_rating },
         { label: '1Y Return',   get: r => r.stock_return_1y },
         { label: 'Criteria',    get: r => r.criteria_passed },
-        { label: 'Score ▾',    get: r => r.composite },
+        { label: 'Score',       get: r => r.composite },
     ];
 
     function renderMinerviniTable() {
@@ -331,10 +344,12 @@
 
         const rows = minerviniData.map(c => {
             const rsClass    = c.rs_rating  >= 90 ? 'rs-95' : c.rs_rating  >= 80 ? 'rs-85' : 'rs-75';
-            const scoreClass = c.composite >= 85 ? 'rs-95' : c.composite >= 75 ? 'rs-85' : 'rs-75';
+            const scoreClass = (c.composite >= 85 && c.composite <= 89) ? 'rs-95'
+                             : c.composite >= 80 ? 'rs-85' : 'rs-75';
             const pctClass   = c.pct_from_high >= -5 ? 'positive' : 'negative';
             return `
             <tr>
+                <td style="text-align:center;font-size:1.1em">${rankLabel[c.rank] || c.rank}</td>
                 <td class="ticker">${c.ticker}</td>
                 <td>$${c.price.toFixed(2)}</td>
                 <td class="${pctClass}">${c.pct_from_high.toFixed(1)}%</td>
