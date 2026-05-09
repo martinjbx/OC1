@@ -1,7 +1,7 @@
 {
-  "scan_date": "2026-05-08T23:58:26.110021",
+  "scan_date": "2026-05-09T07:10:46.690967",
   "total_scanned": 3711,
-  "signals_found": 3,
+  "signals_found": 2,
   "signals": [
     {
       "ticker": "FWONK",
@@ -17,14 +17,6 @@
       "smma15": 1.0667109290751329,
       "smma29": 1.0655980891367252,
       "rsi": 58.14235327102816,
-      "volume_surge": false
-    },
-    {
-      "ticker": "ORA",
-      "price": 121.66999816894531,
-      "smma15": 114.02667640644673,
-      "smma29": 113.63403321247849,
-      "rsi": 60.39943067006956,
       "volume_surge": false
     }
   ]
