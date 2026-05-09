@@ -142,21 +142,27 @@ def main():
     time.sleep(60)
 
     # Run Minervini screener
+    minervini_file = output_dir / "minervini_latest.json"
     try:
         minervini_data = run_minervini_json()
-        minervini_file = output_dir / "minervini_latest.json"
         with open(minervini_file, 'w') as f:
             json.dump(minervini_data, f, indent=2)
         print(f"✅ Minervini results: {minervini_file}")
     except Exception as e:
         print(f"❌ Minervini screener failed: {e}")
-        minervini_data = {
-            'scan_date': datetime.utcnow().isoformat(),
-            'total_scanned': 0,
-            'candidates_7_plus': 0,
-            'candidates_all_8': 0,
-            'top_candidates': []
-        }
+        # Fall back to the previous run's data if available, so summary stays accurate
+        if minervini_file.exists():
+            print("  ↳ Using previous Minervini results for summary")
+            with open(minervini_file) as f:
+                minervini_data = json.load(f)
+        else:
+            minervini_data = {
+                'scan_date': datetime.utcnow().isoformat(),
+                'total_scanned': 0,
+                'candidates_7_plus': 0,
+                'candidates_all_8': 0,
+                'top_candidates': []
+            }
     
     # Create combined summary
     summary = {

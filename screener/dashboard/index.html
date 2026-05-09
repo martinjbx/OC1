@@ -251,13 +251,52 @@
             }
         }
         
+        // ── Composite score helpers ─────────────────────────────────────────
+
+        function calcStructureScore(signal) {
+            // RSI component (50-80 sweet spot → up to 50 pts)
+            const rsi = signal.rsi || 0;
+            const rsiScore = Math.min(Math.max((rsi - 50) / 20 * 50, 0), 50);
+
+            // SMMA spread: (smma15-smma29)/smma29 * 100 → cap 5% spread = 30 pts
+            const smmaGap = ((signal.smma15 - signal.smma29) / signal.smma29) * 100;
+            const smmaScore = Math.min(Math.max(smmaGap / 5 * 30, 0), 30);
+
+            // Volume surge bonus: 20 pts
+            const volScore = signal.volume_surge ? 20 : 0;
+
+            return Math.round(rsiScore + smmaScore + volScore);
+        }
+
+        function calcMinerviniScore(candidate) {
+            // Criteria passed: 8/8 = 40 pts
+            const criteriaScore = (candidate.criteria_passed / 8) * 40;
+
+            // RS Rating 0-100 → 0-35 pts
+            const rsScore = (candidate.rs_rating / 100) * 35;
+
+            // Proximity to 52w high: pct_from_high in [-25, 0] → 0-15 pts
+            const proxScore = Math.max((25 + candidate.pct_from_high) / 25 * 15, 0);
+
+            // 1Y Return (capped at 200%) → 0-10 pts
+            const returnScore = Math.min(candidate.stock_return_1y / 200, 1) * 10;
+
+            return Math.round(criteriaScore + rsScore + proxScore + returnScore);
+        }
+
+        // ── Table renderers ─────────────────────────────────────────────────
+
         function renderStructureTable(signals) {
             const container = document.getElementById('structureTable');
             
-            if (signals.length === 0) {
+            if (!signals || signals.length === 0) {
                 container.innerHTML = '<div class="no-data">No signals found</div>';
                 return;
             }
+
+            // Add composite score and sort best → worst
+            const scored = signals.map(s => ({ ...s, composite: calcStructureScore(s) }));
+            scored.sort((a, b) => b.composite - a.composite);
             
             let html = `
                 <table>
@@ -269,12 +308,13 @@
                             <th>SMMA 29</th>
                             <th>RSI</th>
                             <th>Volume</th>
+                            <th>Score ▾</th>
                         </tr>
                     </thead>
                     <tbody>
             `;
             
-            signals.forEach(signal => {
+            scored.forEach(signal => {
                 html += `
                     <tr>
                         <td class="ticker">${signal.ticker}</td>
@@ -283,6 +323,7 @@
                         <td>${signal.smma29.toFixed(2)}</td>
                         <td>${signal.rsi.toFixed(1)}</td>
                         <td>${signal.volume_surge ? '🔥' : '-'}</td>
+                        <td><span class="rs-badge rs-85">${signal.composite}</span></td>
                     </tr>
                 `;
             });
@@ -294,10 +335,14 @@
         function renderMinerviniTable(candidates) {
             const container = document.getElementById('minerviniTable');
             
-            if (candidates.length === 0) {
+            if (!candidates || candidates.length === 0) {
                 container.innerHTML = '<div class="no-data">No candidates found</div>';
                 return;
             }
+
+            // Add composite score and sort best → worst
+            const scored = candidates.map(c => ({ ...c, composite: calcMinerviniScore(c) }));
+            scored.sort((a, b) => b.composite - a.composite);
             
             let html = `
                 <table>
@@ -309,15 +354,18 @@
                             <th>RS Rating</th>
                             <th>1Y Return</th>
                             <th>Criteria</th>
+                            <th>Score ▾</th>
                         </tr>
                     </thead>
                     <tbody>
             `;
             
-            candidates.forEach(candidate => {
+            scored.forEach(candidate => {
                 const rsClass = candidate.rs_rating >= 90 ? 'rs-95' : 
                                candidate.rs_rating >= 80 ? 'rs-85' : 'rs-75';
                 const pctClass = candidate.pct_from_high >= -5 ? 'positive' : '';
+                const scoreClass = candidate.composite >= 85 ? 'rs-95' :
+                                   candidate.composite >= 75 ? 'rs-85' : 'rs-75';
                 
                 html += `
                     <tr>
@@ -327,6 +375,7 @@
                         <td><span class="rs-badge ${rsClass}">${candidate.rs_rating}</span></td>
                         <td class="positive">+${candidate.stock_return_1y.toFixed(1)}%</td>
                         <td>${candidate.criteria_passed}/8 ${candidate.all_criteria_met ? '✅' : ''}</td>
+                        <td><span class="rs-badge ${scoreClass}">${candidate.composite}</span></td>
                     </tr>
                 `;
             });
