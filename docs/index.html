@@ -205,7 +205,14 @@
         </div>
         
         <div class="section">
-            <h2>🎯 Structure Break Signals</h2>
+            <h2>🚨 Exit & Take-Profit Alerts</h2>
+            <div id="exitTable">
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📈 SMMA Crossover Signals</h2>
             <div id="structureTable">
                 <div class="loading">Loading...</div>
             </div>
@@ -223,7 +230,11 @@
         async function loadData() {
             try {
                 // Load summary
-                const summary = await fetch('data/summary.json').then(r => r.json());
+                const [summary, exitData] = await Promise.all([
+                    fetch('data/summary.json').then(r => r.json()),
+                    fetch('data/exit_alerts.json').then(r => r.json()).catch(() => null),
+                ]);
+                renderExitTable(exitData);
                 
                 // Update last update time
                 const updateDate = new Date(summary.last_update);
@@ -290,18 +301,103 @@
             return Math.round(criteriaScore + rsScore + proxScore + returnScore);
         }
 
-        // Rank by proximity to backtested sweet-spot (85-89 = rank 1)
+        // Rank tiers — lowered so top 7/8 candidates always reach gold
         function calcMinerviniRank(composite) {
-            if (composite >= 85 && composite <= 89) return 1;
-            if (composite >= 90)                   return 2;
-            if (composite >= 80)                   return 3;
-            if (composite >= 75)                   return 4;
-            if (composite >= 70)                   return 5;
-            return 6;
+            if (composite >= 84) return 1; // 🥇 Gold
+            if (composite >= 79) return 2; // 🥈 Silver
+            if (composite >= 74) return 3; // 🥉 Bronze
+            if (composite >= 68) return 4;
+            return 5;
         }
-        const rankLabel = ['','🥇','🥈','🥉','4','5','6'];
+        const rankLabel = ['','🥇','🥈','🥉','4','5'];
+
+        // ── Column sorting ───────────────────────────────────────────────────
+        let _sortState = {};
+        function makeSortable(tableEl) {
+            const headers = tableEl.querySelectorAll('thead th');
+            headers.forEach((th, colIdx) => {
+                th.style.cursor = 'pointer';
+                th.title = 'Click to sort';
+                th.addEventListener('click', () => {
+                    const key = tableEl.id + '_' + colIdx;
+                    const asc = _sortState[key] !== true;
+                    _sortState[key] = asc;
+                    headers.forEach(h => h.textContent = h.textContent.replace(/ [▲▼]$/, ''));
+                    th.textContent += asc ? ' ▲' : ' ▼';
+                    const tbody = tableEl.querySelector('tbody');
+                    const rows = Array.from(tbody.querySelectorAll('tr'));
+                    rows.sort((a, b) => {
+                        const aVal = a.cells[colIdx]?.textContent.trim().replace(/[$%+,🥇🥈🥉✅]/g,'') || '';
+                        const bVal = b.cells[colIdx]?.textContent.trim().replace(/[$%+,🥇🥈🥉✅]/g,'') || '';
+                        const aNum = parseFloat(aVal), bNum = parseFloat(bVal);
+                        if (!isNaN(aNum) && !isNaN(bNum)) return asc ? aNum - bNum : bNum - aNum;
+                        return asc ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+                    });
+                    rows.forEach(r => tbody.appendChild(r));
+                });
+            });
+        }
 
         // ── Table renderers ─────────────────────────────────────────────────
+
+        function renderExitTable(exitData) {
+            const container = document.getElementById('exitTable');
+            if (!exitData) { container.innerHTML = '<div class="no-data">No data</div>'; return; }
+
+            const strong    = exitData.strong_exits        || [];
+            const weak      = exitData.weak_exits          || [];
+            const climactic = exitData.climactic_sells     || [];
+            const partial   = exitData.partial_profits     || [];
+            const extended  = exitData.extended_watch      || [];
+            const watchSize = exitData.watchlist_size      || 0;
+
+            const allAlerts = [
+                ...climactic.map(r => ({ ...r, _type: '🚀 Climactic sell',  _cls: 'rs-95' })),
+                ...strong.map(r    => ({ ...r, _type: '🔴 Sell (MA50 break)', _cls: 'rs-95' })),
+                ...partial.map(r   => ({ ...r, _type: '💰 Take partial',    _cls: 'rs-85' })),
+                ...weak.map(r      => ({ ...r, _type: '🟡 Caution',         _cls: 'rs-75' })),
+                ...extended.map(r  => ({ ...r, _type: '⚠️ Extended',        _cls: 'rs-75' })),
+            ];
+
+            if (allAlerts.length === 0) {
+                container.innerHTML = `<div class="no-data">✅ All ${watchSize} watchlist positions are healthy — no alerts today</div>`;
+                return;
+            }
+
+            let html = `
+                <table id="exitTableEl">
+                    <thead><tr>
+                        <th>Signal</th>
+                        <th>Ticker</th>
+                        <th>Price</th>
+                        <th>vs MA50</th>
+                        <th>P&amp;L</th>
+                        <th>Vol Ratio</th>
+                        <th>Added</th>
+                    </tr></thead><tbody>`;
+
+            allAlerts.forEach(r => {
+                const pnl  = r.gain_pct != null ? `${r.gain_pct > 0 ? '+' : ''}${r.gain_pct.toFixed(1)}%` :
+                             r.pnl_pct  != null ? `${r.pnl_pct  > 0 ? '+' : ''}${r.pnl_pct.toFixed(1)}%`  : '—';
+                const ma50 = r.pct_vs_ma50    != null ? `${r.pct_vs_ma50.toFixed(1)}%`    :
+                             r.pct_above_ma50 != null ? `+${r.pct_above_ma50.toFixed(1)}%` : '—';
+                const vol  = r.vol_ratio != null ? `${r.vol_ratio}x` : '—';
+                const tvLink = `<a href="${tvUrl(r.ticker)}" target="_blank" rel="noopener">${r.ticker}</a>`;
+                html += `<tr>
+                    <td><span class="rs-badge ${r._cls}">${r._type}</span></td>
+                    <td class="ticker">${tvLink}</td>
+                    <td>$${r.current_price != null ? r.current_price.toFixed(2) : '—'}</td>
+                    <td>${ma50}</td>
+                    <td>${pnl}</td>
+                    <td>${vol}</td>
+                    <td>${r.date_added || '—'}</td>
+                </tr>`;
+            });
+
+            html += `</tbody></table><div style="font-size:0.8em;color:#94a3b8;margin-top:6px">Watchlist: ${watchSize} active positions</div>`;
+            container.innerHTML = html;
+            makeSortable(document.getElementById('exitTableEl'));
+        }
 
         function renderStructureTable(signals) {
             const container = document.getElementById('structureTable');
@@ -347,6 +443,7 @@
             
             html += '</tbody></table>';
             container.innerHTML = html;
+            makeSortable(container.querySelector('table'));
         }
         
         function renderMinerviniTable(candidates) {
@@ -408,6 +505,7 @@
             
             html += '</tbody></table>';
             container.innerHTML = html;
+            makeSortable(container.querySelector('table'));
         }
         
         // Load data on page load
