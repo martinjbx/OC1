@@ -201,7 +201,12 @@ def run_minervini_json():
            (c['criteria_passed'] == seen[t]['criteria_passed'] and c['rs_rating'] > seen[t]['rs_rating']):
             seen[t] = c
     candidates = list(seen.values())
-    candidates.sort(key=lambda x: (x['rs_rating'], -x['pct_from_high']), reverse=True)
+    # Sort: highest composite first. Proxy for composite: criteria → RS → proximity to ATH
+    # pct_from_high is negative (e.g. -5.0). Higher = closer to ATH = better.
+    candidates.sort(
+        key=lambda x: (x['criteria_passed'], x['rs_rating'], x['pct_from_high']),
+        reverse=True  # all three: higher is better
+    )
 
     return {
         'scan_date': datetime.utcnow().isoformat(),
