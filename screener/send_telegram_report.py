@@ -35,7 +35,10 @@ def format_report(minervini, structure, exit_alerts):
     all_8 = [c for c in top if c.get("all_criteria_met")]
     seven_plus = [c for c in top if not c.get("all_criteria_met") and c.get("criteria_passed", 0) >= 7]
 
-    lines.append(f"*Minervini SEPA* ({minervini.get('total_scanned', 0)} scanned)")
+    attempted = minervini.get('total_attempted', minervini.get('total_scanned', 0))
+    scanned   = minervini.get('total_scanned', 0)
+    scan_info = f"{scanned} valid / {attempted} attempted" if attempted != scanned else f"{scanned} scanned"
+    lines.append(f"*Minervini SEPA* ({scan_info})")
     if all_8:
         lines.append(f"✅ *All 8 criteria ({len(all_8)}):*")
         for c in all_8[:10]:
