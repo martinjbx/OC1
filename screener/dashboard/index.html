@@ -347,20 +347,24 @@
             const scored = candidates
                 .map(c => ({ ...c, composite: calcMinerviniScore(c) }))
                 .map(c => ({ ...c, rank: calcMinerviniRank(c.composite) }))
-                .sort((a, b) => a.rank !== b.rank ? a.rank - b.rank : b.composite - a.composite);
+                .sort((a, b) => {
+                    if (a.rank !== b.rank) return a.rank - b.rank;          // rank group first
+                    if (b.rs_rating !== a.rs_rating) return b.rs_rating - a.rs_rating; // then RS Rating ↓
+                    return b.pct_from_high - a.pct_from_high;               // then closest to 52w high ↑
+                });
             
             let html = `
                 <table>
                     <thead>
                         <tr>
                             <th>Rank</th>
+                            <th>Score</th>
                             <th>Ticker</th>
                             <th>Price</th>
                             <th>% from High</th>
                             <th>RS Rating</th>
                             <th>1Y Return</th>
                             <th>Criteria</th>
-                            <th>Score</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -377,13 +381,13 @@
                 html += `
                     <tr>
                         <td style="text-align:center;font-size:1.1em">${rl}</td>
+                        <td><span class="rs-badge ${scoreClass}">${candidate.composite}</span></td>
                         <td class="ticker">${candidate.ticker}</td>
                         <td>$${candidate.price.toFixed(2)}</td>
                         <td class="${pctClass}">${candidate.pct_from_high.toFixed(1)}%</td>
                         <td><span class="rs-badge ${rsClass}">${candidate.rs_rating}</span></td>
                         <td class="positive">+${candidate.stock_return_1y.toFixed(1)}%</td>
                         <td>${candidate.criteria_passed}/8 ${candidate.all_criteria_met ? '✅' : ''}</td>
-                        <td><span class="rs-badge ${scoreClass}">${candidate.composite}</span></td>
                     </tr>
                 `;
             });
