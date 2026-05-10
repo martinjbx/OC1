@@ -1,39 +1,14 @@
 {
-  "check_date": "2026-05-10T15:31:37.060080",
-  "watchlist_size": 125,
-  "active_positions": 125,
-  "newly_added": 38,
+  "check_date": "2026-05-10T16:24:29.754219",
+  "watchlist_size": 171,
+  "active_positions": 171,
+  "newly_added": 46,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [],
-  "holds": 3,
-  "errors": 122,
+  "holds": 7,
+  "errors": 164,
   "climactic_sells": [],
   "partial_profits": [],
-  "extended_watch": [
-    {
-      "ticker": "MCHP",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 99.09,
-      "ma_50": 74.72,
-      "pct_above_ma50": 32.62,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 1.0,
-      "entry_price": 98.14,
-      "date_added": "2026-05-10"
-    },
-    {
-      "ticker": "MRVL",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 170.13,
-      "ma_50": 118.59,
-      "pct_above_ma50": 43.47,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 2.0,
-      "entry_price": 166.73,
-      "date_added": "2026-05-10"
-    }
-  ]
+  "extended_watch": []
 }
