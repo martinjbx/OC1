@@ -115,8 +115,15 @@
         
         .ticker {
             font-weight: bold;
-            color: #60a5fa;
             font-size: 1.1em;
+        }
+        .ticker a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .ticker a:hover {
+            color: #93c5fd;
+            text-decoration: underline;
         }
         
         .positive {
@@ -253,6 +260,13 @@
         
         // ── Composite score helpers ─────────────────────────────────────────
 
+        // Convert yfinance ticker to TradingView URL
+        // Crypto: BTC-USD → BTCUSD, stocks: AAPL → AAPL
+        function tvUrl(ticker) {
+            const tv = ticker.replace(/-USD$/, 'USD').replace(/-/, '');
+            return `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(tv)}`;
+        }
+
         function calcStructureScore(signal) {
             // RSI component (50-80 sweet spot → up to 50 pts)
             const rsi = signal.rsi || 0;
@@ -320,7 +334,7 @@
             scored.forEach(signal => {
                 html += `
                     <tr>
-                        <td class="ticker">${signal.ticker}</td>
+                        <td class="ticker"><a href="${tvUrl(signal.ticker)}" target="_blank" rel="noopener">${signal.ticker}</a></td>
                         <td>$${signal.price.toFixed(2)}</td>
                         <td>${signal.smma15.toFixed(2)}</td>
                         <td>${signal.smma29.toFixed(2)}</td>
@@ -382,7 +396,7 @@
                     <tr>
                         <td style="text-align:center;font-size:1.1em">${rl}</td>
                         <td><span class="rs-badge ${scoreClass}">${candidate.composite}</span></td>
-                        <td class="ticker">${candidate.ticker}</td>
+                        <td class="ticker"><a href="${tvUrl(candidate.ticker)}" target="_blank" rel="noopener">${candidate.ticker}</a></td>
                         <td>$${candidate.price.toFixed(2)}</td>
                         <td class="${pctClass}">${candidate.pct_from_high.toFixed(1)}%</td>
                         <td><span class="rs-badge ${rsClass}">${candidate.rs_rating}</span></td>
