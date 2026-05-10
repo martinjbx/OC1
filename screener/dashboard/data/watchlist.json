@@ -782,7 +782,349 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "NKTR": {
+      "date_added": "2026-05-10",
+      "entry_price": 81.89,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "GLUE": {
+      "date_added": "2026-05-10",
+      "entry_price": 19.39,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "IMPP": {
+      "date_added": "2026-05-10",
+      "entry_price": 5.01,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "UUUU": {
+      "date_added": "2026-05-10",
+      "entry_price": 21.38,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AAOI": {
+      "date_added": "2026-05-10",
+      "entry_price": 148.94,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FSM": {
+      "date_added": "2026-05-10",
+      "entry_price": 10.76,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "EQ": {
+      "date_added": "2026-05-10",
+      "entry_price": 2.11,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TROO": {
+      "date_added": "2026-05-10",
+      "entry_price": 4.14,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SPIR": {
+      "date_added": "2026-05-10",
+      "entry_price": 18.49,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SPRO": {
+      "date_added": "2026-05-10",
+      "entry_price": 2.56,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "RMBS": {
+      "date_added": "2026-05-10",
+      "entry_price": 129.25,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ADTN": {
+      "date_added": "2026-05-10",
+      "entry_price": 14.94,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TYGO": {
+      "date_added": "2026-05-10",
+      "entry_price": 4.27,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "REI": {
+      "date_added": "2026-05-10",
+      "entry_price": 1.61,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BODI": {
+      "date_added": "2026-05-10",
+      "entry_price": 13.61,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TNGX": {
+      "date_added": "2026-05-10",
+      "entry_price": 23.02,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MUX": {
+      "date_added": "2026-05-10",
+      "entry_price": 24.23,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SLS": {
+      "date_added": "2026-05-10",
+      "entry_price": 5.01,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CYD": {
+      "date_added": "2026-05-10",
+      "entry_price": 46.24,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SKE": {
+      "date_added": "2026-05-10",
+      "entry_price": 31.81,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "WTI": {
+      "date_added": "2026-05-10",
+      "entry_price": 3.71,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TPC": {
+      "date_added": "2026-05-10",
+      "entry_price": 82.85,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ACMR": {
+      "date_added": "2026-05-10",
+      "entry_price": 59.85,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PANL": {
+      "date_added": "2026-05-10",
+      "entry_price": 7.84,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "KYMR": {
+      "date_added": "2026-05-10",
+      "entry_price": 86.08,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FTAI": {
+      "date_added": "2026-05-10",
+      "entry_price": 270.29,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "DFTX": {
+      "date_added": "2026-05-10",
+      "entry_price": 22.05,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "IMMX": {
+      "date_added": "2026-05-10",
+      "entry_price": 9.75,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SND": {
+      "date_added": "2026-05-10",
+      "entry_price": 4.81,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SSP": {
+      "date_added": "2026-05-10",
+      "entry_price": 4.54,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FN": {
+      "date_added": "2026-05-10",
+      "entry_price": 621.28,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PAAS": {
+      "date_added": "2026-05-10",
+      "entry_price": 59.14,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PUMP": {
+      "date_added": "2026-05-10",
+      "entry_price": 15.68,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "NEXA": {
+      "date_added": "2026-05-10",
+      "entry_price": 14.33,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "LASR": {
+      "date_added": "2026-05-10",
+      "entry_price": 73.91,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SHIM": {
+      "date_added": "2026-05-10",
+      "entry_price": 5.76,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "OBE": {
+      "date_added": "2026-05-10",
+      "entry_price": 12.43,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ANRO": {
+      "date_added": "2026-05-10",
+      "entry_price": 24.26,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-05-10T15:15:06.635872"
+  "last_updated": "2026-05-10T15:31:37.058789"
 }
