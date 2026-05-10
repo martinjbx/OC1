@@ -124,23 +124,28 @@ def run_minervini_json():
     # Apply Minervini criteria to each stock with valid data
     print("Applying Minervini criteria...")
     results = []
-    spy_return = float((spy_data['Close'].iloc[-1] / spy_data['Close'].iloc[0] - 1) * 100)
+    # yf.download returns single-col DataFrame for 'Close'; .squeeze() converts to Series
+    spy_close = spy_data['Close'].squeeze()
+    spy_return = float((spy_close.iloc[-1] / spy_close.iloc[0] - 1) * 100)
 
     for ticker, data in stock_data_map.items():
         try:
             data = data.copy()
-            data['MA_50']  = data['Close'].rolling(50).mean()
-            data['MA_150'] = data['Close'].rolling(150).mean()
-            data['MA_200'] = data['Close'].rolling(200).mean()
+            # Squeeze any single-column DataFrames to Series (yfinance 1.x quirk)
+            close = data['Close'].squeeze()
+            high  = data['High'].squeeze()
+            data['MA_50']  = close.rolling(50).mean()
+            data['MA_150'] = close.rolling(150).mean()
+            data['MA_200'] = close.rolling(200).mean()
 
-            current_price = float(data['Close'].iloc[-1])
+            current_price = float(close.iloc[-1])
             ma_50  = float(data['MA_50'].iloc[-1])
             ma_150 = float(data['MA_150'].iloc[-1])
             ma_200 = float(data['MA_200'].iloc[-1])
             ma_200_1m  = float(data['MA_200'].iloc[-22]) if len(data) >= 22 else ma_200
             ma_200_4m  = float(data['MA_200'].iloc[-88]) if len(data) >= 88 else ma_200
-            week_52_high = float(data['High'].max())
-            stock_return = float((data['Close'].iloc[-1] / data['Close'].iloc[0] - 1) * 100)
+            week_52_high = float(high.max())
+            stock_return = float((close.iloc[-1] / close.iloc[0] - 1) * 100)
 
             # RS rating
             rel = stock_return - spy_return
