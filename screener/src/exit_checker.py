@@ -67,6 +67,85 @@ def update_watchlist_from_scan(watchlist: dict, candidates: list) -> int:
     return added
 
 
+def check_take_profit(ticker: str, entry_price: float = None) -> dict:
+    """
+    Check Minervini-style take-profit conditions for a ticker.
+
+    Rules (in priority order):
+      1. Climactic / blowoff: 3+ consecutive wide-range days up on heavy volume
+         AND stock >30% above 50-day MA → sell into strength immediately
+      2. Extended above MA50: >25% above MA50 → partial profit zone
+      3. 20-25% gain from entry price → target hit, take partial profits
+
+    Returns a dict with take-profit signal info.
+    """
+    try:
+        stock = yf.Ticker(ticker)
+        data = stock.history(period="1y")
+
+        if data is None or len(data) < 60:
+            return {"ticker": ticker, "tp_signal": "NO_DATA"}
+
+        data["MA_50"] = data["Close"].rolling(window=50).mean()
+        data["Vol_20avg"] = data["Volume"].rolling(window=20).mean()
+        data["day_range"] = data["High"] - data["Low"]
+        data["avg_range"] = data["day_range"].rolling(window=20).mean()
+
+        current_price = float(data["Close"].iloc[-1])
+        ma_50 = float(data["MA_50"].iloc[-1])
+        avg_vol = float(data["Vol_20avg"].iloc[-1])
+        pct_above_ma50 = ((current_price / ma_50) - 1) * 100 if ma_50 > 0 else 0
+
+        # --- 1. Climactic action detection ---
+        climactic = False
+        last3 = data.tail(3)
+        wide_up_days = sum(
+            1 for _, row in last3.iterrows()
+            if row["Close"] > row["Open"]                          # up day
+            and row["day_range"] > 1.5 * row["avg_range"]         # wide range
+            and row["Volume"] > 1.5 * row["Vol_20avg"]            # heavy volume
+        )
+        if wide_up_days >= 2 and pct_above_ma50 > 25:
+            climactic = True
+
+        # --- 2. Extended above MA50 ---
+        extended = pct_above_ma50 > 25
+
+        # --- 3. Gain from entry ---
+        gain_pct = None
+        target_hit = False
+        if entry_price and entry_price > 0:
+            gain_pct = round(((current_price / entry_price) - 1) * 100, 1)
+            target_hit = gain_pct >= 20
+
+        # Determine signal
+        if climactic:
+            tp_signal = "CLIMACTIC_SELL"       # Sell most/all into strength now
+        elif extended and target_hit:
+            tp_signal = "PARTIAL_PROFIT"       # Take 1/3 to 1/2 off the table
+        elif extended:
+            tp_signal = "EXTENDED_WATCH"       # Getting stretched — watch closely
+        elif target_hit:
+            tp_signal = "TARGET_HIT"           # 20-25% gain reached — take partial
+        else:
+            tp_signal = "HOLD"
+
+        return {
+            "ticker": ticker,
+            "tp_signal": tp_signal,
+            "current_price": round(current_price, 2),
+            "ma_50": round(ma_50, 2),
+            "pct_above_ma50": round(pct_above_ma50, 2),
+            "climactic": climactic,
+            "wide_up_days": wide_up_days,
+            "gain_pct": gain_pct,
+            "entry_price": entry_price,
+        }
+
+    except Exception as e:
+        return {"ticker": ticker, "tp_signal": "ERROR", "error": str(e)}
+
+
 def check_exit_signal(ticker: str, entry_price: float = None) -> dict:
     """
     Check a single ticker for exit signals.
@@ -164,30 +243,46 @@ def run_exit_check(candidates: list = None, max_workers: int = 10) -> dict:
 
     print(f"  Checking {len(active)} active watchlist tickers for exit signals...")
 
-    # Parallel check
-    results = []
+    # Parallel check — run exit + take-profit concurrently
+    exit_results = []
+    tp_results = []
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {
-            executor.submit(check_exit_signal, ticker, info.get("entry_price")): ticker
+        exit_futures = {
+            executor.submit(check_exit_signal, ticker, info.get("entry_price")): (ticker, "exit")
             for ticker, info in active.items()
         }
-        for i, future in enumerate(as_completed(futures), 1):
-            ticker = futures[future]
+        tp_futures = {
+            executor.submit(check_take_profit, ticker, info.get("entry_price")): (ticker, "tp")
+            for ticker, info in active.items()
+        }
+        all_futures = {**exit_futures, **tp_futures}
+
+        for i, future in enumerate(as_completed(all_futures), 1):
+            ticker, kind = all_futures[future]
             try:
                 result = future.result()
                 result["date_added"] = active[ticker].get("date_added")
-                results.append(result)
+                if kind == "exit":
+                    exit_results.append(result)
+                else:
+                    tp_results.append(result)
             except Exception as e:
-                results.append({"ticker": ticker, "error": str(e)})
-            if i % 20 == 0:
-                print(f"    Progress: {i}/{len(active)}")
+                pass
+            if i % 40 == 0:
+                print(f"    Progress: {i}/{len(active)*2}")
 
-    # Categorise
-    strong_exits = [r for r in results if r.get("signal") == "STRONG_EXIT"]
-    weak_exits   = [r for r in results if r.get("signal") == "WEAK_EXIT"]
-    below_ma50   = [r for r in results if r.get("signal") == "ALREADY_BELOW_MA50"]
-    holds        = [r for r in results if r.get("signal") == "HOLD"]
-    errors       = [r for r in results if "error" in r]
+    # Categorise exits
+    strong_exits = [r for r in exit_results if r.get("signal") == "STRONG_EXIT"]
+    weak_exits   = [r for r in exit_results if r.get("signal") == "WEAK_EXIT"]
+    below_ma50   = [r for r in exit_results if r.get("signal") == "ALREADY_BELOW_MA50"]
+    holds        = [r for r in exit_results if r.get("signal") == "HOLD"]
+    errors       = [r for r in exit_results if "error" in r]
+
+    # Categorise take-profits
+    climactic_sells  = [r for r in tp_results if r.get("tp_signal") == "CLIMACTIC_SELL"]
+    partial_profits  = [r for r in tp_results if r.get("tp_signal") in ("PARTIAL_PROFIT", "TARGET_HIT")]
+    extended_watch   = [r for r in tp_results if r.get("tp_signal") == "EXTENDED_WATCH"]
 
     # Mark strong exits in watchlist
     today = date.today().isoformat()
@@ -208,11 +303,16 @@ def run_exit_check(candidates: list = None, max_workers: int = 10) -> dict:
         "watchlist_size": len(watchlist["tickers"]),
         "active_positions": len(active),
         "newly_added": newly_added,
-        "strong_exits": strong_exits,      # Crossed under MA50 + heavy vol → SELL
-        "weak_exits": weak_exits,          # Crossed under MA50, normal vol → CAUTION
+        # Exit signals
+        "strong_exits": strong_exits,       # Crossed under MA50 + heavy vol → SELL
+        "weak_exits": weak_exits,           # Crossed under MA50, normal vol → CAUTION
         "below_ma50_lingering": below_ma50, # Already below MA50 → MONITOR
         "holds": len(holds),
         "errors": len(errors),
+        # Take-profit signals
+        "climactic_sells": climactic_sells,  # Blowoff top → sell into strength now
+        "partial_profits": partial_profits,  # 20-25% gain or extended → take partial
+        "extended_watch": extended_watch,    # Getting stretched above MA50
     }
 
 
@@ -227,4 +327,7 @@ def _empty_result() -> dict:
         "below_ma50_lingering": [],
         "holds": 0,
         "errors": 0,
+        "climactic_sells": [],
+        "partial_profits": [],
+        "extended_watch": [],
     }

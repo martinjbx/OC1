@@ -35,8 +35,9 @@ jobs:
         run: |
           cd screener
           python run_daily_json.py
-          # Copy JSON output to docs/data for GitHub Pages
+          # Copy JSON output and dashboard HTML to docs/ for GitHub Pages
           cp dashboard/data/*.json ../docs/data/
+          cp dashboard/index.html ../docs/index.html
       
       - name: Commit and push results
         run: |

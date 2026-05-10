@@ -1,5 +1,5 @@
 {
-  "check_date": "2026-05-10T12:58:45.307876",
+  "check_date": "2026-05-10T13:51:51.082191",
   "watchlist_size": 41,
   "active_positions": 41,
   "newly_added": 0,
@@ -7,5 +7,154 @@
   "weak_exits": [],
   "below_ma50_lingering": [],
   "holds": 41,
-  "errors": 0
+  "errors": 0,
+  "climactic_sells": [
+    {
+      "ticker": "DELL",
+      "tp_signal": "CLIMACTIC_SELL",
+      "current_price": 260.46,
+      "ma_50": 180.54,
+      "pct_above_ma50": 44.27,
+      "climactic": true,
+      "wide_up_days": 2,
+      "gain_pct": 6.3,
+      "entry_price": 245.09,
+      "date_added": "2026-05-10"
+    }
+  ],
+  "partial_profits": [],
+  "extended_watch": [
+    {
+      "ticker": "CIEN",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 548.11,
+      "ma_50": 436.68,
+      "pct_above_ma50": 25.52,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 0.2,
+      "entry_price": 547.14,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "MCHP",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 99.09,
+      "ma_50": 74.72,
+      "pct_above_ma50": 32.62,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 1.0,
+      "entry_price": 98.14,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "MRVL",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 170.13,
+      "ma_50": 118.59,
+      "pct_above_ma50": 43.47,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 2.0,
+      "entry_price": 166.73,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "ON",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 103.2,
+      "ma_50": 73.89,
+      "pct_above_ma50": 39.67,
+      "climactic": false,
+      "wide_up_days": 1,
+      "gain_pct": 1.3,
+      "entry_price": 101.85,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "FIX",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 1952.37,
+      "ma_50": 1557.31,
+      "pct_above_ma50": 25.37,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 0.6,
+      "entry_price": 1940.66,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "MPWR",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 1600.84,
+      "ma_50": 1276.3,
+      "pct_above_ma50": 25.43,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": -0.1,
+      "entry_price": 1601.99,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "SNDK",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 1562.34,
+      "ma_50": 837.6,
+      "pct_above_ma50": 86.53,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 4.7,
+      "entry_price": 1492.71,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "MU",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 746.81,
+      "ma_50": 448.89,
+      "pct_above_ma50": 66.37,
+      "climactic": false,
+      "wide_up_days": 1,
+      "gain_pct": 2.7,
+      "entry_price": 727.38,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "WDC",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 480.0,
+      "ma_50": 335.55,
+      "pct_above_ma50": 43.05,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 1.9,
+      "entry_price": 471.2,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "STX",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 782.64,
+      "ma_50": 495.91,
+      "pct_above_ma50": 57.82,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": -0.5,
+      "entry_price": 786.82,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "AMD",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 455.19,
+      "ma_50": 254.51,
+      "pct_above_ma50": 78.85,
+      "climactic": false,
+      "wide_up_days": 1,
+      "gain_pct": 3.2,
+      "entry_price": 440.88,
+      "date_added": "2026-05-10"
+    }
+  ]
 }

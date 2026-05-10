@@ -204,6 +204,8 @@ def main():
         'exits': {
             'strong': len(exit_data.get('strong_exits', [])) if exit_data else 0,
             'weak': len(exit_data.get('weak_exits', [])) if exit_data else 0,
+            'climactic_sells': len(exit_data.get('climactic_sells', [])) if exit_data else 0,
+            'partial_profits': len(exit_data.get('partial_profits', [])) if exit_data else 0,
             'watchlist_size': exit_data.get('watchlist_size', 0) if exit_data else 0,
         }
     }

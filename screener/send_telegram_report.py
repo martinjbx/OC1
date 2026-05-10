@@ -84,6 +84,28 @@ def format_report(minervini, structure, exit_alerts):
     if not strong and not weak and not below:
         lines.append("  ✅ All positions holding above MA50")
 
+    # ── Take-profit alerts ────────────────────────────
+    climactic = exit_alerts.get("climactic_sells", [])
+    partial   = exit_alerts.get("partial_profits", [])
+    extended  = exit_alerts.get("extended_watch", [])
+
+    if climactic or partial or extended:
+        lines.append("")
+        lines.append("*Take-Profit Alerts*")
+        if climactic:
+            lines.append(f"🚀 *Climactic — sell into strength ({len(climactic)}):*")
+            for r in climactic:
+                lines.append(f"  `{r['ticker']}` ${r['current_price']} | +{r['pct_above_ma50']:.1f}% vs MA50 | {r['wide_up_days']} wide up days")
+        if partial:
+            lines.append(f"💰 *Take partial profits ({len(partial)}):*")
+            for r in partial:
+                gain = f" | gain {r['gain_pct']:+.1f}%" if r.get('gain_pct') is not None else ""
+                lines.append(f"  `{r['ticker']}` ${r['current_price']} | +{r['pct_above_ma50']:.1f}% vs MA50{gain}")
+        if extended:
+            lines.append(f"⚠️ *Extended, watch closely ({len(extended)}):*")
+            for r in extended[:5]:
+                lines.append(f"  `{r['ticker']}` +{r['pct_above_ma50']:.1f}% vs MA50")
+
     return "\n".join(lines)
 
 
