@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from structure_screener import run_structure_screen
 from minervini_sepa_screener import scan_ticker as minervini_scan_ticker
+from exit_checker import run_exit_check
 
 def run_structure_json():
     """Run structure screener and return JSON"""
@@ -173,6 +174,21 @@ def main():
                 'top_candidates': []
             }
     
+    # Run exit checker (uses today's Minervini candidates to update watchlist)
+    print("\nRunning exit signal checker...")
+    exit_data = None
+    try:
+        minervini_candidates = minervini_data.get('top_candidates', [])
+        exit_data = run_exit_check(candidates=minervini_candidates)
+        exit_file = output_dir / "exit_alerts.json"
+        with open(exit_file, 'w') as f:
+            json.dump(exit_data, f, indent=2)
+        print(f"✅ Exit alerts: {len(exit_data.get('strong_exits', []))} strong, "
+              f"{len(exit_data.get('weak_exits', []))} weak — {exit_file}")
+    except Exception as e:
+        print(f"❌ Exit checker failed: {e}")
+        exit_data = None
+
     # Create combined summary
     summary = {
         'last_update': datetime.utcnow().isoformat(),
@@ -184,6 +200,11 @@ def main():
             'candidates_7_plus': minervini_data['candidates_7_plus'],
             'candidates_all_8': minervini_data['candidates_all_8'],
             'scanned': minervini_data['total_scanned']
+        },
+        'exits': {
+            'strong': len(exit_data.get('strong_exits', [])) if exit_data else 0,
+            'weak': len(exit_data.get('weak_exits', [])) if exit_data else 0,
+            'watchlist_size': exit_data.get('watchlist_size', 0) if exit_data else 0,
         }
     }
     
