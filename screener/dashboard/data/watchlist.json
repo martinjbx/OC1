@@ -1538,7 +1538,169 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "ESI": {
+      "date_added": "2026-05-11",
+      "entry_price": 44.87,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CASY": {
+      "date_added": "2026-05-11",
+      "entry_price": 867.94,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ORMP": {
+      "date_added": "2026-05-11",
+      "entry_price": 4.43,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "UFCS": {
+      "date_added": "2026-05-11",
+      "entry_price": 49.31,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "COHU": {
+      "date_added": "2026-05-11",
+      "entry_price": 50.66,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AKAM": {
+      "date_added": "2026-05-11",
+      "entry_price": 154.65,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CAMT": {
+      "date_added": "2026-05-11",
+      "entry_price": 208.84,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SYRE": {
+      "date_added": "2026-05-11",
+      "entry_price": 76.76,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TNK": {
+      "date_added": "2026-05-11",
+      "entry_price": 83.53,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "IMVT": {
+      "date_added": "2026-05-11",
+      "entry_price": 29.96,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "KALU": {
+      "date_added": "2026-05-11",
+      "entry_price": 181.69,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MTRN": {
+      "date_added": "2026-05-11",
+      "entry_price": 202.8,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "GNK": {
+      "date_added": "2026-05-11",
+      "entry_price": 25.94,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SVM": {
+      "date_added": "2026-05-11",
+      "entry_price": 14.75,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "VSH": {
+      "date_added": "2026-05-11",
+      "entry_price": 34.94,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "WILC": {
+      "date_added": "2026-05-11",
+      "entry_price": 36.45,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "JAZZ": {
+      "date_added": "2026-05-11",
+      "entry_price": 227.79,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "LPG": {
+      "date_added": "2026-05-11",
+      "entry_price": 40.54,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-05-10T16:24:29.752511"
+  "last_updated": "2026-05-11T13:54:31.622044"
 }
