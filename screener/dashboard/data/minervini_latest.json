@@ -28,7 +28,7 @@
       "price": 0.0,
       "pct_from_high": -0.0,
       "rs_rating": 95,
-      "stock_return_1y": Infinity,
+      "stock_return_1y": 0,
       "criteria_passed": 8,
       "all_criteria_met": true
     },

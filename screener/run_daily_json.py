@@ -145,7 +145,8 @@ def run_minervini_json():
             ma_200_1m  = float(data['MA_200'].iloc[-22]) if len(data) >= 22 else ma_200
             ma_200_4m  = float(data['MA_200'].iloc[-88]) if len(data) >= 88 else ma_200
             week_52_high = float(high.max())
-            stock_return = float((close.iloc[-1] / close.iloc[0] - 1) * 100)
+            start_price = float(close.iloc[0])
+            stock_return = float((close.iloc[-1] / start_price - 1) * 100) if start_price > 0 else 0.0
 
             # RS rating
             rel = stock_return - spy_return
@@ -247,7 +248,8 @@ def main():
     try:
         minervini_data = run_minervini_json()
         with open(minervini_file, 'w') as f:
-            json.dump(minervini_data, f, indent=2)
+            # allow_nan=False catches Infinity/NaN before they corrupt the JSON
+            json.dump(minervini_data, f, indent=2, allow_nan=False)
         print(f"✅ Minervini results: {minervini_file}")
     except Exception as e:
         print(f"❌ Minervini screener failed: {e}")
