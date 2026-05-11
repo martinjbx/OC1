@@ -24,6 +24,7 @@ WATCHLIST = [
     {"display": "FTC",     "yf": "FTC.L",    "name": "Filtronic"},
     {"display": "SPGP",    "yf": "SPGP",     "name": "iShares Gold Producers"},
     {"display": "URNP",    "yf": "URNP",     "name": "Sprott Uranium"},
+    {"display": "UNFI",    "yf": "UNFI",     "name": "United Natural Foods"},
 ]
 
 MIN_BARS = 100  # minimum bars for any useful analysis
