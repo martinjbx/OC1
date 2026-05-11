@@ -146,6 +146,15 @@
         .rs-85 { background: #3b82f6; color: white; }
         .rs-75 { background: #f59e0b; color: white; }
         
+        /* Watchlist status badges */
+        .status-entry    { background: #10b981; color: white; }
+        .status-exit     { background: #ef4444; color: white; }
+        .status-caution  { background: #f97316; color: white; }
+        .status-climactic{ background: #a855f7; color: white; }
+        .status-extended { background: #f59e0b; color: #1e293b; }
+        .status-hold     { background: #475569; color: #cbd5e1; }
+        .status-nodata   { background: transparent; color: #64748b; }
+        
         .no-data {
             text-align: center;
             padding: 40px;
@@ -204,6 +213,13 @@
             </div>
         </div>
         
+        <div class="section" id="watchlistSection">
+            <h2>👀 Personal Watchlist</h2>
+            <div id="watchlistTable">
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+
         <div class="section">
             <h2>🚨 Exit & Take-Profit Alerts</h2>
             <div id="exitTable">
@@ -255,6 +271,10 @@
                 document.getElementById('minervini8').textContent = 
                     summary.minervini.candidates_all_8;
                 
+                // Load watchlist summary
+                const watchlist = await fetch('data/watchlist_summary.json').then(r => r.json()).catch(() => null);
+                renderWatchlistTable(watchlist);
+
                 // Load structure signals
                 const structure = await fetch('data/structure_latest.json').then(r => r.json());
                 renderStructureTable(structure.signals);
@@ -339,6 +359,82 @@
         }
 
         // ── Table renderers ─────────────────────────────────────────────────
+
+        function renderWatchlistTable(watchlistData) {
+            const container = document.getElementById('watchlistTable');
+            if (!watchlistData || !watchlistData.tickers || watchlistData.tickers.length === 0) {
+                container.innerHTML = '<div class="no-data">No watchlist data available</div>';
+                return;
+            }
+
+            const tickers = watchlistData.tickers;
+            const scanDate = watchlistData.scan_date ? new Date(watchlistData.scan_date).toLocaleString() : '—';
+
+            function statusBadge(status) {
+                switch (status) {
+                    case 'ENTRY':          return `<span class="rs-badge status-entry">🟢 ENTRY</span>`;
+                    case 'EXIT_STRONG':    return `<span class="rs-badge status-exit">🔴 EXIT SELL</span>`;
+                    case 'EXIT_WEAK':      return `<span class="rs-badge status-caution">🔴 EXIT CAUTION</span>`;
+                    case 'CLIMACTIC_SELL': return `<span class="rs-badge status-climactic">🚀 CLIMACTIC</span>`;
+                    case 'EXTENDED':       return `<span class="rs-badge status-extended">⚠️ EXTENDED</span>`;
+                    case 'HOLD':           return `<span style="color:#94a3b8">⏳ HOLD</span>`;
+                    case 'NO_DATA':        return `<span style="color:#64748b">—</span>`;
+                    default:               return `<span style="color:#94a3b8">${status}</span>`;
+                }
+            }
+
+            function scoreBadge(score, status) {
+                if (status === 'NO_DATA' || score === 0) return '—';
+                const cls = score >= 85 ? 'rs-95' : score >= 75 ? 'rs-85' : 'rs-75';
+                return `<span class="rs-badge ${cls}">${score}</span>`;
+            }
+
+            function rsBadge(rs, status) {
+                if (status === 'NO_DATA' || rs === 0) return '—';
+                const cls = rs >= 85 ? 'rs-95' : rs >= 75 ? 'rs-85' : 'rs-75';
+                return `<span class="rs-badge ${cls}">${rs}</span>`;
+            }
+
+            let html = `
+                <table id="watchlistTableEl">
+                    <thead><tr>
+                        <th>Ticker</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Criteria</th>
+                        <th>Status</th>
+                        <th>Price</th>
+                        <th>% from High</th>
+                        <th>RS</th>
+                    </tr></thead><tbody>`;
+
+            tickers.forEach(t => {
+                const tvLink = `<a href="${tvUrl(t.display)}" target="_blank" rel="noopener">${t.display}</a>`;
+                const pctClass = (t.pct_from_high >= -5 && t.status !== 'NO_DATA') ? 'positive' :
+                                 (t.pct_from_high < -15 && t.status !== 'NO_DATA') ? 'negative' : '';
+                const priceStr = t.status === 'NO_DATA' || t.price === 0 ? '—' :
+                                 t.price >= 1000 ? `$${t.price.toFixed(0)}` :
+                                 t.price >= 1 ? `$${t.price.toFixed(2)}` : `$${t.price.toFixed(4)}`;
+                const pctStr = t.status === 'NO_DATA' ? '—' : `${t.pct_from_high > 0 ? '+' : ''}${t.pct_from_high.toFixed(1)}%`;
+                const criteriaStr = t.status === 'NO_DATA' ? '—' : `${t.criteria_passed}/8`;
+
+                html += `<tr>
+                    <td class="ticker">${tvLink}</td>
+                    <td style="color:#cbd5e1">${t.name}</td>
+                    <td>${scoreBadge(t.score, t.status)}</td>
+                    <td>${criteriaStr}</td>
+                    <td>${statusBadge(t.status)}</td>
+                    <td>${priceStr}</td>
+                    <td class="${pctClass}">${pctStr}</td>
+                    <td>${rsBadge(t.rs_rating, t.status)}</td>
+                </tr>`;
+            });
+
+            html += `</tbody></table>
+                <div style="font-size:0.8em;color:#94a3b8;margin-top:6px">Watchlist scan: ${scanDate}</div>`;
+            container.innerHTML = html;
+            makeSortable(document.getElementById('watchlistTableEl'));
+        }
 
         function renderExitTable(exitData) {
             const container = document.getElementById('exitTable');

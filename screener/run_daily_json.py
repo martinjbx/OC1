@@ -104,7 +104,7 @@ def run_minervini_json():
 
     # Download SPY benchmark
     print("Downloading SPY benchmark...")
-    spy_data = None
+    spy_data = None  # will be set below and reused by watchlist screener
     for attempt in range(5):
         try:
             spy_data = yf.download('SPY', period='1y', auto_adjust=True, progress=False)
@@ -279,6 +279,29 @@ def main():
     except Exception as e:
         print(f"❌ Exit checker failed: {e}")
         exit_data = None
+
+    # Run watchlist summary
+    print("\nRunning watchlist summary...")
+    from watchlist_screener import run_watchlist_screen
+    watchlist_results = []
+    try:
+        # Reuse already-downloaded SPY data if available
+        _spy_for_watchlist = None
+        try:
+            _spy_for_watchlist = spy_data
+        except NameError:
+            pass
+        watchlist_results = run_watchlist_screen(spy_data=_spy_for_watchlist)
+        watchlist_file = output_dir / "watchlist_summary.json"
+        with open(watchlist_file, 'w') as f:
+            json.dump({
+                'scan_date': datetime.utcnow().isoformat(),
+                'tickers': watchlist_results
+            }, f, indent=2)
+        print(f"✅ Watchlist summary: {watchlist_file}")
+    except Exception as e:
+        print(f"❌ Watchlist screener failed: {e}")
+        watchlist_results = []
 
     # Create combined summary
     summary = {
