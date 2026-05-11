@@ -207,9 +207,9 @@
             </div>
             
             <div class="card">
-                <h3>Minervini 8/8</h3>
-                <div class="card-value" id="minervini8">-</div>
-                <div class="card-subtitle">Perfect score</div>
+                <h3>Sweet Spot (84-95)</h3>
+                <div class="card-value" id="minerviniSweetSpot">-</div>
+                <div class="card-subtitle">Best risk-adjusted range</div>
             </div>
         </div>
         
@@ -235,7 +235,7 @@
         </div>
         
         <div class="section">
-            <h2>⭐ Top Minervini Candidates</h2>
+            <h2>⭐ Minervini Sweet Spot (Score 84–95)</h2>
             <div id="minerviniTable">
                 <div class="loading">Loading...</div>
             </div>
@@ -263,7 +263,7 @@
                     document.getElementById('structureScanned').textContent = `${summary.structure?.scanned ?? 0} tickers scanned`;
                     document.getElementById('minervini7Plus').textContent = summary.minervini?.candidates_7_plus ?? '—';
                     document.getElementById('minerviniScanned').textContent = `${summary.minervini?.scanned ?? 0} tickers scanned`;
-                    document.getElementById('minervini8').textContent = summary.minervini?.candidates_all_8 ?? '—';
+                    document.getElementById('minerviniSweetSpot').textContent = summary.minervini?.sweet_spot_count ?? summary.minervini?.candidates_all_8 ?? '—';
                 }
 
                 safeRender(() => renderExitTable(exitData), 'exitTable');
@@ -547,58 +547,55 @@
                 return;
             }
 
-            // Add composite + rank, sort by rank then score
-            const scored = candidates
-                .map(c => ({ ...c, composite: calcMinerviniScore(c) }))
-                .map(c => ({ ...c, rank: calcMinerviniRank(c.composite) }))
-                .sort((a, b) => {
-                    if (a.rank !== b.rank) return a.rank - b.rank;          // rank group first
-                    if (b.rs_rating !== a.rs_rating) return b.rs_rating - a.rs_rating; // then RS Rating ↓
-                    return b.pct_from_high - a.pct_from_high;               // then closest to 52w high ↑
-                });
-            
+            // Data arrives pre-sorted from Python: closest to 52w high first,
+            // then RS rating, then criteria. Composite score pre-computed (84-95 sweet spot only).
             let html = `
-                <table>
+                <table id="minerviniTableEl">
                     <thead>
                         <tr>
-                            <th>Rank</th>
+                            <th>#</th>
                             <th>Score</th>
                             <th>Ticker</th>
                             <th>Price</th>
-                            <th>% from High</th>
+                            <th>% from ATH ↑</th>
                             <th>RS Rating</th>
-                            <th>1Y Return</th>
+                            <th>Return</th>
                             <th>Criteria</th>
                         </tr>
                     </thead>
                     <tbody>
             `;
-            
-            scored.forEach(candidate => {
+
+            candidates.forEach((candidate, idx) => {
                 const rsClass    = candidate.rs_rating >= 90 ? 'rs-95' :
                                    candidate.rs_rating >= 80 ? 'rs-85' : 'rs-75';
-                const pctClass   = candidate.pct_from_high >= -5 ? 'positive' : '';
-                const scoreClass = (candidate.composite >= 85 && candidate.composite <= 89) ? 'rs-95' :
-                                    candidate.composite >= 80 ? 'rs-85' : 'rs-75';
-                const rl = rankLabel[candidate.rank] || candidate.rank;
+                const pctClass   = candidate.pct_from_high >= -5 ? 'positive' :
+                                   candidate.pct_from_high >= -15 ? '' : 'negative';
+                const composite  = candidate.composite ?? calcMinerviniScore(candidate);
+                const scoreClass = composite >= 90 ? 'rs-95' : composite >= 85 ? 'rs-85' : 'rs-75';
+                const retVal     = candidate.stock_return_1y ?? 0;
+                const retStr     = retVal >= 0 ? `+${retVal.toFixed(1)}%` : `${retVal.toFixed(1)}%`;
                 
                 html += `
                     <tr>
-                        <td style="text-align:center;font-size:1.1em">${rl}</td>
-                        <td><span class="rs-badge ${scoreClass}">${candidate.composite}</span></td>
+                        <td style="text-align:center;color:#64748b">${idx + 1}</td>
+                        <td><span class="rs-badge ${scoreClass}">${composite}</span></td>
                         <td class="ticker"><a href="${tvUrl(candidate.ticker)}" target="_blank" rel="noopener">${candidate.ticker}</a></td>
                         <td>$${candidate.price.toFixed(2)}</td>
                         <td class="${pctClass}">${candidate.pct_from_high.toFixed(1)}%</td>
                         <td><span class="rs-badge ${rsClass}">${candidate.rs_rating}</span></td>
-                        <td class="positive">+${candidate.stock_return_1y.toFixed(1)}%</td>
+                        <td class="${retVal >= 0 ? 'positive' : 'negative'}">${retStr}</td>
                         <td>${candidate.criteria_passed}/8 ${candidate.all_criteria_met ? '✅' : ''}</td>
                     </tr>
                 `;
             });
             
-            html += '</tbody></table>';
+            html += `</tbody></table>
+                <div style="font-size:0.8em;color:#94a3b8;margin-top:6px">
+                    Showing sweet-spot scores 84–95 only — sorted by proximity to 52w high, then RS rating
+                </div>`;
             container.innerHTML = html;
-            makeSortable(container.querySelector('table'));
+            makeSortable(document.getElementById('minerviniTableEl'));
         }
         
         // Load data on page load

@@ -194,28 +194,50 @@ def run_minervini_json():
         for s in results if s['criteria_passed'] >= 7
     ]
 
+    # Compute composite score for each candidate (same formula as dashboard JS)
+    def calc_composite(c):
+        criteria_score = (c['criteria_passed'] / 8) * 40
+        rs_score       = (c['rs_rating'] / 100) * 35
+        prox_score     = max((25 + c['pct_from_high']) / 25 * 15, 0)
+        return_score   = min(c['stock_return_1y'] / 200, 1) * 10
+        return round(criteria_score + rs_score + prox_score + return_score)
+
     # Deduplicate
     seen = {}
     for c in candidates:
+        c['composite'] = calc_composite(c)
         t = c['ticker']
-        if t not in seen or c['criteria_passed'] > seen[t]['criteria_passed'] or \
-           (c['criteria_passed'] == seen[t]['criteria_passed'] and c['rs_rating'] > seen[t]['rs_rating']):
+        if t not in seen or c['composite'] > seen[t]['composite']:
             seen[t] = c
     candidates = list(seen.values())
-    # Sort: highest composite first. Proxy for composite: criteria → RS → proximity to ATH
-    # pct_from_high is negative (e.g. -5.0). Higher = closer to ATH = better.
-    candidates.sort(
-        key=lambda x: (x['criteria_passed'], x['rs_rating'], x['pct_from_high']),
-        reverse=True  # all three: higher is better
+
+    # Backtest sweet spot: scores 84-95 give the best risk-adjusted returns.
+    # 95+ shows high volatility / binary outcomes (small-cap momentum blow-offs).
+    all_count   = len(candidates)
+    all_8_count = len([c for c in candidates if c['all_criteria_met']])
+    sweet_spot  = [c for c in candidates if 84 <= c['composite'] <= 95]
+
+    # Sort sweet-spot list: proximity to ATH first (stocks nearest 52w high),
+    # then RS rating, then 8/8 criteria.  This matches Minervini's own priority
+    # order and aligns with best-return stocks in the backtest.
+    # pct_from_high is negative; higher (less negative) = closer to ATH = better.
+    sweet_spot.sort(
+        key=lambda x: (x['pct_from_high'], -x['rs_rating'], -x['criteria_passed']),
+        reverse=False  # higher pct_from_high first; ties broken by lower rs/criteria (already negated)
+    )
+    # Reverse so that closest-to-ATH is first
+    sweet_spot.sort(
+        key=lambda x: (-x['pct_from_high'], -x['rs_rating'], -x['criteria_passed'])
     )
 
     return {
         'scan_date': datetime.utcnow().isoformat(),
         'total_attempted': len(tickers),
-        'total_scanned': len(results),       # tickers with ≥200 days valid data
-        'candidates_7_plus': len(candidates),
-        'candidates_all_8': len([c for c in candidates if c['all_criteria_met']]),
-        'top_candidates': candidates[:50],
+        'total_scanned': len(results),
+        'candidates_7_plus': all_count,
+        'candidates_all_8': all_8_count,
+        'sweet_spot_count': len(sweet_spot),
+        'top_candidates': sweet_spot[:50],
     }
 
 def main():
@@ -314,7 +336,8 @@ def main():
         },
         'minervini': {
             'candidates_7_plus': minervini_data['candidates_7_plus'],
-            'candidates_all_8': minervini_data['candidates_all_8'],
+            'candidates_all_8': minervini_data.get('candidates_all_8', 0),
+            'sweet_spot_count': minervini_data.get('sweet_spot_count', 0),
             'scanned': minervini_data['total_scanned']
         },
         'exits': {
