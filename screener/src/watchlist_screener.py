@@ -23,7 +23,7 @@ WATCHLIST = [
     {"display": "MRVL",    "yf": "MRVL",     "name": "Marvell"},
     {"display": "FTC",     "yf": "FTC.L",    "name": "Filtronic"},
     {"display": "SPGP",    "yf": "SPGP",     "name": "iShares Gold Producers"},
-    {"display": "URNP",    "yf": "URNP",     "name": "Sprott Uranium"},
+    {"display": "URNP",    "yf": "URNP.L",   "name": "Sprott Uranium"},
     {"display": "UNFI",    "yf": "UNFI",     "name": "United Natural Foods"},
 ]
 
