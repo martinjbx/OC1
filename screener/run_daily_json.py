@@ -107,7 +107,7 @@ def run_minervini_json():
     spy_data = None  # will be set below and reused by watchlist screener
     for attempt in range(5):
         try:
-            spy_data = yf.download('SPY', period='1y', auto_adjust=True, progress=False)
+            spy_data = yf.download('SPY', period='2y', auto_adjust=True, progress=False)
             if len(spy_data) > 0:
                 break
         except Exception as e:
@@ -118,7 +118,7 @@ def run_minervini_json():
 
     # Batch-download all tickers (much less rate-limited than individual requests)
     print("Batch downloading price data...")
-    stock_data_map = _batch_download(tickers, period='1y', batch_size=200)
+    stock_data_map = _batch_download(tickers, period='2y', batch_size=200)
     print(f"  {len(stock_data_map)} / {len(tickers)} tickers with valid data (≥200 days)")
 
     # Apply Minervini criteria to each stock with valid data
