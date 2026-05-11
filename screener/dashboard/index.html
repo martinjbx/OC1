@@ -243,49 +243,46 @@
     </div>
     
     <script>
+        async function safeRender(fn, label) {
+            try { fn(); } catch(e) { console.error('Render error [' + label + ']:', e); }
+        }
+
         async function loadData() {
             try {
                 // Load summary
                 const [summary, exitData] = await Promise.all([
-                    fetch('data/summary.json').then(r => r.json()),
+                    fetch('data/summary.json').then(r => r.json()).catch(() => null),
                     fetch('data/exit_alerts.json').then(r => r.json()).catch(() => null),
                 ]);
-                renderExitTable(exitData);
-                
-                // Update last update time
-                const updateDate = new Date(summary.last_update);
-                document.getElementById('lastUpdate').textContent = 
-                    `Last updated: ${updateDate.toLocaleString()}`;
-                
-                // Update summary cards
-                document.getElementById('structureSignals').textContent = 
-                    summary.structure.signals;
-                document.getElementById('structureScanned').textContent = 
-                    `${summary.structure.scanned} tickers scanned`;
-                
-                document.getElementById('minervini7Plus').textContent = 
-                    summary.minervini.candidates_7_plus;
-                document.getElementById('minerviniScanned').textContent = 
-                    `${summary.minervini.scanned} tickers scanned`;
-                
-                document.getElementById('minervini8').textContent = 
-                    summary.minervini.candidates_all_8;
-                
+
+                if (summary) {
+                    const updateDate = new Date(summary.last_update);
+                    document.getElementById('lastUpdate').textContent =
+                        `Last updated: ${updateDate.toLocaleString()}`;
+                    document.getElementById('structureSignals').textContent = summary.structure?.signals ?? '—';
+                    document.getElementById('structureScanned').textContent = `${summary.structure?.scanned ?? 0} tickers scanned`;
+                    document.getElementById('minervini7Plus').textContent = summary.minervini?.candidates_7_plus ?? '—';
+                    document.getElementById('minerviniScanned').textContent = `${summary.minervini?.scanned ?? 0} tickers scanned`;
+                    document.getElementById('minervini8').textContent = summary.minervini?.candidates_all_8 ?? '—';
+                }
+
+                safeRender(() => renderExitTable(exitData), 'exitTable');
+
                 // Load watchlist summary
                 const watchlist = await fetch('data/watchlist_summary.json').then(r => r.json()).catch(() => null);
-                renderWatchlistTable(watchlist);
+                safeRender(() => renderWatchlistTable(watchlist), 'watchlistTable');
 
                 // Load structure signals
-                const structure = await fetch('data/structure_latest.json').then(r => r.json());
-                renderStructureTable(structure.signals);
-                
-                // Load Minervini candidates
-                const minervini = await fetch('data/minervini_latest.json').then(r => r.json());
-                renderMinerviniTable(minervini.top_candidates);
-                
+                const structure = await fetch('data/structure_latest.json').then(r => r.json()).catch(() => null);
+                safeRender(() => renderStructureTable(structure?.signals), 'structureTable');
+
+                // Load Minervini candidates (always runs even if others fail)
+                const minervini = await fetch('data/minervini_latest.json').then(r => r.json()).catch(() => null);
+                safeRender(() => renderMinerviniTable(minervini?.top_candidates), 'minerviniTable');
+
             } catch (error) {
-                console.error('Error loading data:', error);
-                document.getElementById('lastUpdate').textContent = 'Error loading data';
+                console.error('Error in loadData:', error);
+                document.getElementById('lastUpdate').textContent = 'Error loading data — check console';
             }
         }
         
