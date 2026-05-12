@@ -1,10 +1,10 @@
 {
-  "scan_date": "2026-05-11T20:56:32.146523",
+  "scan_date": "2026-05-12T04:52:18.769646",
   "total_attempted": 3761,
-  "total_scanned": 3196,
-  "candidates_7_plus": 898,
-  "candidates_all_8": 430,
-  "sweet_spot_count": 307,
+  "total_scanned": 3371,
+  "candidates_7_plus": 936,
+  "candidates_all_8": 440,
+  "sweet_spot_count": 315,
   "top_candidates": [
     {
       "ticker": "CBOE",
@@ -187,16 +187,6 @@
       "composite": 94
     },
     {
-      "ticker": "ENS",
-      "price": 236.82,
-      "pct_from_high": -0.6,
-      "rs_rating": 95,
-      "stock_return_1y": 150.2,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 95
-    },
-    {
       "ticker": "MLI",
       "price": 140.71,
       "pct_from_high": -0.6,
@@ -207,21 +197,21 @@
       "composite": 95
     },
     {
-      "ticker": "KRYS",
-      "price": 312.88,
-      "pct_from_high": -0.7,
-      "rs_rating": 95,
-      "stock_return_1y": 102.1,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 93
-    },
-    {
       "ticker": "KORE",
       "price": 9.16,
       "pct_from_high": -0.7,
       "rs_rating": 95,
       "stock_return_1y": 147.6,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 95
+    },
+    {
+      "ticker": "ENS",
+      "price": 236.82,
+      "pct_from_high": -0.7,
+      "rs_rating": 95,
+      "stock_return_1y": 150.2,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 95
@@ -337,6 +327,16 @@
       "composite": 84
     },
     {
+      "ticker": "KEYS",
+      "price": 366.36,
+      "pct_from_high": -1.0,
+      "rs_rating": 95,
+      "stock_return_1y": 144.7,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 95
+    },
+    {
       "ticker": "ESI",
       "price": 45.06,
       "pct_from_high": -1.0,
@@ -365,16 +365,6 @@
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 94
-    },
-    {
-      "ticker": "MSGS",
-      "price": 344.12,
-      "pct_from_high": -1.2,
-      "rs_rating": 85,
-      "stock_return_1y": 86.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
     },
     {
       "ticker": "VTR",
@@ -437,16 +427,6 @@
       "composite": 94
     },
     {
-      "ticker": "KALU",
-      "price": 180.39,
-      "pct_from_high": -1.4,
-      "rs_rating": 85,
-      "stock_return_1y": 93.2,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 89
-    },
-    {
       "ticker": "TRST",
       "price": 48.51,
       "pct_from_high": -1.4,
@@ -455,16 +435,6 @@
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 88
-    },
-    {
-      "ticker": "DAC",
-      "price": 133.34,
-      "pct_from_high": -1.4,
-      "rs_rating": 75,
-      "stock_return_1y": 69.4,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 84
     },
     {
       "ticker": "ATEX",
@@ -505,6 +475,36 @@
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 94
+    },
+    {
+      "ticker": "ROK",
+      "price": 456.66,
+      "pct_from_high": -1.5,
+      "rs_rating": 75,
+      "stock_return_1y": 74.8,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 84
+    },
+    {
+      "ticker": "MSGM",
+      "price": 5.32,
+      "pct_from_high": -1.6,
+      "rs_rating": 95,
+      "stock_return_1y": 105.4,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 93
+    },
+    {
+      "ticker": "CRDO",
+      "price": 210.22,
+      "pct_from_high": -1.7,
+      "rs_rating": 95,
+      "stock_return_1y": 1083.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false,
+      "composite": 92
     }
   ]
 }

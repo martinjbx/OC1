@@ -2096,7 +2096,34 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "ROK": {
+      "date_added": "2026-05-12",
+      "entry_price": 456.66,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MSGM": {
+      "date_added": "2026-05-12",
+      "entry_price": 5.32,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CRDO": {
+      "date_added": "2026-05-12",
+      "entry_price": 210.22,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-05-11T20:56:35.093015"
+  "last_updated": "2026-05-12T04:52:24.875116"
 }
