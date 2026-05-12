@@ -1,10 +1,10 @@
 {
-  "scan_date": "2026-05-12T04:52:18.769646",
+  "scan_date": "2026-05-12T11:18:54.928240",
   "total_attempted": 3761,
-  "total_scanned": 3371,
-  "candidates_7_plus": 936,
-  "candidates_all_8": 440,
-  "sweet_spot_count": 315,
+  "total_scanned": 3428,
+  "candidates_7_plus": 944,
+  "candidates_all_8": 441,
+  "sweet_spot_count": 317,
   "top_candidates": [
     {
       "ticker": "CBOE",
@@ -367,6 +367,16 @@
       "composite": 94
     },
     {
+      "ticker": "WT",
+      "price": 19.4,
+      "pct_from_high": -1.1,
+      "rs_rating": 95,
+      "stock_return_1y": 118.2,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 94
+    },
+    {
       "ticker": "VTR",
       "price": 87.69,
       "pct_from_high": -1.2,
@@ -495,16 +505,6 @@
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 93
-    },
-    {
-      "ticker": "CRDO",
-      "price": 210.22,
-      "pct_from_high": -1.7,
-      "rs_rating": 95,
-      "stock_return_1y": 1083.7,
-      "criteria_passed": 7,
-      "all_criteria_met": false,
-      "composite": 92
     }
   ]
 }

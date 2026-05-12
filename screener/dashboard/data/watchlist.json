@@ -1534,7 +1534,7 @@
       "date_added": "2026-05-10",
       "entry_price": 19.1,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2125,5 +2125,5 @@
       "exit_reason": null
     }
   },
-  "last_updated": "2026-05-12T04:52:24.875116"
+  "last_updated": "2026-05-12T11:19:00.303272"
 }

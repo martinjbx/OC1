@@ -1,8 +1,8 @@
 {
-  "check_date": "2026-05-12T04:52:24.877211",
+  "check_date": "2026-05-12T11:19:00.305231",
   "watchlist_size": 236,
   "active_positions": 235,
-  "newly_added": 3,
+  "newly_added": 0,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [],
@@ -194,6 +194,18 @@
       "date_added": "2026-05-10"
     },
     {
+      "ticker": "MPWR",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 1661.1,
+      "ma_50": 1286.71,
+      "pct_above_ma50": 29.1,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 3.7,
+      "entry_price": 1601.99,
+      "date_added": "2026-05-10"
+    },
+    {
       "ticker": "FIX",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 2032.98,
@@ -206,15 +218,15 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "MPWR",
+      "ticker": "WDC",
       "tp_signal": "EXTENDED_WATCH",
-      "current_price": 1661.1,
-      "ma_50": 1286.71,
-      "pct_above_ma50": 29.1,
+      "current_price": 515.83,
+      "ma_50": 340.28,
+      "pct_above_ma50": 51.59,
       "climactic": false,
       "wide_up_days": 0,
-      "gain_pct": 3.7,
-      "entry_price": 1601.99,
+      "gain_pct": 9.5,
+      "entry_price": 471.2,
       "date_added": "2026-05-10"
     },
     {
@@ -230,15 +242,15 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "WDC",
+      "ticker": "AMD",
       "tp_signal": "EXTENDED_WATCH",
-      "current_price": 515.83,
-      "ma_50": 340.28,
-      "pct_above_ma50": 51.59,
+      "current_price": 458.79,
+      "ma_50": 259.68,
+      "pct_above_ma50": 76.67,
       "climactic": false,
       "wide_up_days": 0,
-      "gain_pct": 9.5,
-      "entry_price": 471.2,
+      "gain_pct": 4.1,
+      "entry_price": 440.88,
       "date_added": "2026-05-10"
     },
     {
@@ -263,18 +275,6 @@
       "wide_up_days": 0,
       "gain_pct": 1.3,
       "entry_price": 268.02,
-      "date_added": "2026-05-10"
-    },
-    {
-      "ticker": "AMD",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 458.79,
-      "ma_50": 259.68,
-      "pct_above_ma50": 76.67,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 4.1,
-      "entry_price": 440.88,
       "date_added": "2026-05-10"
     },
     {
@@ -314,18 +314,6 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "LWLG",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 16.86,
-      "ma_50": 9.79,
-      "pct_above_ma50": 72.28,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 2.6,
-      "entry_price": 16.43,
-      "date_added": "2026-05-10"
-    },
-    {
       "ticker": "NBIS",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 186.1,
@@ -338,18 +326,6 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "NDLS",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 12.05,
-      "ma_50": 8.66,
-      "pct_above_ma50": 39.11,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": -4.9,
-      "entry_price": 12.67,
-      "date_added": "2026-05-10"
-    },
-    {
       "ticker": "WULF",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 23.37,
@@ -359,6 +335,30 @@
       "wide_up_days": 0,
       "gain_pct": -0.1,
       "entry_price": 23.39,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "LWLG",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 16.86,
+      "ma_50": 9.79,
+      "pct_above_ma50": 72.28,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 2.6,
+      "entry_price": 16.43,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "NDLS",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 12.05,
+      "ma_50": 8.66,
+      "pct_above_ma50": 39.11,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": -4.9,
+      "entry_price": 12.67,
       "date_added": "2026-05-10"
     },
     {
@@ -386,15 +386,15 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "VRT",
+      "ticker": "CTOS",
       "tp_signal": "EXTENDED_WATCH",
-      "current_price": 367.92,
-      "ma_50": 287.01,
-      "pct_above_ma50": 28.19,
+      "current_price": 9.84,
+      "ma_50": 7.47,
+      "pct_above_ma50": 31.75,
       "climactic": false,
       "wide_up_days": 0,
-      "gain_pct": 8.2,
-      "entry_price": 339.97,
+      "gain_pct": 1.4,
+      "entry_price": 9.7,
       "date_added": "2026-05-10"
     },
     {
@@ -422,15 +422,15 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "CTOS",
+      "ticker": "VRT",
       "tp_signal": "EXTENDED_WATCH",
-      "current_price": 9.84,
-      "ma_50": 7.47,
-      "pct_above_ma50": 31.75,
+      "current_price": 367.92,
+      "ma_50": 287.01,
+      "pct_above_ma50": 28.19,
       "climactic": false,
       "wide_up_days": 0,
-      "gain_pct": 1.4,
-      "entry_price": 9.7,
+      "gain_pct": 8.2,
+      "entry_price": 339.97,
       "date_added": "2026-05-10"
     },
     {
@@ -494,18 +494,6 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "QUIK",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 20.69,
-      "ma_50": 11.63,
-      "pct_above_ma50": 77.92,
-      "climactic": false,
-      "wide_up_days": 1,
-      "gain_pct": 4.0,
-      "entry_price": 19.89,
-      "date_added": "2026-05-10"
-    },
-    {
       "ticker": "NBTX",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 53.55,
@@ -518,15 +506,15 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "KN",
+      "ticker": "QUIK",
       "tp_signal": "EXTENDED_WATCH",
-      "current_price": 36.26,
-      "ma_50": 28.14,
-      "pct_above_ma50": 28.87,
+      "current_price": 20.69,
+      "ma_50": 11.63,
+      "pct_above_ma50": 77.92,
       "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 2.8,
-      "entry_price": 35.28,
+      "wide_up_days": 1,
+      "gain_pct": 4.0,
+      "entry_price": 19.89,
       "date_added": "2026-05-10"
     },
     {
@@ -542,6 +530,18 @@
       "date_added": "2026-05-10"
     },
     {
+      "ticker": "KN",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 36.26,
+      "ma_50": 28.14,
+      "pct_above_ma50": 28.87,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 2.8,
+      "entry_price": 35.28,
+      "date_added": "2026-05-10"
+    },
+    {
       "ticker": "BAND",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 49.95,
@@ -551,18 +551,6 @@
       "wide_up_days": 0,
       "gain_pct": 0.1,
       "entry_price": 49.89,
-      "date_added": "2026-05-10"
-    },
-    {
-      "ticker": "ATEX",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 55.72,
-      "ma_50": 41.76,
-      "pct_above_ma50": 33.43,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": -0.4,
-      "entry_price": 55.92,
       "date_added": "2026-05-10"
     },
     {
@@ -590,15 +578,15 @@
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "PLAB",
+      "ticker": "ATEX",
       "tp_signal": "EXTENDED_WATCH",
-      "current_price": 54.96,
-      "ma_50": 42.88,
-      "pct_above_ma50": 28.18,
+      "current_price": 55.72,
+      "ma_50": 41.76,
+      "pct_above_ma50": 33.43,
       "climactic": false,
       "wide_up_days": 0,
-      "gain_pct": 2.5,
-      "entry_price": 53.64,
+      "gain_pct": -0.4,
+      "entry_price": 55.92,
       "date_added": "2026-05-10"
     },
     {
@@ -623,6 +611,18 @@
       "wide_up_days": 0,
       "gain_pct": 1.6,
       "entry_price": 59.17,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "PLAB",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 54.96,
+      "ma_50": 42.88,
+      "pct_above_ma50": 28.18,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 2.5,
+      "entry_price": 53.64,
       "date_added": "2026-05-10"
     },
     {
@@ -662,6 +662,30 @@
       "date_added": "2026-05-10"
     },
     {
+      "ticker": "AIP",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 33.13,
+      "ma_50": 20.51,
+      "pct_above_ma50": 61.53,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 4.0,
+      "entry_price": 31.86,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "UCTT",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 85.45,
+      "ma_50": 68.34,
+      "pct_above_ma50": 25.04,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": -1.9,
+      "entry_price": 87.1,
+      "date_added": "2026-05-10"
+    },
+    {
       "ticker": "ENS",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 236.82,
@@ -683,30 +707,6 @@
       "wide_up_days": 0,
       "gain_pct": -8.1,
       "entry_price": 5.41,
-      "date_added": "2026-05-10"
-    },
-    {
-      "ticker": "UCTT",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 85.45,
-      "ma_50": 68.34,
-      "pct_above_ma50": 25.04,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": -1.9,
-      "entry_price": 87.1,
-      "date_added": "2026-05-10"
-    },
-    {
-      "ticker": "AIP",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 33.13,
-      "ma_50": 20.51,
-      "pct_above_ma50": 61.53,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 4.0,
-      "entry_price": 31.86,
       "date_added": "2026-05-10"
     },
     {
@@ -734,18 +734,6 @@
       "date_added": "2026-05-11"
     },
     {
-      "ticker": "SYRE",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 76.43,
-      "ma_50": 55.72,
-      "pct_above_ma50": 37.17,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": -0.4,
-      "entry_price": 76.76,
-      "date_added": "2026-05-11"
-    },
-    {
       "ticker": "MTRN",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 203.03,
@@ -758,6 +746,18 @@
       "date_added": "2026-05-11"
     },
     {
+      "ticker": "SYRE",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 76.43,
+      "ma_50": 55.72,
+      "pct_above_ma50": 37.17,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": -0.4,
+      "entry_price": 76.76,
+      "date_added": "2026-05-11"
+    },
+    {
       "ticker": "COHU",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 51.28,
@@ -767,6 +767,18 @@
       "wide_up_days": 0,
       "gain_pct": 1.2,
       "entry_price": 50.66,
+      "date_added": "2026-05-11"
+    },
+    {
+      "ticker": "VSH",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 34.83,
+      "ma_50": 22.38,
+      "pct_above_ma50": 55.6,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": -0.3,
+      "entry_price": 34.94,
       "date_added": "2026-05-11"
     },
     {
@@ -794,30 +806,6 @@
       "date_added": "2026-05-11"
     },
     {
-      "ticker": "SMTC",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 136.53,
-      "ma_50": 92.45,
-      "pct_above_ma50": 47.68,
-      "climactic": false,
-      "wide_up_days": 1,
-      "gain_pct": 0.6,
-      "entry_price": 135.65,
-      "date_added": "2026-05-11"
-    },
-    {
-      "ticker": "WILC",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 36.86,
-      "ma_50": 28.16,
-      "pct_above_ma50": 30.89,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 1.1,
-      "entry_price": 36.45,
-      "date_added": "2026-05-11"
-    },
-    {
       "ticker": "WLFI-USD",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 0.0,
@@ -827,18 +815,6 @@
       "wide_up_days": 0,
       "gain_pct": null,
       "entry_price": 0.0,
-      "date_added": "2026-05-11"
-    },
-    {
-      "ticker": "NTCT",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 40.67,
-      "ma_50": 32.49,
-      "pct_above_ma50": 25.19,
-      "climactic": false,
-      "wide_up_days": 1,
-      "gain_pct": 0.3,
-      "entry_price": 40.53,
       "date_added": "2026-05-11"
     },
     {
@@ -854,6 +830,30 @@
       "date_added": "2026-05-11"
     },
     {
+      "ticker": "WILC",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 36.86,
+      "ma_50": 28.16,
+      "pct_above_ma50": 30.89,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 1.1,
+      "entry_price": 36.45,
+      "date_added": "2026-05-11"
+    },
+    {
+      "ticker": "SMTC",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 136.53,
+      "ma_50": 92.45,
+      "pct_above_ma50": 47.68,
+      "climactic": false,
+      "wide_up_days": 1,
+      "gain_pct": 0.6,
+      "entry_price": 135.65,
+      "date_added": "2026-05-11"
+    },
+    {
       "ticker": "SITM",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 901.48,
@@ -866,15 +866,15 @@
       "date_added": "2026-05-11"
     },
     {
-      "ticker": "VSH",
+      "ticker": "NTCT",
       "tp_signal": "EXTENDED_WATCH",
-      "current_price": 34.83,
-      "ma_50": 22.38,
-      "pct_above_ma50": 55.6,
+      "current_price": 40.67,
+      "ma_50": 32.49,
+      "pct_above_ma50": 25.19,
       "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": -0.3,
-      "entry_price": 34.94,
+      "wide_up_days": 1,
+      "gain_pct": 0.3,
+      "entry_price": 40.53,
       "date_added": "2026-05-11"
     },
     {
@@ -890,18 +890,6 @@
       "date_added": "2026-05-11"
     },
     {
-      "ticker": "TSAT",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 54.91,
-      "ma_50": 42.41,
-      "pct_above_ma50": 29.48,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": -0.4,
-      "entry_price": 55.15,
-      "date_added": "2026-05-11"
-    },
-    {
       "ticker": "BHE",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 86.51,
@@ -911,18 +899,6 @@
       "wide_up_days": 0,
       "gain_pct": -0.4,
       "entry_price": 86.86,
-      "date_added": "2026-05-11"
-    },
-    {
-      "ticker": "SATL",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 8.7,
-      "ma_50": 5.62,
-      "pct_above_ma50": 54.83,
-      "climactic": false,
-      "wide_up_days": 1,
-      "gain_pct": -0.8,
-      "entry_price": 8.77,
       "date_added": "2026-05-11"
     },
     {
@@ -950,18 +926,6 @@
       "date_added": "2026-05-11"
     },
     {
-      "ticker": "AEHR",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 104.56,
-      "ma_50": 61.68,
-      "pct_above_ma50": 69.51,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": -0.8,
-      "entry_price": 105.39,
-      "date_added": "2026-05-11"
-    },
-    {
       "ticker": "ICHR",
       "tp_signal": "EXTENDED_WATCH",
       "current_price": 76.95,
@@ -974,15 +938,39 @@
       "date_added": "2026-05-11"
     },
     {
-      "ticker": "TXN",
+      "ticker": "AEHR",
       "tp_signal": "EXTENDED_WATCH",
-      "current_price": 297.76,
-      "ma_50": 222.27,
-      "pct_above_ma50": 33.96,
+      "current_price": 104.56,
+      "ma_50": 61.68,
+      "pct_above_ma50": 69.51,
       "climactic": false,
       "wide_up_days": 0,
-      "gain_pct": 0.0,
-      "entry_price": 297.76,
+      "gain_pct": -0.8,
+      "entry_price": 105.39,
+      "date_added": "2026-05-11"
+    },
+    {
+      "ticker": "TSAT",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 54.91,
+      "ma_50": 42.41,
+      "pct_above_ma50": 29.48,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": -0.4,
+      "entry_price": 55.15,
+      "date_added": "2026-05-11"
+    },
+    {
+      "ticker": "SATL",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 8.7,
+      "ma_50": 5.62,
+      "pct_above_ma50": 54.83,
+      "climactic": false,
+      "wide_up_days": 1,
+      "gain_pct": -0.8,
+      "entry_price": 8.77,
       "date_added": "2026-05-11"
     },
     {
@@ -995,6 +983,18 @@
       "wide_up_days": 0,
       "gain_pct": -0.0,
       "entry_price": 24.31,
+      "date_added": "2026-05-11"
+    },
+    {
+      "ticker": "TXN",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 297.76,
+      "ma_50": 222.27,
+      "pct_above_ma50": 33.96,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 0.0,
+      "entry_price": 297.76,
       "date_added": "2026-05-11"
     },
     {
