@@ -1,10 +1,10 @@
 {
-  "scan_date": "2026-05-13T08:11:00.322651",
+  "scan_date": "2026-05-13T11:33:50.314710",
   "total_attempted": 3761,
-  "total_scanned": 3639,
-  "candidates_7_plus": 1007,
-  "candidates_all_8": 469,
-  "sweet_spot_count": 369,
+  "total_scanned": 3574,
+  "candidates_7_plus": 985,
+  "candidates_all_8": 464,
+  "sweet_spot_count": 364,
   "top_candidates": [
     {
       "ticker": "CBOE",

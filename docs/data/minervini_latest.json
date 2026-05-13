@@ -1,10 +1,10 @@
 {
-  "scan_date": "2026-05-13T05:31:07.724686",
+  "scan_date": "2026-05-13T11:33:50.314710",
   "total_attempted": 3761,
-  "total_scanned": 2898,
-  "candidates_7_plus": 800,
-  "candidates_all_8": 374,
-  "sweet_spot_count": 298,
+  "total_scanned": 3574,
+  "candidates_7_plus": 985,
+  "candidates_all_8": 464,
+  "sweet_spot_count": 364,
   "top_candidates": [
     {
       "ticker": "CBOE",
@@ -22,6 +22,16 @@
       "pct_from_high": -0.0,
       "rs_rating": 85,
       "stock_return_1y": 94.8,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 89
+    },
+    {
+      "ticker": "CTRE",
+      "price": 42.09,
+      "pct_from_high": -0.1,
+      "rs_rating": 85,
+      "stock_return_1y": 84.7,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 89
@@ -45,6 +55,16 @@
       "criteria_passed": 7,
       "all_criteria_met": false,
       "composite": 93
+    },
+    {
+      "ticker": "RY",
+      "price": 182.28,
+      "pct_from_high": -0.2,
+      "rs_rating": 85,
+      "stock_return_1y": 83.3,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 89
     },
     {
       "ticker": "CVS",
@@ -125,6 +145,16 @@
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 94
+    },
+    {
+      "ticker": "MCY",
+      "price": 101.72,
+      "pct_from_high": -0.6,
+      "rs_rating": 85,
+      "stock_return_1y": 85.2,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 89
     },
     {
       "ticker": "PRLB",
@@ -367,6 +397,16 @@
       "composite": 93
     },
     {
+      "ticker": "CASY",
+      "price": 867.19,
+      "pct_from_high": -1.4,
+      "rs_rating": 95,
+      "stock_return_1y": 157.1,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 95
+    },
+    {
       "ticker": "MTRN",
       "price": 203.65,
       "pct_from_high": -1.4,
@@ -387,6 +427,16 @@
       "composite": 93
     },
     {
+      "ticker": "KRYS",
+      "price": 310.31,
+      "pct_from_high": -1.5,
+      "rs_rating": 95,
+      "stock_return_1y": 100.4,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 92
+    },
+    {
       "ticker": "DGXX",
       "price": 8.39,
       "pct_from_high": -1.5,
@@ -405,6 +455,26 @@
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 88
+    },
+    {
+      "ticker": "TRP",
+      "price": 66.3,
+      "pct_from_high": -1.5,
+      "rs_rating": 85,
+      "stock_return_1y": 85.5,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
+      "ticker": "CM",
+      "price": 111.51,
+      "pct_from_high": -1.6,
+      "rs_rating": 95,
+      "stock_return_1y": 141.4,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 94
     },
     {
       "ticker": "NVRI",
@@ -432,76 +502,6 @@
       "pct_from_high": -1.8,
       "rs_rating": 95,
       "stock_return_1y": 146.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 94
-    },
-    {
-      "ticker": "ROK",
-      "price": 455.08,
-      "pct_from_high": -1.8,
-      "rs_rating": 75,
-      "stock_return_1y": 74.2,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 84
-    },
-    {
-      "ticker": "NHC",
-      "price": 189.47,
-      "pct_from_high": -1.9,
-      "rs_rating": 95,
-      "stock_return_1y": 104.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 92
-    },
-    {
-      "ticker": "FFIV",
-      "price": 354.98,
-      "pct_from_high": -1.9,
-      "rs_rating": 95,
-      "stock_return_1y": 107.1,
-      "criteria_passed": 7,
-      "all_criteria_met": false,
-      "composite": 87
-    },
-    {
-      "ticker": "EXEL",
-      "price": 49.46,
-      "pct_from_high": -2.0,
-      "rs_rating": 95,
-      "stock_return_1y": 132.5,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 94
-    },
-    {
-      "ticker": "SHIP",
-      "price": 16.47,
-      "pct_from_high": -2.0,
-      "rs_rating": 85,
-      "stock_return_1y": 80.4,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
-    },
-    {
-      "ticker": "GSL",
-      "price": 41.79,
-      "pct_from_high": -2.1,
-      "rs_rating": 95,
-      "stock_return_1y": 99.6,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 92
-    },
-    {
-      "ticker": "MLI",
-      "price": 138.59,
-      "pct_from_high": -2.1,
-      "rs_rating": 95,
-      "stock_return_1y": 143.5,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 94

@@ -1,7 +1,7 @@
 {
-  "scan_date": "2026-05-13T05:26:13.487241",
+  "scan_date": "2026-05-13T11:26:43.738596",
   "total_scanned": 3761,
-  "signals_found": 2,
+  "signals_found": 4,
   "signals": [
     {
       "ticker": "UROY",
@@ -17,6 +17,22 @@
       "smma15": 0.7918093969267382,
       "smma29": 0.7761680565318116,
       "rsi": 77.08162228878484,
+      "volume_surge": false
+    },
+    {
+      "ticker": "PANL",
+      "price": 8.640000343322754,
+      "smma15": 7.675909369780279,
+      "smma29": 7.64941941719788,
+      "rsi": 63.107837896896214,
+      "volume_surge": false
+    },
+    {
+      "ticker": "FTAI",
+      "price": 266.2099914550781,
+      "smma15": 252.7904026152668,
+      "smma29": 250.6297925566125,
+      "rsi": 53.689944679182666,
       "volume_surge": false
     }
   ]
