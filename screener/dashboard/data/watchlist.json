@@ -2276,7 +2276,43 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CTRE": {
+      "date_added": "2026-05-13",
+      "entry_price": 42.09,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MCY": {
+      "date_added": "2026-05-13",
+      "entry_price": 101.72,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TRP": {
+      "date_added": "2026-05-13",
+      "entry_price": 66.3,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CM": {
+      "date_added": "2026-05-13",
+      "entry_price": 111.51,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-05-13T05:31:10.413187"
+  "last_updated": "2026-05-13T08:11:07.631857"
 }
