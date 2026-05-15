@@ -1164,7 +1164,7 @@
     "KRYS": {
       "date_added": "2026-05-10",
       "entry_price": 305.71,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -1965,7 +1965,7 @@
     "SOBO": {
       "date_added": "2026-05-11",
       "entry_price": 35.39,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2393,7 +2393,61 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "WMB": {
+      "date_added": "2026-05-15",
+      "entry_price": 77.69,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "VLGEA": {
+      "date_added": "2026-05-15",
+      "entry_price": 45.84,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PM": {
+      "date_added": "2026-05-15",
+      "entry_price": 191.86,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CARE": {
+      "date_added": "2026-05-15",
+      "entry_price": 27.07,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "VCTR": {
+      "date_added": "2026-05-15",
+      "entry_price": 87.93,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "GS": {
+      "date_added": "2026-05-15",
+      "entry_price": 968.96,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-05-14T08:29:45.554476"
+  "last_updated": "2026-05-15T08:52:44.013573"
 }
