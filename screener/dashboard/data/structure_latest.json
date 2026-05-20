@@ -1,23 +1,6 @@
 {
-  "scan_date": "2026-05-19T11:05:27.622312",
+  "scan_date": "2026-05-20T10:47:07.574891",
   "total_scanned": 3761,
-  "signals_found": 2,
-  "signals": [
-    {
-      "ticker": "SOLV",
-      "price": 76.12999725341797,
-      "smma15": 70.7561241536437,
-      "smma29": 70.7343493951224,
-      "rsi": 65.38784573176594,
-      "volume_surge": false
-    },
-    {
-      "ticker": "JXG",
-      "price": 6.53000020980835,
-      "smma15": 4.369642892155243,
-      "smma29": 4.2603499534083396,
-      "rsi": 84.27448817836776,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }

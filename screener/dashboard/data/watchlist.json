@@ -590,9 +590,9 @@
       "entry_price": 284.67,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-05-20",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "PTEN": {
       "date_added": "2026-05-10",
@@ -1281,7 +1281,7 @@
     "ATEX": {
       "date_added": "2026-05-10",
       "entry_price": 55.92,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -1490,9 +1490,9 @@
       "entry_price": 6.11,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-05-20",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "KORE": {
       "date_added": "2026-05-10",
@@ -2298,7 +2298,7 @@
     "TRP": {
       "date_added": "2026-05-13",
       "entry_price": 66.3,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2636,7 +2636,52 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "DDOG": {
+      "date_added": "2026-05-20",
+      "entry_price": 215.15,
+      "rs_rating": 85,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BTE": {
+      "date_added": "2026-05-20",
+      "entry_price": 5.32,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MO": {
+      "date_added": "2026-05-20",
+      "entry_price": 74.0,
+      "rs_rating": 85,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "REPX": {
+      "date_added": "2026-05-20",
+      "entry_price": 41.21,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FROG": {
+      "date_added": "2026-05-20",
+      "entry_price": 70.63,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-05-19T11:13:35.575263"
+  "last_updated": "2026-05-20T10:52:26.417039"
 }
