@@ -2082,7 +2082,7 @@
     "CNO": {
       "date_added": "2026-05-11",
       "entry_price": 45.68,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2208,7 +2208,7 @@
     "ENB": {
       "date_added": "2026-05-13",
       "entry_price": 54.84,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2641,7 +2641,7 @@
       "date_added": "2026-05-20",
       "entry_price": 215.15,
       "rs_rating": 85,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2793,12 +2793,84 @@
     "THFF": {
       "date_added": "2026-05-21",
       "entry_price": 68.19,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BLDP": {
+      "date_added": "2026-05-22",
+      "entry_price": 5.43,
       "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PKBK": {
+      "date_added": "2026-05-22",
+      "entry_price": 31.16,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BLX": {
+      "date_added": "2026-05-22",
+      "entry_price": 56.38,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BB": {
+      "date_added": "2026-05-22",
+      "entry_price": 6.65,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CATY": {
+      "date_added": "2026-05-22",
+      "entry_price": 57.25,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "HTB": {
+      "date_added": "2026-05-22",
+      "entry_price": 46.72,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CBL": {
+      "date_added": "2026-05-22",
+      "entry_price": 47.97,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PCB": {
+      "date_added": "2026-05-22",
+      "entry_price": 24.55,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
     }
   },
-  "last_updated": "2026-05-21T11:08:20.185675"
+  "last_updated": "2026-05-22T08:51:31.917587"
 }
