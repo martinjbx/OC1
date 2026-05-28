@@ -219,7 +219,7 @@
     "STLD": {
       "date_added": "2026-05-10",
       "entry_price": 235.02,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -419,9 +419,9 @@
       "entry_price": 9.81,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-05-28",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "TGB": {
       "date_added": "2026-05-10",
@@ -526,7 +526,7 @@
       "date_added": "2026-05-10",
       "entry_price": 61.32,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1444,7 +1444,7 @@
       "date_added": "2026-05-10",
       "entry_price": 87.1,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1516,7 +1516,7 @@
       "date_added": "2026-05-10",
       "entry_price": 129.53,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1578,8 +1578,8 @@
     "COHU": {
       "date_added": "2026-05-11",
       "entry_price": 50.66,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 75,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2028,7 +2028,7 @@
     "MSGS": {
       "date_added": "2026-05-11",
       "entry_price": 344.12,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2055,7 +2055,7 @@
     "ING": {
       "date_added": "2026-05-11",
       "entry_price": 30.1,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2757,7 +2757,7 @@
     "WBS": {
       "date_added": "2026-05-21",
       "entry_price": 73.1,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2865,7 +2865,7 @@
     "PCB": {
       "date_added": "2026-05-22",
       "entry_price": 24.55,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3059,7 +3059,79 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "MAR": {
+      "date_added": "2026-05-28",
+      "entry_price": 385.86,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MAC": {
+      "date_added": "2026-05-28",
+      "entry_price": 22.69,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "GH": {
+      "date_added": "2026-05-28",
+      "entry_price": 127.51,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SRTA": {
+      "date_added": "2026-05-28",
+      "entry_price": 6.26,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FDX": {
+      "date_added": "2026-05-28",
+      "entry_price": 411.78,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "KNX": {
+      "date_added": "2026-05-28",
+      "entry_price": 74.18,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "WSBF": {
+      "date_added": "2026-05-28",
+      "entry_price": 18.65,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FRAF": {
+      "date_added": "2026-05-28",
+      "entry_price": 58.88,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-05-27T11:14:27.503078"
+  "last_updated": "2026-05-28T11:29:08.634438"
 }
