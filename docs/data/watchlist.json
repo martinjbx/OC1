@@ -121,7 +121,7 @@
       "date_added": "2026-05-10",
       "entry_price": 128.2,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2578,7 +2578,7 @@
       "date_added": "2026-05-19",
       "entry_price": 120.55,
       "rs_rating": 85,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2595,7 +2595,7 @@
     "BSRR": {
       "date_added": "2026-05-19",
       "entry_price": 37.99,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3216,7 +3216,7 @@
     "CNOB": {
       "date_added": "2026-05-30",
       "entry_price": 30.07,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3356,7 +3356,61 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "NTRS": {
+      "date_added": "2026-06-05",
+      "entry_price": 173.06,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MUFG": {
+      "date_added": "2026-06-05",
+      "entry_price": 20.05,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "UNM": {
+      "date_added": "2026-06-05",
+      "entry_price": 84.91,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "OII": {
+      "date_added": "2026-06-05",
+      "entry_price": 39.78,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PGC": {
+      "date_added": "2026-06-05",
+      "entry_price": 43.91,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "EWBC": {
+      "date_added": "2026-06-05",
+      "entry_price": 125.21,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-04T10:54:11.137667"
+  "last_updated": "2026-06-05T11:08:55.941013"
 }

@@ -1,23 +1,6 @@
 {
-  "scan_date": "2026-06-04T10:49:44.665107",
+  "scan_date": "2026-06-05T11:03:36.310102",
   "total_scanned": 3761,
-  "signals_found": 2,
-  "signals": [
-    {
-      "ticker": "PKG",
-      "price": 224.38999938964844,
-      "smma15": 217.4679511437315,
-      "smma29": 216.69631583910686,
-      "rsi": 56.635501292155325,
-      "volume_surge": false
-    },
-    {
-      "ticker": "IBM",
-      "price": 305.6300048828125,
-      "smma15": 255.66710758183993,
-      "smma29": 251.22018233343496,
-      "rsi": 67.55918592971778,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }

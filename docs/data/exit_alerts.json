@@ -1,13 +1,28 @@
 {
-  "check_date": "2026-06-04T10:54:11.141113",
-  "watchlist_size": 373,
-  "active_positions": 353,
-  "newly_added": 1,
+  "check_date": "2026-06-05T11:08:55.944560",
+  "watchlist_size": 379,
+  "active_positions": 359,
+  "newly_added": 6,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [],
-  "holds": 0,
-  "errors": 353,
+  "below_ma50_lingering": [
+    {
+      "ticker": "MDU",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 21.15,
+      "ma_50": 21.8,
+      "pct_vs_ma50": -2.99,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 0.63,
+      "vol_elevated": false,
+      "entry_price": 22.8,
+      "pnl_pct": -7.2,
+      "date_added": "2026-05-11"
+    }
+  ],
+  "holds": 1,
+  "errors": 357,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
