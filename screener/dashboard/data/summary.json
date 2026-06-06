@@ -1,20 +1,20 @@
 {
-  "last_update": "2026-06-05T11:08:57.806612",
+  "last_update": "2026-06-06T08:14:32.803860",
   "structure": {
-    "signals": 0,
+    "signals": 2,
     "scanned": 3761
   },
   "minervini": {
-    "candidates_7_plus": 512,
-    "candidates_all_8": 241,
-    "sweet_spot_count": 190,
-    "scanned": 2944
+    "candidates_7_plus": 812,
+    "candidates_all_8": 383,
+    "sweet_spot_count": 318,
+    "scanned": 3277
   },
   "exits": {
     "strong": 0,
     "weak": 0,
     "climactic_sells": 0,
     "partial_profits": 0,
-    "watchlist_size": 379
+    "watchlist_size": 383
   }
 }

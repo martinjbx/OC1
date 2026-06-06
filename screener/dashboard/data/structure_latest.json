@@ -1,6 +1,23 @@
 {
-  "scan_date": "2026-06-05T11:03:36.310102",
+  "scan_date": "2026-06-06T08:11:01.648363",
   "total_scanned": 3761,
-  "signals_found": 0,
-  "signals": []
+  "signals_found": 2,
+  "signals": [
+    {
+      "ticker": "BYD",
+      "price": 87.87000274658203,
+      "smma15": 83.79277199343674,
+      "smma29": 83.78702500865194,
+      "rsi": 58.22227935872403,
+      "volume_surge": false
+    },
+    {
+      "ticker": "ADPT",
+      "price": 16.899999618530273,
+      "smma15": 14.683562950051627,
+      "smma29": 14.585436687173463,
+      "rsi": 61.91377672802026,
+      "volume_surge": false
+    }
+  ]
 }
