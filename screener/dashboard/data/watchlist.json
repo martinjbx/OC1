@@ -2730,7 +2730,7 @@
     "SNDR": {
       "date_added": "2026-05-21",
       "entry_price": 33.6,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2838,7 +2838,7 @@
     "CATY": {
       "date_added": "2026-05-22",
       "entry_price": 57.25,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2973,7 +2973,7 @@
     "WSFS": {
       "date_added": "2026-05-27",
       "entry_price": 72.77,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3446,7 +3446,88 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CTBI": {
+      "date_added": "2026-06-09",
+      "entry_price": 68.31,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TFSL": {
+      "date_added": "2026-06-09",
+      "entry_price": 16.49,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SRCE": {
+      "date_added": "2026-06-09",
+      "entry_price": 75.95,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CCNE": {
+      "date_added": "2026-06-09",
+      "entry_price": 31.37,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "HBT": {
+      "date_added": "2026-06-09",
+      "entry_price": 29.39,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FCF": {
+      "date_added": "2026-06-09",
+      "entry_price": 19.18,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TBBB": {
+      "date_added": "2026-06-09",
+      "entry_price": 39.6,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MYE": {
+      "date_added": "2026-06-09",
+      "entry_price": 24.61,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FRST": {
+      "date_added": "2026-06-09",
+      "entry_price": 15.04,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-06T08:14:30.482047"
+  "last_updated": "2026-06-09T10:54:01.644009"
 }

@@ -1,14 +1,27 @@
 {
-  "check_date": "2026-06-06T08:14:30.485391",
-  "watchlist_size": 383,
-  "active_positions": 363,
-  "newly_added": 4,
+  "check_date": "2026-06-09T10:54:01.647457",
+  "watchlist_size": 392,
+  "active_positions": 372,
+  "newly_added": 9,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [],
-  "holds": 1,
-  "errors": 362,
+  "holds": 0,
+  "errors": 372,
   "climactic_sells": [],
   "partial_profits": [],
-  "extended_watch": []
+  "extended_watch": [
+    {
+      "ticker": "EVC",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 9.09,
+      "ma_50": 5.83,
+      "pct_above_ma50": 56.01,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 4.5,
+      "entry_price": 8.7,
+      "date_added": "2026-05-11"
+    }
+  ]
 }
