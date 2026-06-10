@@ -1,15 +1,6 @@
 {
-  "scan_date": "2026-06-09T23:08:34.604578",
+  "scan_date": "2026-06-10T23:19:54.809982",
   "total_scanned": 3761,
-  "signals_found": 1,
-  "signals": [
-    {
-      "ticker": "CRL",
-      "price": 189.85000610351562,
-      "smma15": 173.5873478580189,
-      "smma29": 173.50805567542506,
-      "rsi": 59.77566357802547,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }

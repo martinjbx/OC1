@@ -1,13 +1,28 @@
 {
-  "check_date": "2026-06-09T23:13:00.868027",
-  "watchlist_size": 407,
-  "active_positions": 387,
-  "newly_added": 15,
+  "check_date": "2026-06-10T23:24:20.308999",
+  "watchlist_size": 416,
+  "active_positions": 396,
+  "newly_added": 9,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [],
-  "holds": 0,
-  "errors": 387,
+  "below_ma50_lingering": [
+    {
+      "ticker": "CIEN",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 434.65,
+      "ma_50": 520.75,
+      "pct_vs_ma50": -16.53,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 1.26,
+      "vol_elevated": false,
+      "entry_price": 547.14,
+      "pnl_pct": -20.6,
+      "date_added": "2026-05-10"
+    }
+  ],
+  "holds": 1,
+  "errors": 394,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
