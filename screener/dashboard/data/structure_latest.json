@@ -1,6 +1,15 @@
 {
-  "scan_date": "2026-06-10T23:19:54.809982",
+  "scan_date": "2026-06-11T23:14:39.016821",
   "total_scanned": 3761,
-  "signals_found": 0,
-  "signals": []
+  "signals_found": 1,
+  "signals": [
+    {
+      "ticker": "INCY",
+      "price": 107.83000183105469,
+      "smma15": 99.06408019998958,
+      "smma29": 98.18201641848962,
+      "rsi": 65.35676938361817,
+      "volume_surge": false
+    }
+  ]
 }

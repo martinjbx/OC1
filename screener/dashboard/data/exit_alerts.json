@@ -1,28 +1,28 @@
 {
-  "check_date": "2026-06-10T23:24:20.308999",
-  "watchlist_size": 416,
-  "active_positions": 396,
-  "newly_added": 9,
+  "check_date": "2026-06-11T23:19:35.819608",
+  "watchlist_size": 420,
+  "active_positions": 400,
+  "newly_added": 4,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [
     {
-      "ticker": "CIEN",
+      "ticker": "WMT",
       "signal": "ALREADY_BELOW_MA50",
-      "current_price": 434.65,
-      "ma_50": 520.75,
-      "pct_vs_ma50": -16.53,
+      "current_price": 120.5,
+      "ma_50": 125.55,
+      "pct_vs_ma50": -4.02,
       "below_ma50": true,
       "just_crossed_under": false,
-      "vol_ratio": 1.26,
+      "vol_ratio": 0.76,
       "vol_elevated": false,
-      "entry_price": 547.14,
-      "pnl_pct": -20.6,
-      "date_added": "2026-05-10"
+      "entry_price": 131.45,
+      "pnl_pct": -8.3,
+      "date_added": "2026-05-16"
     }
   ],
-  "holds": 1,
-  "errors": 394,
+  "holds": 0,
+  "errors": 399,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []

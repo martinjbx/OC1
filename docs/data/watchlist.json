@@ -336,8 +336,8 @@
     "ASML": {
       "date_added": "2026-05-10",
       "entry_price": 1546.25,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 85,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1641,7 +1641,7 @@
     "MTRN": {
       "date_added": "2026-05-11",
       "entry_price": 202.8,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2082,7 +2082,7 @@
     "CNO": {
       "date_added": "2026-05-11",
       "entry_price": 45.68,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2694,7 +2694,7 @@
     "CVLG": {
       "date_added": "2026-05-21",
       "entry_price": 36.87,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2712,7 +2712,7 @@
     "BNS": {
       "date_added": "2026-05-21",
       "entry_price": 78.95,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2955,7 +2955,7 @@
     "OBK": {
       "date_added": "2026-05-27",
       "entry_price": 48.16,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3108,7 +3108,7 @@
     "KNX": {
       "date_added": "2026-05-28",
       "entry_price": 74.18,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3743,7 +3743,43 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "LAUR": {
+      "date_added": "2026-06-11",
+      "entry_price": 37.95,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MOV": {
+      "date_added": "2026-06-11",
+      "entry_price": 38.29,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AMAL": {
+      "date_added": "2026-06-11",
+      "entry_price": 44.1,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "NVEC": {
+      "date_added": "2026-06-11",
+      "entry_price": 113.85,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-10T23:24:20.305245"
+  "last_updated": "2026-06-11T23:19:35.815750"
 }
