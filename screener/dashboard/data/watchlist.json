@@ -2541,7 +2541,7 @@
     "MNST": {
       "date_added": "2026-05-19",
       "entry_price": 88.54,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2712,7 +2712,7 @@
     "BNS": {
       "date_added": "2026-05-21",
       "entry_price": 78.95,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2757,7 +2757,7 @@
     "WBS": {
       "date_added": "2026-05-21",
       "entry_price": 73.1,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2946,7 +2946,7 @@
     "HBCP": {
       "date_added": "2026-05-23",
       "entry_price": 64.97,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3045,7 +3045,7 @@
     "BPOP": {
       "date_added": "2026-05-27",
       "entry_price": 152.12,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3063,7 +3063,7 @@
     "MAR": {
       "date_added": "2026-05-28",
       "entry_price": 385.86,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3216,7 +3216,7 @@
     "CNOB": {
       "date_added": "2026-05-30",
       "entry_price": 30.07,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3423,7 +3423,7 @@
     "SLF": {
       "date_added": "2026-06-06",
       "entry_price": 73.72,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3779,7 +3779,133 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "UBS": {
+      "date_added": "2026-06-12",
+      "entry_price": 48.97,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "UBSI": {
+      "date_added": "2026-06-12",
+      "entry_price": 45.65,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AIZ": {
+      "date_added": "2026-06-12",
+      "entry_price": 260.99,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FHB": {
+      "date_added": "2026-06-12",
+      "entry_price": 28.69,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SMFG": {
+      "date_added": "2026-06-12",
+      "entry_price": 24.4,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "UMBF": {
+      "date_added": "2026-06-12",
+      "entry_price": 135.37,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FLG": {
+      "date_added": "2026-06-12",
+      "entry_price": 14.94,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FBP": {
+      "date_added": "2026-06-12",
+      "entry_price": 25.5,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ASB": {
+      "date_added": "2026-06-12",
+      "entry_price": 29.56,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AMG": {
+      "date_added": "2026-06-12",
+      "entry_price": 354.62,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ABCB": {
+      "date_added": "2026-06-12",
+      "entry_price": 88.95,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MSBI": {
+      "date_added": "2026-06-12",
+      "entry_price": 30.16,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ORRF": {
+      "date_added": "2026-06-12",
+      "entry_price": 39.94,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MCS": {
+      "date_added": "2026-06-12",
+      "entry_price": 22.44,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-11T23:19:35.815750"
+  "last_updated": "2026-06-12T23:27:26.337328"
 }
