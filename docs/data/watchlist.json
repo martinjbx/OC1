@@ -158,9 +158,9 @@
       "entry_price": 16.77,
       "rs_rating": 75,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-06-18",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "KLAC": {
       "date_added": "2026-05-10",
@@ -1380,7 +1380,7 @@
     "SLAB": {
       "date_added": "2026-05-10",
       "entry_price": 217.45,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -1589,9 +1589,9 @@
       "entry_price": 154.65,
       "rs_rating": 85,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-06-18",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "CAMT": {
       "date_added": "2026-05-11",
@@ -3351,7 +3351,7 @@
     "TKR": {
       "date_added": "2026-06-04",
       "entry_price": 131.82,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4035,7 +4035,7 @@
     "LTH": {
       "date_added": "2026-06-16",
       "entry_price": 34.87,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4094,7 +4094,115 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "AZZ": {
+      "date_added": "2026-06-18",
+      "entry_price": 157.18,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CBNA": {
+      "date_added": "2026-06-18",
+      "entry_price": 40.47,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FRO": {
+      "date_added": "2026-06-18",
+      "entry_price": 40.93,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "VCYT": {
+      "date_added": "2026-06-18",
+      "entry_price": 53.63,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FTDR": {
+      "date_added": "2026-06-18",
+      "entry_price": 71.56,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "LYTS": {
+      "date_added": "2026-06-18",
+      "entry_price": 26.6,
+      "rs_rating": 85,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AIR": {
+      "date_added": "2026-06-18",
+      "entry_price": 134.88,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "VMD": {
+      "date_added": "2026-06-18",
+      "entry_price": 10.64,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MSM": {
+      "date_added": "2026-06-18",
+      "entry_price": 118.51,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ORN": {
+      "date_added": "2026-06-18",
+      "entry_price": 15.89,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SN": {
+      "date_added": "2026-06-18",
+      "entry_price": 140.84,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "GOLF": {
+      "date_added": "2026-06-18",
+      "entry_price": 107.73,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-17T23:17:21.588540"
+  "last_updated": "2026-06-18T23:34:29.584474"
 }
