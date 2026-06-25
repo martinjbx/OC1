@@ -2541,7 +2541,7 @@
     "MNST": {
       "date_added": "2026-05-19",
       "entry_price": 88.54,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3702,7 +3702,7 @@
     "SPG": {
       "date_added": "2026-06-10",
       "entry_price": 212.82,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4598,7 +4598,133 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "PNW": {
+      "date_added": "2026-06-25",
+      "entry_price": 107.28,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PDFS": {
+      "date_added": "2026-06-25",
+      "entry_price": 68.67,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "IDA": {
+      "date_added": "2026-06-25",
+      "entry_price": 149.61,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BJRI": {
+      "date_added": "2026-06-25",
+      "entry_price": 56.33,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AEE": {
+      "date_added": "2026-06-25",
+      "entry_price": 114.53,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TILE": {
+      "date_added": "2026-06-25",
+      "entry_price": 35.51,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FITB": {
+      "date_added": "2026-06-25",
+      "entry_price": 56.41,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "WSBC": {
+      "date_added": "2026-06-25",
+      "entry_price": 38.54,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AROC": {
+      "date_added": "2026-06-25",
+      "entry_price": 41.4,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MTB": {
+      "date_added": "2026-06-25",
+      "entry_price": 236.77,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PKOH": {
+      "date_added": "2026-06-25",
+      "entry_price": 38.28,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "COLB": {
+      "date_added": "2026-06-25",
+      "entry_price": 32.07,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "GNW": {
+      "date_added": "2026-06-25",
+      "entry_price": 9.4,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FIBK": {
+      "date_added": "2026-06-25",
+      "entry_price": 38.44,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-24T23:13:16.473435"
+  "last_updated": "2026-06-25T23:12:44.656760"
 }
