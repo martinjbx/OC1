@@ -1,14 +1,27 @@
 {
-  "check_date": "2026-06-25T23:12:44.661379",
-  "watchlist_size": 525,
-  "active_positions": 503,
+  "check_date": "2026-06-26T22:57:24.138894",
+  "watchlist_size": 539,
+  "active_positions": 517,
   "newly_added": 14,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [],
-  "holds": 1,
-  "errors": 502,
+  "holds": 7,
+  "errors": 510,
   "climactic_sells": [],
   "partial_profits": [],
-  "extended_watch": []
+  "extended_watch": [
+    {
+      "ticker": "LFST",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 10.28,
+      "ma_50": 7.87,
+      "pct_above_ma50": 30.56,
+      "climactic": false,
+      "wide_up_days": 1,
+      "gain_pct": 11.7,
+      "entry_price": 9.2,
+      "date_added": "2026-06-22"
+    }
+  ]
 }
