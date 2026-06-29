@@ -607,7 +607,7 @@
       "date_added": "2026-05-10",
       "entry_price": 83.88,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -777,8 +777,8 @@
     "CYTK": {
       "date_added": "2026-05-10",
       "entry_price": 76.91,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 75,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1164,7 +1164,7 @@
     "KRYS": {
       "date_added": "2026-05-10",
       "entry_price": 305.71,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -1434,7 +1434,7 @@
     "TDAY": {
       "date_added": "2026-05-10",
       "entry_price": 7.63,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2658,7 +2658,7 @@
     "MO": {
       "date_added": "2026-05-20",
       "entry_price": 74.0,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2677,7 +2677,7 @@
       "date_added": "2026-05-20",
       "entry_price": 70.63,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2757,7 +2757,7 @@
     "WBS": {
       "date_added": "2026-05-21",
       "entry_price": 73.1,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3585,7 +3585,7 @@
     "BY": {
       "date_added": "2026-06-09",
       "entry_price": 34.52,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3648,7 +3648,7 @@
     "RBCAA": {
       "date_added": "2026-06-09",
       "entry_price": 86.17,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3910,7 +3910,7 @@
       "date_added": "2026-06-15",
       "entry_price": 175.85,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -4188,7 +4188,7 @@
     "SN": {
       "date_added": "2026-06-18",
       "entry_price": 140.84,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4656,7 +4656,7 @@
     "FITB": {
       "date_added": "2026-06-25",
       "entry_price": 56.41,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4850,7 +4850,52 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "HG": {
+      "date_added": "2026-06-29",
+      "entry_price": 34.13,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "USFD": {
+      "date_added": "2026-06-29",
+      "entry_price": 102.44,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "HCSG": {
+      "date_added": "2026-06-29",
+      "entry_price": 24.5,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PANW": {
+      "date_added": "2026-06-29",
+      "entry_price": 332.0,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TRIN": {
+      "date_added": "2026-06-29",
+      "entry_price": 17.73,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-26T22:57:24.134305"
+  "last_updated": "2026-06-29T22:49:54.639488"
 }
