@@ -2100,7 +2100,7 @@
     "ROK": {
       "date_added": "2026-05-12",
       "entry_price": 456.66,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2163,7 +2163,7 @@
     "RLGT": {
       "date_added": "2026-05-13",
       "entry_price": 8.66,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2928,7 +2928,7 @@
     "CCO": {
       "date_added": "2026-05-23",
       "entry_price": 2.4,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3216,7 +3216,7 @@
     "CNOB": {
       "date_added": "2026-05-30",
       "entry_price": 30.07,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4197,7 +4197,7 @@
     "GOLF": {
       "date_added": "2026-06-18",
       "entry_price": 107.73,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4629,7 +4629,7 @@
     "BJRI": {
       "date_added": "2026-06-25",
       "entry_price": 56.33,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4701,7 +4701,7 @@
     "COLB": {
       "date_added": "2026-06-25",
       "entry_price": 32.07,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4895,7 +4895,79 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "MITK": {
+      "date_added": "2026-06-30",
+      "entry_price": 20.13,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "RRX": {
+      "date_added": "2026-06-30",
+      "entry_price": 238.19,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "EBC": {
+      "date_added": "2026-06-30",
+      "entry_price": 22.24,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SNA": {
+      "date_added": "2026-06-30",
+      "entry_price": 402.4,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MPB": {
+      "date_added": "2026-06-30",
+      "entry_price": 34.84,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ALHC": {
+      "date_added": "2026-06-30",
+      "entry_price": 23.81,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CGNX": {
+      "date_added": "2026-06-30",
+      "entry_price": 72.42,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ARGX": {
+      "date_added": "2026-06-30",
+      "entry_price": 927.77,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-29T22:49:54.639488"
+  "last_updated": "2026-06-30T23:04:56.904442"
 }
