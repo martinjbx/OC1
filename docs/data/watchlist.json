@@ -1148,9 +1148,9 @@
       "entry_price": 24.8,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-01",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "CSTM": {
       "date_added": "2026-05-10",
@@ -3666,7 +3666,7 @@
     "NUVL": {
       "date_added": "2026-06-10",
       "entry_price": 123.35,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4683,7 +4683,7 @@
     "MTB": {
       "date_added": "2026-06-25",
       "entry_price": 236.77,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4935,7 +4935,7 @@
     "MPB": {
       "date_added": "2026-06-30",
       "entry_price": 34.84,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4967,7 +4967,52 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "BMRC": {
+      "date_added": "2026-07-01",
+      "entry_price": 28.94,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MVBF": {
+      "date_added": "2026-07-01",
+      "entry_price": 29.84,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "DK": {
+      "date_added": "2026-07-01",
+      "entry_price": 53.14,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BWB": {
+      "date_added": "2026-07-01",
+      "entry_price": 21.68,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "USB": {
+      "date_added": "2026-07-01",
+      "entry_price": 61.96,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-06-30T23:04:56.904442"
+  "last_updated": "2026-07-01T23:02:24.783831"
 }
