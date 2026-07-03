@@ -1,10 +1,10 @@
 {
-  "scan_date": "2026-07-02T23:05:53.135963",
+  "scan_date": "2026-07-03T22:55:46.722992",
   "total_attempted": 3761,
-  "total_scanned": 3654,
-  "candidates_7_plus": 1013,
-  "candidates_all_8": 520,
-  "sweet_spot_count": 424,
+  "total_scanned": 3485,
+  "candidates_7_plus": 962,
+  "candidates_all_8": 500,
+  "sweet_spot_count": 407,
   "top_candidates": [
     {
       "ticker": "WELL",
@@ -69,7 +69,7 @@
     {
       "ticker": "THG",
       "price": 221.61,
-      "pct_from_high": 0.0,
+      "pct_from_high": -0.0,
       "rs_rating": 85,
       "stock_return_1y": 84.2,
       "criteria_passed": 8,
@@ -447,16 +447,6 @@
       "composite": 84
     },
     {
-      "ticker": "TDAY",
-      "price": 8.83,
-      "pct_from_high": -0.7,
-      "rs_rating": 85,
-      "stock_return_1y": 83.2,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
-    },
-    {
       "ticker": "DVA",
       "price": 234.91,
       "pct_from_high": -0.7,
@@ -477,16 +467,6 @@
       "composite": 88
     },
     {
-      "ticker": "HG",
-      "price": 34.44,
-      "pct_from_high": -0.8,
-      "rs_rating": 95,
-      "stock_return_1y": 134.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 94
-    },
-    {
       "ticker": "CAH",
       "price": 238.94,
       "pct_from_high": -0.8,
@@ -497,6 +477,16 @@
       "composite": 91
     },
     {
+      "ticker": "TDAY",
+      "price": 8.83,
+      "pct_from_high": -0.8,
+      "rs_rating": 85,
+      "stock_return_1y": 83.2,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
       "ticker": "WBS",
       "price": 76.72,
       "pct_from_high": -0.8,
@@ -505,6 +495,16 @@
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 89
+    },
+    {
+      "ticker": "TFSL",
+      "price": 17.84,
+      "pct_from_high": -0.8,
+      "rs_rating": 85,
+      "stock_return_1y": 68.7,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
     }
   ]
 }

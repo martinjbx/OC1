@@ -3459,7 +3459,7 @@
     "TFSL": {
       "date_added": "2026-06-09",
       "entry_price": 16.49,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5095,5 +5095,5 @@
       "exit_reason": null
     }
   },
-  "last_updated": "2026-07-02T23:06:09.323101"
+  "last_updated": "2026-07-03T22:55:57.481844"
 }
