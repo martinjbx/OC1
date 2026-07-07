@@ -1445,9 +1445,9 @@
       "entry_price": 87.1,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-07",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "KOPN": {
       "date_added": "2026-05-10",
@@ -1580,9 +1580,9 @@
       "entry_price": 50.66,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-07",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "AKAM": {
       "date_added": "2026-05-11",
@@ -5201,7 +5201,70 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CRNX": {
+      "date_added": "2026-07-07",
+      "entry_price": 83.53,
+      "rs_rating": 85,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TOI": {
+      "date_added": "2026-07-07",
+      "entry_price": 5.8,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "INCY": {
+      "date_added": "2026-07-07",
+      "entry_price": 118.05,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "IONS": {
+      "date_added": "2026-07-07",
+      "entry_price": 86.33,
+      "rs_rating": 85,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "XENE": {
+      "date_added": "2026-07-07",
+      "entry_price": 63.37,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BEAM": {
+      "date_added": "2026-07-07",
+      "entry_price": 37.92,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "IGIC": {
+      "date_added": "2026-07-07",
+      "entry_price": 28.25,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-06T23:06:58.948405"
+  "last_updated": "2026-07-07T22:54:35.546846"
 }
