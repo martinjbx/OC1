@@ -48,7 +48,7 @@
     "VLO": {
       "date_added": "2026-05-10",
       "entry_price": 241.24,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -724,7 +724,7 @@
       "date_added": "2026-05-10",
       "entry_price": 68.54,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1957,7 +1957,7 @@
       "date_added": "2026-05-11",
       "entry_price": 358.3,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2136,7 +2136,7 @@
     "CVS": {
       "date_added": "2026-05-13",
       "entry_price": 95.15,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2262,7 +2262,7 @@
     "OHI": {
       "date_added": "2026-05-13",
       "entry_price": 47.65,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2748,7 +2748,7 @@
     "MATX": {
       "date_added": "2026-05-21",
       "entry_price": 188.62,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4053,7 +4053,7 @@
     "PHVS": {
       "date_added": "2026-06-17",
       "entry_price": 33.41,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4315,7 +4315,7 @@
       "date_added": "2026-06-19",
       "entry_price": 169.67,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5264,7 +5264,70 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "MPC": {
+      "date_added": "2026-07-08",
+      "entry_price": 280.68,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "DINO": {
+      "date_added": "2026-07-08",
+      "entry_price": 78.62,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SAH": {
+      "date_added": "2026-07-08",
+      "entry_price": 88.01,
+      "rs_rating": 85,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "XOMA": {
+      "date_added": "2026-07-08",
+      "entry_price": 45.0,
+      "rs_rating": 85,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ACA": {
+      "date_added": "2026-07-08",
+      "entry_price": 145.38,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BLZE": {
+      "date_added": "2026-07-08",
+      "entry_price": 16.42,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BCRX": {
+      "date_added": "2026-07-08",
+      "entry_price": 11.11,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-07T22:54:35.546846"
+  "last_updated": "2026-07-08T22:52:41.354008"
 }
