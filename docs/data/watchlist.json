@@ -2748,7 +2748,7 @@
     "MATX": {
       "date_added": "2026-05-21",
       "entry_price": 188.62,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2757,7 +2757,7 @@
     "WBS": {
       "date_added": "2026-05-21",
       "entry_price": 73.1,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3387,7 +3387,7 @@
     "OII": {
       "date_added": "2026-06-05",
       "entry_price": 39.78,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3612,7 +3612,7 @@
     "ZION": {
       "date_added": "2026-06-09",
       "entry_price": 64.83,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4161,7 +4161,7 @@
     "VMD": {
       "date_added": "2026-06-18",
       "entry_price": 10.64,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5386,7 +5386,7 @@
       "date_added": "2026-07-09",
       "entry_price": 8.78,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5408,7 +5408,52 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "NMR": {
+      "date_added": "2026-07-10",
+      "entry_price": 9.66,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "RF": {
+      "date_added": "2026-07-10",
+      "entry_price": 31.02,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TXG": {
+      "date_added": "2026-07-10",
+      "entry_price": 42.73,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "HWC": {
+      "date_added": "2026-07-10",
+      "entry_price": 75.41,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "KB": {
+      "date_added": "2026-07-10",
+      "entry_price": 123.19,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-09T23:06:16.640074"
+  "last_updated": "2026-07-10T22:54:01.591221"
 }
