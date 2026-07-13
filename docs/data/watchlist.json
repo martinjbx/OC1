@@ -1120,7 +1120,7 @@
       "date_added": "2026-05-10",
       "entry_price": 24.26,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -3748,7 +3748,7 @@
       "date_added": "2026-06-11",
       "entry_price": 37.95,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5297,14 +5297,14 @@
       "entry_price": 45.0,
       "rs_rating": 85,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-13",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "ACA": {
       "date_added": "2026-07-08",
       "entry_price": 145.38,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5453,7 +5453,34 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "PSX": {
+      "date_added": "2026-07-13",
+      "entry_price": 198.29,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "EAT": {
+      "date_added": "2026-07-13",
+      "entry_price": 189.27,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "RDVT": {
+      "date_added": "2026-07-13",
+      "entry_price": 68.45,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-10T22:54:01.591221"
+  "last_updated": "2026-07-13T22:54:38.173183"
 }
