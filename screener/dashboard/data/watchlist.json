@@ -266,9 +266,9 @@
       "entry_price": 1492.71,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-15",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "MU": {
       "date_added": "2026-05-10",
@@ -770,9 +770,9 @@
       "entry_price": 69.33,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-15",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "CYTK": {
       "date_added": "2026-05-10",
@@ -2010,7 +2010,7 @@
     "MFC": {
       "date_added": "2026-05-11",
       "entry_price": 39.97,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2595,7 +2595,7 @@
     "BSRR": {
       "date_added": "2026-05-19",
       "entry_price": 37.99,
-      "rs_rating": 95,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2757,7 +2757,7 @@
     "WBS": {
       "date_added": "2026-05-21",
       "entry_price": 73.1,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2784,7 +2784,7 @@
     "CPF": {
       "date_added": "2026-05-21",
       "entry_price": 34.96,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2964,7 +2964,7 @@
     "ALRS": {
       "date_added": "2026-05-27",
       "entry_price": 28.84,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3045,7 +3045,7 @@
     "BPOP": {
       "date_added": "2026-05-27",
       "entry_price": 152.12,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3180,7 +3180,7 @@
     "NTB": {
       "date_added": "2026-05-29",
       "entry_price": 56.96,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3450,7 +3450,7 @@
     "CTBI": {
       "date_added": "2026-06-09",
       "entry_price": 68.31,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3459,7 +3459,7 @@
     "TFSL": {
       "date_added": "2026-06-09",
       "entry_price": 16.49,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3954,7 +3954,7 @@
     "FHI": {
       "date_added": "2026-06-15",
       "entry_price": 58.21,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4017,7 +4017,7 @@
     "KEY": {
       "date_added": "2026-06-16",
       "entry_price": 22.75,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4467,7 +4467,7 @@
     "CHMG": {
       "date_added": "2026-06-24",
       "entry_price": 74.4,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4701,7 +4701,7 @@
     "COLB": {
       "date_added": "2026-06-25",
       "entry_price": 32.07,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4998,7 +4998,7 @@
     "BWB": {
       "date_added": "2026-07-01",
       "entry_price": 21.68,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5007,7 +5007,7 @@
     "USB": {
       "date_added": "2026-07-01",
       "entry_price": 61.96,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5516,7 +5516,16 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "LQDT": {
+      "date_added": "2026-07-15",
+      "entry_price": 39.65,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-14T23:04:00.632736"
+  "last_updated": "2026-07-15T23:11:16.399562"
 }
