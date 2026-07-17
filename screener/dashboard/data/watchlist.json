@@ -481,7 +481,7 @@
       "date_added": "2026-05-10",
       "entry_price": 71.77,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1488,8 +1488,8 @@
     "UGP": {
       "date_added": "2026-05-10",
       "entry_price": 6.11,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 75,
+      "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-05-20",
       "exit_reason": "MA50_CROSS_HIGH_VOL"
@@ -2037,7 +2037,7 @@
     "VTR": {
       "date_added": "2026-05-11",
       "entry_price": 87.69,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2262,7 +2262,7 @@
     "OHI": {
       "date_added": "2026-05-13",
       "entry_price": 47.65,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2361,7 +2361,7 @@
     "WTTR": {
       "date_added": "2026-05-14",
       "entry_price": 18.34,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3621,7 +3621,7 @@
     "CURB": {
       "date_added": "2026-06-09",
       "entry_price": 29.8,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3702,7 +3702,7 @@
     "SPG": {
       "date_added": "2026-06-10",
       "entry_price": 212.82,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4629,7 +4629,7 @@
     "BJRI": {
       "date_added": "2026-06-25",
       "entry_price": 56.33,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5034,7 +5034,7 @@
     "CTVA": {
       "date_added": "2026-07-02",
       "entry_price": 85.8,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5277,7 +5277,7 @@
     "DINO": {
       "date_added": "2026-07-08",
       "entry_price": 78.62,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5502,7 +5502,7 @@
     "HXL": {
       "date_added": "2026-07-14",
       "entry_price": 101.88,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5579,7 +5579,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "ATAI": {
+      "date_added": "2026-07-17",
+      "entry_price": 7.22,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "JXN": {
+      "date_added": "2026-07-17",
+      "entry_price": 125.66,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-16T23:05:37.264340"
+  "last_updated": "2026-07-17T22:58:35.741393"
 }
