@@ -1031,9 +1031,9 @@
       "entry_price": 9.75,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-20",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "SND": {
       "date_added": "2026-05-10",
@@ -2064,7 +2064,7 @@
     "TRST": {
       "date_added": "2026-05-11",
       "entry_price": 48.51,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2361,7 +2361,7 @@
     "WTTR": {
       "date_added": "2026-05-14",
       "entry_price": 18.34,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2775,7 +2775,7 @@
     "FSBC": {
       "date_added": "2026-05-21",
       "entry_price": 41.61,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3919,7 +3919,7 @@
       "date_added": "2026-06-15",
       "entry_price": 27.77,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -4629,7 +4629,7 @@
     "BJRI": {
       "date_added": "2026-06-25",
       "entry_price": 56.33,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4890,7 +4890,7 @@
     "TRIN": {
       "date_added": "2026-06-29",
       "entry_price": 17.73,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5484,7 +5484,7 @@
     "PBF": {
       "date_added": "2026-07-14",
       "entry_price": 60.89,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5597,7 +5597,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "AXS": {
+      "date_added": "2026-07-20",
+      "entry_price": 115.03,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "KARO": {
+      "date_added": "2026-07-20",
+      "entry_price": 63.77,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-17T22:58:35.741393"
+  "last_updated": "2026-07-20T23:08:18.219251"
 }
