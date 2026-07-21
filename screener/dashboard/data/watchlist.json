@@ -2199,7 +2199,7 @@
     "AIT": {
       "date_added": "2026-05-13",
       "entry_price": 313.7,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2579,9 +2579,9 @@
       "entry_price": 120.55,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-21",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "SU": {
       "date_added": "2026-05-19",
@@ -3387,7 +3387,7 @@
     "OII": {
       "date_added": "2026-06-05",
       "entry_price": 39.78,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3936,7 +3936,7 @@
     "DRH": {
       "date_added": "2026-06-15",
       "entry_price": 11.94,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4377,7 +4377,7 @@
     "INSW": {
       "date_added": "2026-06-22",
       "entry_price": 88.41,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4530,7 +4530,7 @@
     "CCBG": {
       "date_added": "2026-06-24",
       "entry_price": 48.56,
-      "rs_rating": 95,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5615,7 +5615,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "HST": {
+      "date_added": "2026-07-21",
+      "entry_price": 24.44,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "DBD": {
+      "date_added": "2026-07-21",
+      "entry_price": 88.18,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-20T23:08:18.219251"
+  "last_updated": "2026-07-21T23:07:15.128063"
 }
