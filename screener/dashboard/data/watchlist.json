@@ -1965,7 +1965,7 @@
     "SOBO": {
       "date_added": "2026-05-11",
       "entry_price": 35.39,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2199,7 +2199,7 @@
     "AIT": {
       "date_added": "2026-05-13",
       "entry_price": 313.7,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2271,7 +2271,7 @@
     "SHIP": {
       "date_added": "2026-05-13",
       "entry_price": 16.47,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2568,7 +2568,7 @@
     "SPNT": {
       "date_added": "2026-05-19",
       "entry_price": 23.86,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2631,7 +2631,7 @@
     "ACNB": {
       "date_added": "2026-05-19",
       "entry_price": 53.34,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2937,7 +2937,7 @@
     "SMBC": {
       "date_added": "2026-05-23",
       "entry_price": 68.99,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3180,7 +3180,7 @@
     "NTB": {
       "date_added": "2026-05-29",
       "entry_price": 56.96,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3765,7 +3765,7 @@
     "AMAL": {
       "date_added": "2026-06-11",
       "entry_price": 44.1,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4800,7 +4800,7 @@
     "NIC": {
       "date_added": "2026-06-26",
       "entry_price": 163.25,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4963,7 +4963,7 @@
       "date_added": "2026-06-30",
       "entry_price": 927.77,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5565,7 +5565,7 @@
     "BANC": {
       "date_added": "2026-07-16",
       "entry_price": 21.48,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5660,7 +5660,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "RTX": {
+      "date_added": "2026-07-23",
+      "entry_price": 209.16,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FLXS": {
+      "date_added": "2026-07-23",
+      "entry_price": 75.19,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-22T22:58:35.589084"
+  "last_updated": "2026-07-23T22:45:00.348623"
 }
