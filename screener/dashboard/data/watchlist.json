@@ -2199,7 +2199,7 @@
     "AIT": {
       "date_added": "2026-05-13",
       "entry_price": 313.7,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2766,7 +2766,7 @@
     "TMP": {
       "date_added": "2026-05-21",
       "entry_price": 85.46,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2793,7 +2793,7 @@
     "THFF": {
       "date_added": "2026-05-21",
       "entry_price": 68.19,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2892,7 +2892,7 @@
     "EMA": {
       "date_added": "2026-05-23",
       "entry_price": 53.12,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2919,7 +2919,7 @@
     "FISI": {
       "date_added": "2026-05-23",
       "entry_price": 35.36,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2955,7 +2955,7 @@
     "OBK": {
       "date_added": "2026-05-27",
       "entry_price": 48.16,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3621,7 +3621,7 @@
     "CURB": {
       "date_added": "2026-06-09",
       "entry_price": 29.8,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4431,7 +4431,7 @@
     "TRV": {
       "date_added": "2026-06-23",
       "entry_price": 316.96,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4467,7 +4467,7 @@
     "CHMG": {
       "date_added": "2026-06-24",
       "entry_price": 74.4,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4782,7 +4782,7 @@
     "JNJ": {
       "date_added": "2026-06-26",
       "entry_price": 254.66,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5223,7 +5223,7 @@
     "INCY": {
       "date_added": "2026-07-07",
       "entry_price": 118.05,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5678,7 +5678,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "KRT": {
+      "date_added": "2026-07-24",
+      "entry_price": 39.52,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ETR": {
+      "date_added": "2026-07-24",
+      "entry_price": 115.95,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-23T22:45:00.348623"
+  "last_updated": "2026-07-24T22:48:46.364447"
 }
