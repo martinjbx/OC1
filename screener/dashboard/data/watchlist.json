@@ -2415,7 +2415,7 @@
     "PM": {
       "date_added": "2026-05-15",
       "entry_price": 191.86,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2757,7 +2757,7 @@
     "WBS": {
       "date_added": "2026-05-21",
       "entry_price": 73.1,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2946,7 +2946,7 @@
     "HBCP": {
       "date_added": "2026-05-23",
       "entry_price": 64.97,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3027,7 +3027,7 @@
     "PFIS": {
       "date_added": "2026-05-27",
       "entry_price": 60.1,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3648,7 +3648,7 @@
     "RBCAA": {
       "date_added": "2026-06-09",
       "entry_price": 86.17,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4971,7 +4971,7 @@
     "BMRC": {
       "date_added": "2026-07-01",
       "entry_price": 28.94,
-      "rs_rating": 95,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5287,7 +5287,7 @@
       "date_added": "2026-07-08",
       "entry_price": 88.01,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5513,9 +5513,9 @@
       "entry_price": 199.61,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-27",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "LQDT": {
       "date_added": "2026-07-15",
@@ -5696,7 +5696,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "GM": {
+      "date_added": "2026-07-27",
+      "entry_price": 87.04,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SEIC": {
+      "date_added": "2026-07-27",
+      "entry_price": 101.52,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-24T22:48:46.364447"
+  "last_updated": "2026-07-27T22:48:50.222203"
 }
