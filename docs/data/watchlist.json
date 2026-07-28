@@ -3324,7 +3324,7 @@
     "MGA": {
       "date_added": "2026-06-03",
       "entry_price": 68.83,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3702,7 +3702,7 @@
     "SPG": {
       "date_added": "2026-06-10",
       "entry_price": 212.82,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3936,7 +3936,7 @@
     "DRH": {
       "date_added": "2026-06-15",
       "entry_price": 11.94,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4071,7 +4071,7 @@
     "WAB": {
       "date_added": "2026-06-17",
       "entry_price": 271.86,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5714,7 +5714,52 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "IMAX": {
+      "date_added": "2026-07-28",
+      "entry_price": 47.29,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "RNG": {
+      "date_added": "2026-07-28",
+      "entry_price": 56.93,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "UVE": {
+      "date_added": "2026-07-28",
+      "entry_price": 44.22,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FHN": {
+      "date_added": "2026-07-28",
+      "entry_price": 26.02,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AER": {
+      "date_added": "2026-07-28",
+      "entry_price": 154.09,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-27T22:48:50.222203"
+  "last_updated": "2026-07-28T22:49:50.876829"
 }
