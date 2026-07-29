@@ -1425,7 +1425,7 @@
     "NHC": {
       "date_added": "2026-05-10",
       "entry_price": 188.82,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2073,7 +2073,7 @@
     "DAC": {
       "date_added": "2026-05-11",
       "entry_price": 133.34,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2136,7 +2136,7 @@
     "CVS": {
       "date_added": "2026-05-13",
       "entry_price": 95.15,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2793,7 +2793,7 @@
     "THFF": {
       "date_added": "2026-05-21",
       "entry_price": 68.19,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2811,7 +2811,7 @@
     "PKBK": {
       "date_added": "2026-05-22",
       "entry_price": 31.16,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2946,7 +2946,7 @@
     "HBCP": {
       "date_added": "2026-05-23",
       "entry_price": 64.97,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3486,7 +3486,7 @@
     "HBT": {
       "date_added": "2026-06-09",
       "entry_price": 29.39,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3567,7 +3567,7 @@
     "SMBK": {
       "date_added": "2026-06-09",
       "entry_price": 43.55,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3702,7 +3702,7 @@
     "SPG": {
       "date_added": "2026-06-10",
       "entry_price": 212.82,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4539,7 +4539,7 @@
     "CIVB": {
       "date_added": "2026-06-24",
       "entry_price": 28.0,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4629,7 +4629,7 @@
     "BJRI": {
       "date_added": "2026-06-25",
       "entry_price": 56.33,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5385,7 +5385,7 @@
     "PAYS": {
       "date_added": "2026-07-09",
       "entry_price": 8.78,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5759,7 +5759,43 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "BFH": {
+      "date_added": "2026-07-29",
+      "entry_price": 106.99,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "GRMN": {
+      "date_added": "2026-07-29",
+      "entry_price": 294.83,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ENVA": {
+      "date_added": "2026-07-29",
+      "entry_price": 244.71,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ESEA": {
+      "date_added": "2026-07-29",
+      "entry_price": 75.99,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-28T22:49:50.876829"
+  "last_updated": "2026-07-29T22:45:44.444218"
 }
