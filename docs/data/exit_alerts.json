@@ -1,43 +1,13 @@
 {
-  "check_date": "2026-07-29T22:45:44.449770",
-  "watchlist_size": 644,
-  "active_positions": 608,
-  "newly_added": 4,
+  "check_date": "2026-07-30T23:03:15.465871",
+  "watchlist_size": 650,
+  "active_positions": 614,
+  "newly_added": 6,
   "strong_exits": [],
-  "weak_exits": [
-    {
-      "ticker": "MSGM",
-      "signal": "WEAK_EXIT",
-      "current_price": 4.28,
-      "ma_50": 4.3,
-      "pct_vs_ma50": -0.57,
-      "below_ma50": true,
-      "just_crossed_under": true,
-      "vol_ratio": 0.4,
-      "vol_elevated": false,
-      "entry_price": 5.32,
-      "pnl_pct": -19.5,
-      "date_added": "2026-05-12"
-    }
-  ],
-  "below_ma50_lingering": [
-    {
-      "ticker": "MDU",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 20.01,
-      "ma_50": 21.16,
-      "pct_vs_ma50": -5.44,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.98,
-      "vol_elevated": false,
-      "entry_price": 22.8,
-      "pnl_pct": -12.2,
-      "date_added": "2026-05-11"
-    }
-  ],
+  "weak_exits": [],
+  "below_ma50_lingering": [],
   "holds": 0,
-  "errors": 606,
+  "errors": 614,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
