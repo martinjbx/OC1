@@ -1380,8 +1380,8 @@
     "SLAB": {
       "date_added": "2026-05-10",
       "entry_price": 217.45,
-      "rs_rating": 85,
-      "criteria_passed": 8,
+      "rs_rating": 95,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1488,7 +1488,7 @@
     "UGP": {
       "date_added": "2026-05-10",
       "entry_price": 6.11,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-05-20",
@@ -2757,7 +2757,7 @@
     "WBS": {
       "date_added": "2026-05-21",
       "entry_price": 73.1,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2811,7 +2811,7 @@
     "PKBK": {
       "date_added": "2026-05-22",
       "entry_price": 31.16,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2955,7 +2955,7 @@
     "OBK": {
       "date_added": "2026-05-27",
       "entry_price": 48.16,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3450,7 +3450,7 @@
     "CTBI": {
       "date_added": "2026-06-09",
       "entry_price": 68.31,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3486,7 +3486,7 @@
     "HBT": {
       "date_added": "2026-06-09",
       "entry_price": 29.39,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3911,9 +3911,9 @@
       "entry_price": 175.85,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-31",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "CXW": {
       "date_added": "2026-06-15",
@@ -4127,9 +4127,9 @@
       "entry_price": 53.63,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-31",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "FTDR": {
       "date_added": "2026-06-18",
@@ -5036,9 +5036,9 @@
       "entry_price": 85.8,
       "rs_rating": 75,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-31",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "SLDB": {
       "date_added": "2026-07-02",
@@ -5538,7 +5538,7 @@
     "CDNA": {
       "date_added": "2026-07-16",
       "entry_price": 40.34,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5619,7 +5619,7 @@
     "HST": {
       "date_added": "2026-07-21",
       "entry_price": 24.44,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5819,9 +5819,9 @@
       "entry_price": 105.65,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-07-31",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "LLYVA": {
       "date_added": "2026-07-30",
@@ -5849,7 +5849,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "BFC": {
+      "date_added": "2026-07-31",
+      "entry_price": 152.74,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TCBX": {
+      "date_added": "2026-07-31",
+      "entry_price": 43.84,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-07-30T23:03:15.461243"
+  "last_updated": "2026-07-31T22:49:08.395358"
 }

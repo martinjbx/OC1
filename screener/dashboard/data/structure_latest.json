@@ -1,23 +1,6 @@
 {
-  "scan_date": "2026-07-30T22:57:31.552044",
+  "scan_date": "2026-07-31T22:45:24.502556",
   "total_scanned": 3761,
-  "signals_found": 2,
-  "signals": [
-    {
-      "ticker": "GM",
-      "price": 88.4000015258789,
-      "smma15": 81.13234655264614,
-      "smma29": 79.9386455999155,
-      "rsi": 64.06365556478816,
-      "volume_surge": false
-    },
-    {
-      "ticker": "NVGS",
-      "price": 22.1200008392334,
-      "smma15": 21.284612628599323,
-      "smma29": 21.26255210159817,
-      "rsi": 56.55999248295764,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }
