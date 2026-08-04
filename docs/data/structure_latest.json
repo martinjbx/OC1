@@ -1,15 +1,6 @@
 {
-  "scan_date": "2026-08-03T22:43:18.122035",
+  "scan_date": "2026-08-04T22:46:48.702456",
   "total_scanned": 3761,
-  "signals_found": 1,
-  "signals": [
-    {
-      "ticker": "CNDT",
-      "price": 1.7300000190734863,
-      "smma15": 1.5429862475284002,
-      "smma29": 1.5285914378973386,
-      "rsi": 60.60076312226364,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }
