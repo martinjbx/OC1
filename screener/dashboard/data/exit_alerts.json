@@ -1,113 +1,14 @@
 {
-  "check_date": "2026-08-07T22:26:57.960188",
-  "watchlist_size": 675,
-  "active_positions": 616,
-  "newly_added": 6,
+  "check_date": "2026-08-10T22:27:51.909927",
+  "watchlist_size": 682,
+  "active_positions": 623,
+  "newly_added": 7,
   "strong_exits": [],
-  "weak_exits": [
-    {
-      "ticker": "SKM",
-      "signal": "WEAK_EXIT",
-      "current_price": 34.26,
-      "ma_50": 34.86,
-      "pct_vs_ma50": -1.72,
-      "below_ma50": true,
-      "just_crossed_under": true,
-      "vol_ratio": 0.57,
-      "vol_elevated": false,
-      "entry_price": 44.43,
-      "pnl_pct": -22.9,
-      "date_added": "2026-06-02"
-    }
-  ],
-  "below_ma50_lingering": [
-    {
-      "ticker": "WULF",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 17.08,
-      "ma_50": 22.59,
-      "pct_vs_ma50": -24.38,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 1.17,
-      "vol_elevated": false,
-      "entry_price": 23.39,
-      "pnl_pct": -27.0,
-      "date_added": "2026-05-10"
-    },
-    {
-      "ticker": "NOK",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 9.36,
-      "ma_50": 12.34,
-      "pct_vs_ma50": -24.17,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.49,
-      "vol_elevated": false,
-      "entry_price": 12.82,
-      "pnl_pct": -27.0,
-      "date_added": "2026-05-10"
-    },
-    {
-      "ticker": "BHE",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 82.36,
-      "ma_50": 85.56,
-      "pct_vs_ma50": -3.74,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.38,
-      "vol_elevated": false,
-      "entry_price": 86.86,
-      "pnl_pct": -5.2,
-      "date_added": "2026-05-11"
-    },
-    {
-      "ticker": "CWBC",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 25.2,
-      "ma_50": 25.87,
-      "pct_vs_ma50": -2.57,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.56,
-      "vol_elevated": false,
-      "entry_price": 25.34,
-      "pnl_pct": -0.6,
-      "date_added": "2026-06-09"
-    },
-    {
-      "ticker": "IHRT",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 3.86,
-      "ma_50": 3.96,
-      "pct_vs_ma50": -2.51,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.62,
-      "vol_elevated": false,
-      "entry_price": 5.68,
-      "pnl_pct": -32.0,
-      "date_added": "2026-05-10"
-    }
-  ],
-  "holds": 4,
-  "errors": 606,
+  "weak_exits": [],
+  "below_ma50_lingering": [],
+  "holds": 0,
+  "errors": 623,
   "climactic_sells": [],
   "partial_profits": [],
-  "extended_watch": [
-    {
-      "ticker": "NTRA",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 322.1,
-      "ma_50": 252.56,
-      "pct_above_ma50": 27.53,
-      "climactic": false,
-      "wide_up_days": 1,
-      "gain_pct": 15.3,
-      "entry_price": 279.32,
-      "date_added": "2026-07-02"
-    }
-  ]
+  "extended_watch": []
 }

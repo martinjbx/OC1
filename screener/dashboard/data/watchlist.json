@@ -3207,7 +3207,7 @@
     "ADAM": {
       "date_added": "2026-05-30",
       "entry_price": 9.2,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3378,7 +3378,7 @@
     "UNM": {
       "date_added": "2026-06-05",
       "entry_price": 84.91,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5089,7 +5089,7 @@
       "date_added": "2026-07-02",
       "entry_price": 238.94,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5304,7 +5304,7 @@
     "ACA": {
       "date_added": "2026-07-08",
       "entry_price": 145.38,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5727,7 +5727,7 @@
     "RNG": {
       "date_added": "2026-07-28",
       "entry_price": 56.93,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6074,7 +6074,70 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "HZO": {
+      "date_added": "2026-08-10",
+      "entry_price": 52.12,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FAST": {
+      "date_added": "2026-08-10",
+      "entry_price": 52.15,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "RAMP": {
+      "date_added": "2026-08-10",
+      "entry_price": 37.75,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "NTAP": {
+      "date_added": "2026-08-10",
+      "entry_price": 198.72,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CUBI": {
+      "date_added": "2026-08-10",
+      "entry_price": 82.36,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "HALO": {
+      "date_added": "2026-08-10",
+      "entry_price": 102.62,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MTA": {
+      "date_added": "2026-08-10",
+      "entry_price": 8.97,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-07T22:26:57.954183"
+  "last_updated": "2026-08-10T22:27:51.903833"
 }
