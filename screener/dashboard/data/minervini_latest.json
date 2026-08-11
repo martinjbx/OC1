@@ -1,160 +1,180 @@
 {
-  "scan_date": "2026-08-10T22:27:46.444600",
+  "scan_date": "2026-08-11T22:31:41.832887",
   "total_attempted": 3761,
-  "total_scanned": 1954,
-  "candidates_7_plus": 493,
-  "candidates_all_8": 212,
-  "sweet_spot_count": 166,
+  "total_scanned": 1876,
+  "candidates_7_plus": 467,
+  "candidates_all_8": 209,
+  "sweet_spot_count": 152,
   "top_candidates": [
     {
-      "ticker": "PANW",
-      "price": 385.04,
+      "ticker": "MPC",
+      "price": 336.42,
+      "pct_from_high": 0.0,
+      "rs_rating": 95,
+      "stock_return_1y": 98.8,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 93
+    },
+    {
+      "ticker": "NIC",
+      "price": 177.27,
       "pct_from_high": -0.0,
       "rs_rating": 95,
-      "stock_return_1y": 132.6,
+      "stock_return_1y": 109.8,
       "criteria_passed": 8,
       "all_criteria_met": true,
-      "composite": 95
+      "composite": 94
     },
     {
-      "ticker": "NTB",
-      "price": 62.53,
-      "pct_from_high": -0.0,
-      "rs_rating": 85,
-      "stock_return_1y": 92.7,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 89
-    },
-    {
-      "ticker": "HZO",
-      "price": 52.12,
+      "ticker": "WTBA",
+      "price": 29.11,
       "pct_from_high": 0.0,
       "rs_rating": 85,
-      "stock_return_1y": 87.0,
+      "stock_return_1y": 81.2,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 89
-    },
-    {
-      "ticker": "FAST",
-      "price": 52.15,
-      "pct_from_high": -0.1,
-      "rs_rating": 75,
-      "stock_return_1y": 65.6,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 84
     },
     {
       "ticker": "CRNX",
-      "price": 84.15,
-      "pct_from_high": -0.2,
+      "price": 84.36,
+      "pct_from_high": -0.0,
       "rs_rating": 75,
-      "stock_return_1y": 69.8,
+      "stock_return_1y": 70.2,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 85
     },
     {
       "ticker": "PSX",
-      "price": 215.52,
+      "price": 224.36,
+      "pct_from_high": -0.1,
+      "rs_rating": 75,
+      "stock_return_1y": 77.0,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 85
+    },
+    {
+      "ticker": "BFC",
+      "price": 156.93,
       "pct_from_high": -0.3,
-      "rs_rating": 75,
-      "stock_return_1y": 70.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 85
-    },
-    {
-      "ticker": "WTBA",
-      "price": 28.39,
-      "pct_from_high": -0.5,
-      "rs_rating": 75,
-      "stock_return_1y": 76.7,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 85
-    },
-    {
-      "ticker": "CGON",
-      "price": 76.56,
-      "pct_from_high": -0.6,
       "rs_rating": 95,
-      "stock_return_1y": 132.7,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 95
-    },
-    {
-      "ticker": "FDSB",
-      "price": 17.89,
-      "pct_from_high": -0.6,
-      "rs_rating": 75,
-      "stock_return_1y": 72.9,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 85
-    },
-    {
-      "ticker": "SN",
-      "price": 186.17,
-      "pct_from_high": -0.8,
-      "rs_rating": 95,
-      "stock_return_1y": 106.9,
+      "stock_return_1y": 101.8,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 93
     },
     {
-      "ticker": "ROST",
-      "price": 254.82,
-      "pct_from_high": -0.8,
-      "rs_rating": 85,
-      "stock_return_1y": 84.8,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 89
-    },
-    {
       "ticker": "CGAU",
-      "price": 21.33,
-      "pct_from_high": -0.9,
+      "price": 21.68,
+      "pct_from_high": -0.3,
       "rs_rating": 95,
-      "stock_return_1y": 230.5,
+      "stock_return_1y": 235.9,
       "criteria_passed": 7,
       "all_criteria_met": false,
       "composite": 93
     },
     {
-      "ticker": "SLAB",
-      "price": 218.43,
-      "pct_from_high": -1.1,
-      "rs_rating": 95,
-      "stock_return_1y": 121.6,
+      "ticker": "JPM",
+      "price": 362.04,
+      "pct_from_high": -0.3,
+      "rs_rating": 85,
+      "stock_return_1y": 83.0,
       "criteria_passed": 8,
       "all_criteria_met": true,
-      "composite": 94
+      "composite": 89
     },
     {
-      "ticker": "TDY",
-      "price": 690.25,
-      "pct_from_high": -1.1,
+      "ticker": "SXT",
+      "price": 131.9,
+      "pct_from_high": -0.4,
+      "rs_rating": 85,
+      "stock_return_1y": 92.1,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 89
+    },
+    {
+      "ticker": "DRI",
+      "price": 218.9,
+      "pct_from_high": -0.4,
       "rs_rating": 75,
-      "stock_return_1y": 69.3,
+      "stock_return_1y": 63.9,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 84
     },
     {
-      "ticker": "RTX",
-      "price": 224.12,
-      "pct_from_high": -1.2,
+      "ticker": "TCBX",
+      "price": 44.91,
+      "pct_from_high": -0.6,
       "rs_rating": 95,
-      "stock_return_1y": 99.4,
+      "stock_return_1y": 108.9,
       "criteria_passed": 8,
       "all_criteria_met": true,
-      "composite": 92
+      "composite": 93
+    },
+    {
+      "ticker": "CGON",
+      "price": 77.03,
+      "pct_from_high": -0.6,
+      "rs_rating": 95,
+      "stock_return_1y": 134.1,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 95
+    },
+    {
+      "ticker": "WBS",
+      "price": 78.75,
+      "pct_from_high": -0.7,
+      "rs_rating": 85,
+      "stock_return_1y": 90.1,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 89
+    },
+    {
+      "ticker": "PKBK",
+      "price": 34.51,
+      "pct_from_high": -0.8,
+      "rs_rating": 95,
+      "stock_return_1y": 101.0,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 93
+    },
+    {
+      "ticker": "PANW",
+      "price": 383.8,
+      "pct_from_high": -0.9,
+      "rs_rating": 95,
+      "stock_return_1y": 131.8,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 94
+    },
+    {
+      "ticker": "VCTR",
+      "price": 113.65,
+      "pct_from_high": -0.9,
+      "rs_rating": 95,
+      "stock_return_1y": 152.3,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 95
+    },
+    {
+      "ticker": "FAST",
+      "price": 52.38,
+      "pct_from_high": -1.0,
+      "rs_rating": 75,
+      "stock_return_1y": 66.3,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 84
     },
     {
       "ticker": "CCO",
@@ -167,141 +187,121 @@
       "composite": 88
     },
     {
-      "ticker": "ADAM",
-      "price": 9.79,
+      "ticker": "RTX",
+      "price": 223.86,
       "pct_from_high": -1.3,
       "rs_rating": 95,
-      "stock_return_1y": 106.1,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 93
-    },
-    {
-      "ticker": "RNG",
-      "price": 64.1,
-      "pct_from_high": -1.3,
-      "rs_rating": 95,
-      "stock_return_1y": 103.4,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 93
-    },
-    {
-      "ticker": "WBS",
-      "price": 78.7,
-      "pct_from_high": -1.3,
-      "rs_rating": 85,
-      "stock_return_1y": 89.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
-    },
-    {
-      "ticker": "RAMP",
-      "price": 37.75,
-      "pct_from_high": -1.3,
-      "rs_rating": 75,
-      "stock_return_1y": 69.8,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 84
-    },
-    {
-      "ticker": "USB",
-      "price": 64.19,
-      "pct_from_high": -1.3,
-      "rs_rating": 75,
-      "stock_return_1y": 68.3,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 84
-    },
-    {
-      "ticker": "UNM",
-      "price": 91.39,
-      "pct_from_high": -1.4,
-      "rs_rating": 85,
-      "stock_return_1y": 79.4,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
-    },
-    {
-      "ticker": "AIT",
-      "price": 357.8,
-      "pct_from_high": -1.4,
-      "rs_rating": 85,
-      "stock_return_1y": 87.1,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
-    },
-    {
-      "ticker": "PKBK",
-      "price": 34.26,
-      "pct_from_high": -1.5,
-      "rs_rating": 95,
-      "stock_return_1y": 99.6,
+      "stock_return_1y": 99.1,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 92
-    },
-    {
-      "ticker": "ACA",
-      "price": 144.73,
-      "pct_from_high": -1.5,
-      "rs_rating": 85,
-      "stock_return_1y": 78.4,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
-    },
-    {
-      "ticker": "NIC",
-      "price": 173.34,
-      "pct_from_high": -1.8,
-      "rs_rating": 95,
-      "stock_return_1y": 105.1,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 92
-    },
-    {
-      "ticker": "ANGO",
-      "price": 15.75,
-      "pct_from_high": -1.8,
-      "rs_rating": 95,
-      "stock_return_1y": 111.7,
-      "criteria_passed": 7,
-      "all_criteria_met": false,
-      "composite": 88
-    },
-    {
-      "ticker": "NTAP",
-      "price": 198.72,
-      "pct_from_high": -1.8,
-      "rs_rating": 75,
-      "stock_return_1y": 67.8,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 84
     },
     {
       "ticker": "CUBI",
-      "price": 82.36,
-      "pct_from_high": -1.9,
+      "price": 82.86,
+      "pct_from_high": -1.3,
       "rs_rating": 85,
-      "stock_return_1y": 82.3,
+      "stock_return_1y": 83.4,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 88
     },
     {
-      "ticker": "MPC",
-      "price": 320.32,
+      "ticker": "ACA",
+      "price": 144.91,
+      "pct_from_high": -1.3,
+      "rs_rating": 85,
+      "stock_return_1y": 78.7,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
+      "ticker": "AMAL",
+      "price": 50.01,
+      "pct_from_high": -1.4,
+      "rs_rating": 85,
+      "stock_return_1y": 84.7,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
+      "ticker": "HWC",
+      "price": 78.22,
+      "pct_from_high": -1.4,
+      "rs_rating": 75,
+      "stock_return_1y": 74.1,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 84
+    },
+    {
+      "ticker": "WSBF",
+      "price": 20.81,
+      "pct_from_high": -1.6,
+      "rs_rating": 75,
+      "stock_return_1y": 67.5,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 84
+    },
+    {
+      "ticker": "CBNA",
+      "price": 48.22,
+      "pct_from_high": -1.7,
+      "rs_rating": 95,
+      "stock_return_1y": 127.5,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 94
+    },
+    {
+      "ticker": "MTW",
+      "price": 19.46,
+      "pct_from_high": -1.7,
+      "rs_rating": 95,
+      "stock_return_1y": 109.0,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 93
+    },
+    {
+      "ticker": "GFF",
+      "price": 106.75,
+      "pct_from_high": -1.7,
+      "rs_rating": 85,
+      "stock_return_1y": 81.7,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
+      "ticker": "CATY",
+      "price": 63.7,
+      "pct_from_high": -1.8,
+      "rs_rating": 75,
+      "stock_return_1y": 67.5,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 84
+    },
+    {
+      "ticker": "SN",
+      "price": 187.68,
+      "pct_from_high": -1.9,
+      "rs_rating": 95,
+      "stock_return_1y": 108.6,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 93
+    },
+    {
+      "ticker": "ROST",
+      "price": 251.81,
       "pct_from_high": -2.0,
       "rs_rating": 85,
-      "stock_return_1y": 89.3,
+      "stock_return_1y": 82.6,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 88
@@ -309,7 +309,7 @@
     {
       "ticker": "HALO",
       "price": 102.62,
-      "pct_from_high": -2.0,
+      "pct_from_high": -2.1,
       "rs_rating": 85,
       "stock_return_1y": 83.0,
       "criteria_passed": 8,
@@ -317,194 +317,194 @@
       "composite": 88
     },
     {
-      "ticker": "BNS",
-      "price": 88.56,
+      "ticker": "CFG",
+      "price": 72.99,
       "pct_from_high": -2.1,
+      "rs_rating": 85,
+      "stock_return_1y": 97.8,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
+      "ticker": "ANGO",
+      "price": 15.75,
+      "pct_from_high": -2.2,
+      "rs_rating": 95,
+      "stock_return_1y": 111.7,
+      "criteria_passed": 7,
+      "all_criteria_met": false,
+      "composite": 88
+    },
+    {
+      "ticker": "TMP",
+      "price": 99.1,
+      "pct_from_high": -2.2,
+      "rs_rating": 85,
+      "stock_return_1y": 96.9,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
+      "ticker": "RNG",
+      "price": 63.45,
+      "pct_from_high": -2.3,
+      "rs_rating": 95,
+      "stock_return_1y": 101.3,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 92
+    },
+    {
+      "ticker": "CTBI",
+      "price": 78.09,
+      "pct_from_high": -2.3,
+      "rs_rating": 85,
+      "stock_return_1y": 84.4,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
+      "ticker": "ACNB",
+      "price": 64.42,
+      "pct_from_high": -2.3,
+      "rs_rating": 85,
+      "stock_return_1y": 87.7,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 88
+    },
+    {
+      "ticker": "WTS",
+      "price": 384.76,
+      "pct_from_high": -2.5,
+      "rs_rating": 95,
+      "stock_return_1y": 119.3,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 93
+    },
+    {
+      "ticker": "STT",
+      "price": 187.22,
+      "pct_from_high": -2.7,
+      "rs_rating": 95,
+      "stock_return_1y": 155.8,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 94
+    },
+    {
+      "ticker": "GM",
+      "price": 89.35,
+      "pct_from_high": -2.7,
       "rs_rating": 95,
       "stock_return_1y": 111.9,
       "criteria_passed": 8,
       "all_criteria_met": true,
-      "composite": 93
+      "composite": 92
     },
     {
-      "ticker": "RAPP",
-      "price": 46.98,
-      "pct_from_high": -2.1,
+      "ticker": "CM",
+      "price": 118.96,
+      "pct_from_high": -2.9,
       "rs_rating": 95,
-      "stock_return_1y": 157.1,
+      "stock_return_1y": 148.7,
       "criteria_passed": 8,
       "all_criteria_met": true,
-      "composite": 95
+      "composite": 94
     },
     {
-      "ticker": "SLF",
-      "price": 82.63,
-      "pct_from_high": -2.1,
-      "rs_rating": 85,
-      "stock_return_1y": 83.2,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
-    },
-    {
-      "ticker": "CBNA",
-      "price": 47.92,
-      "pct_from_high": -2.3,
-      "rs_rating": 95,
-      "stock_return_1y": 126.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 93
-    },
-    {
-      "ticker": "IVZ",
-      "price": 31.74,
-      "pct_from_high": -2.5,
-      "rs_rating": 95,
-      "stock_return_1y": 115.8,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 93
-    },
-    {
-      "ticker": "CFG",
-      "price": 72.67,
-      "pct_from_high": -2.5,
-      "rs_rating": 85,
-      "stock_return_1y": 97.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 88
-    },
-    {
-      "ticker": "EWBC",
-      "price": 131.85,
-      "pct_from_high": -2.6,
-      "rs_rating": 85,
-      "stock_return_1y": 79.5,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 87
-    },
-    {
-      "ticker": "PAYS",
-      "price": 12.53,
-      "pct_from_high": -2.8,
-      "rs_rating": 95,
-      "stock_return_1y": 174.8,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 95
-    },
-    {
-      "ticker": "MGA",
-      "price": 69.89,
+      "ticker": "FBIZ",
+      "price": 71.38,
       "pct_from_high": -2.9,
       "rs_rating": 85,
-      "stock_return_1y": 98.2,
+      "stock_return_1y": 86.1,
       "criteria_passed": 8,
       "all_criteria_met": true,
+      "composite": 87
+    },
+    {
+      "ticker": "RBCAA",
+      "price": 99.07,
+      "pct_from_high": -3.1,
+      "rs_rating": 85,
+      "stock_return_1y": 84.7,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 87
+    },
+    {
+      "ticker": "AIT",
+      "price": 352.35,
+      "pct_from_high": -3.1,
+      "rs_rating": 85,
+      "stock_return_1y": 84.3,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 87
+    },
+    {
+      "ticker": "RY",
+      "price": 210.26,
+      "pct_from_high": -3.2,
+      "rs_rating": 95,
+      "stock_return_1y": 103.6,
+      "criteria_passed": 8,
+      "all_criteria_met": true,
+      "composite": 92
+    },
+    {
+      "ticker": "MASS",
+      "price": 10.01,
+      "pct_from_high": -3.2,
+      "rs_rating": 95,
+      "stock_return_1y": 135.5,
+      "criteria_passed": 7,
+      "all_criteria_met": false,
       "composite": 88
     },
     {
-      "ticker": "STT",
-      "price": 186.68,
-      "pct_from_high": -3.0,
-      "rs_rating": 95,
-      "stock_return_1y": 155.0,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 94
-    },
-    {
-      "ticker": "TD",
-      "price": 121.08,
-      "pct_from_high": -3.0,
-      "rs_rating": 95,
-      "stock_return_1y": 125.8,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 93
-    },
-    {
-      "ticker": "MTA",
-      "price": 8.97,
-      "pct_from_high": -3.0,
-      "rs_rating": 95,
-      "stock_return_1y": 237.2,
-      "criteria_passed": 7,
-      "all_criteria_met": false,
-      "composite": 91
-    },
-    {
-      "ticker": "CAH",
-      "price": 237.18,
-      "pct_from_high": -3.1,
-      "rs_rating": 95,
-      "stock_return_1y": 141.8,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 93
-    },
-    {
-      "ticker": "CTBI",
-      "price": 77.47,
-      "pct_from_high": -3.1,
-      "rs_rating": 85,
-      "stock_return_1y": 82.9,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 87
-    },
-    {
-      "ticker": "HBCP",
-      "price": 70.63,
-      "pct_from_high": -3.2,
-      "rs_rating": 85,
-      "stock_return_1y": 88.3,
-      "criteria_passed": 8,
-      "all_criteria_met": true,
-      "composite": 87
-    },
-    {
-      "ticker": "RL",
-      "price": 406.89,
+      "ticker": "OBK",
+      "price": 53.75,
       "pct_from_high": -3.3,
-      "rs_rating": 95,
-      "stock_return_1y": 162.5,
+      "rs_rating": 85,
+      "stock_return_1y": 86.9,
       "criteria_passed": 8,
       "all_criteria_met": true,
-      "composite": 94
+      "composite": 87
     },
     {
       "ticker": "PH",
-      "price": 1060.5,
-      "pct_from_high": -3.6,
+      "price": 1061.33,
+      "pct_from_high": -3.5,
       "rs_rating": 85,
-      "stock_return_1y": 90.4,
+      "stock_return_1y": 90.5,
       "criteria_passed": 8,
       "all_criteria_met": true,
       "composite": 87
     },
     {
-      "ticker": "ACNB",
-      "price": 63.49,
+      "ticker": "IVZ",
+      "price": 31.36,
       "pct_from_high": -3.7,
-      "rs_rating": 85,
-      "stock_return_1y": 85.0,
+      "rs_rating": 95,
+      "stock_return_1y": 113.2,
       "criteria_passed": 8,
       "all_criteria_met": true,
-      "composite": 87
+      "composite": 92
     },
     {
-      "ticker": "TMP",
-      "price": 97.51,
-      "pct_from_high": -3.7,
-      "rs_rating": 85,
-      "stock_return_1y": 93.7,
+      "ticker": "BWEN",
+      "price": 5.34,
+      "pct_from_high": -3.8,
+      "rs_rating": 95,
+      "stock_return_1y": 118.0,
       "criteria_passed": 8,
       "all_criteria_met": true,
-      "composite": 87
+      "composite": 92
     }
   ]
 }

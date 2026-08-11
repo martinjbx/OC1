@@ -3117,7 +3117,7 @@
     "WSBF": {
       "date_added": "2026-05-28",
       "entry_price": 18.65,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3648,7 +3648,7 @@
     "RBCAA": {
       "date_added": "2026-06-09",
       "entry_price": 86.17,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5268,7 +5268,7 @@
     "MPC": {
       "date_added": "2026-07-08",
       "entry_price": 280.68,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5853,7 +5853,7 @@
     "BFC": {
       "date_added": "2026-07-31",
       "entry_price": 152.74,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5952,7 +5952,7 @@
     "WTBA": {
       "date_added": "2026-08-04",
       "entry_price": 28.61,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6137,7 +6137,43 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "DRI": {
+      "date_added": "2026-08-11",
+      "entry_price": 218.9,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MTW": {
+      "date_added": "2026-08-11",
+      "entry_price": 19.46,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MASS": {
+      "date_added": "2026-08-11",
+      "entry_price": 10.01,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BWEN": {
+      "date_added": "2026-08-11",
+      "entry_price": 5.34,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-10T22:27:51.903833"
+  "last_updated": "2026-08-11T22:31:48.021043"
 }

@@ -1,13 +1,28 @@
 {
-  "check_date": "2026-08-10T22:27:51.909927",
-  "watchlist_size": 682,
-  "active_positions": 623,
-  "newly_added": 7,
+  "check_date": "2026-08-11T22:31:48.027006",
+  "watchlist_size": 686,
+  "active_positions": 627,
+  "newly_added": 4,
   "strong_exits": [],
-  "weak_exits": [],
+  "weak_exits": [
+    {
+      "ticker": "SBRA",
+      "signal": "WEAK_EXIT",
+      "current_price": 19.85,
+      "ma_50": 19.86,
+      "pct_vs_ma50": -0.05,
+      "below_ma50": true,
+      "just_crossed_under": true,
+      "vol_ratio": 0.96,
+      "vol_elevated": false,
+      "entry_price": 20.97,
+      "pnl_pct": -5.3,
+      "date_added": "2026-05-13"
+    }
+  ],
   "below_ma50_lingering": [],
   "holds": 0,
-  "errors": 623,
+  "errors": 626,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
