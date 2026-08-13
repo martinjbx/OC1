@@ -1614,8 +1614,8 @@
     "TNK": {
       "date_added": "2026-05-11",
       "entry_price": 83.53,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 75,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -3180,7 +3180,7 @@
     "NTB": {
       "date_added": "2026-05-29",
       "entry_price": 56.96,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4503,7 +4503,7 @@
     "UNTY": {
       "date_added": "2026-06-24",
       "entry_price": 58.14,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4917,7 +4917,7 @@
     "EBC": {
       "date_added": "2026-06-30",
       "entry_price": 22.24,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5124,7 +5124,7 @@
     "PNC": {
       "date_added": "2026-07-06",
       "entry_price": 253.18,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5646,7 +5646,7 @@
     "DAR": {
       "date_added": "2026-07-22",
       "entry_price": 64.78,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5934,7 +5934,7 @@
     "SCHW": {
       "date_added": "2026-08-04",
       "entry_price": 106.35,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6173,7 +6173,34 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "MDB": {
+      "date_added": "2026-08-13",
+      "entry_price": 472.29,
+      "rs_rating": 85,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SNOW": {
+      "date_added": "2026-08-13",
+      "entry_price": 337.38,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "OKTA": {
+      "date_added": "2026-08-13",
+      "entry_price": 154.95,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-12T22:30:50.493128"
+  "last_updated": "2026-08-13T22:32:12.602203"
 }
