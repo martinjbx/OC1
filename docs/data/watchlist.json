@@ -1058,9 +1058,9 @@
       "entry_price": 621.28,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-08-18",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "PAAS": {
       "date_added": "2026-05-10",
@@ -1425,7 +1425,7 @@
     "NHC": {
       "date_added": "2026-05-10",
       "entry_price": 188.82,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -1634,9 +1634,9 @@
       "entry_price": 181.69,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-08-18",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "MTRN": {
       "date_added": "2026-05-11",
@@ -1695,8 +1695,8 @@
     "LPG": {
       "date_added": "2026-05-11",
       "entry_price": 40.54,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 75,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1715,9 +1715,9 @@
       "entry_price": 135.65,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-08-18",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "CSCO": {
       "date_added": "2026-05-11",
@@ -4467,7 +4467,7 @@
     "CHMG": {
       "date_added": "2026-06-24",
       "entry_price": 74.4,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4890,7 +4890,7 @@
     "TRIN": {
       "date_added": "2026-06-29",
       "entry_price": 17.73,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5556,7 +5556,7 @@
     "CZFS": {
       "date_added": "2026-07-16",
       "entry_price": 74.83,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5646,7 +5646,7 @@
     "DAR": {
       "date_added": "2026-07-22",
       "entry_price": 64.78,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6024,7 +6024,7 @@
     "ACAD": {
       "date_added": "2026-08-07",
       "entry_price": 29.21,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
@@ -6123,7 +6123,7 @@
     "HALO": {
       "date_added": "2026-08-10",
       "entry_price": 102.62,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6254,7 +6254,34 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "THC": {
+      "date_added": "2026-08-18",
+      "entry_price": 270.21,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "OVV": {
+      "date_added": "2026-08-18",
+      "entry_price": 65.02,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "NPK": {
+      "date_added": "2026-08-18",
+      "entry_price": 147.26,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-17T22:16:28.537258"
+  "last_updated": "2026-08-18T22:30:53.570494"
 }
