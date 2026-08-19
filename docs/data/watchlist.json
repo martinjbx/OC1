@@ -112,7 +112,7 @@
       "date_added": "2026-05-10",
       "entry_price": 56.58,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -534,8 +534,8 @@
     "RCUS": {
       "date_added": "2026-05-10",
       "entry_price": 25.36,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 85,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1506,7 +1506,7 @@
     "GSL": {
       "date_added": "2026-05-10",
       "entry_price": 42.29,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-05-23",
@@ -3504,7 +3504,7 @@
     "TBBB": {
       "date_added": "2026-06-09",
       "entry_price": 39.6,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3909,7 +3909,7 @@
     "LYV": {
       "date_added": "2026-06-15",
       "entry_price": 175.85,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-07-31",
@@ -4071,7 +4071,7 @@
     "WAB": {
       "date_added": "2026-06-17",
       "entry_price": 271.86,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5106,7 +5106,7 @@
     "BAC": {
       "date_added": "2026-07-06",
       "entry_price": 59.9,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5223,7 +5223,7 @@
     "INCY": {
       "date_added": "2026-07-07",
       "entry_price": 118.05,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5457,7 +5457,7 @@
     "PSX": {
       "date_added": "2026-07-13",
       "entry_price": 198.29,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6078,7 +6078,7 @@
     "HZO": {
       "date_added": "2026-08-10",
       "entry_price": 52.12,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6281,7 +6281,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "FIVE": {
+      "date_added": "2026-08-19",
+      "entry_price": 242.08,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AMBP": {
+      "date_added": "2026-08-19",
+      "entry_price": 5.23,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-18T22:30:53.570494"
+  "last_updated": "2026-08-19T22:13:09.898395"
 }
