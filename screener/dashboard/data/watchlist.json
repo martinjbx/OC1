@@ -661,7 +661,7 @@
       "date_added": "2026-05-10",
       "entry_price": 62.04,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1309,7 +1309,7 @@
       "date_added": "2026-05-10",
       "entry_price": 58.6,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1381,7 +1381,7 @@
       "date_added": "2026-05-10",
       "entry_price": 217.45,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -1506,7 +1506,7 @@
     "GSL": {
       "date_added": "2026-05-10",
       "entry_price": 42.29,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-05-23",
@@ -1650,8 +1650,8 @@
     "GNK": {
       "date_added": "2026-05-11",
       "entry_price": 25.94,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 85,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2766,7 +2766,7 @@
     "TMP": {
       "date_added": "2026-05-21",
       "entry_price": 85.46,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4035,7 +4035,7 @@
     "LTH": {
       "date_added": "2026-06-16",
       "entry_price": 34.87,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4863,7 +4863,7 @@
     "USFD": {
       "date_added": "2026-06-29",
       "entry_price": 102.44,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5853,7 +5853,7 @@
     "BFC": {
       "date_added": "2026-07-31",
       "entry_price": 152.74,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6160,7 +6160,7 @@
       "date_added": "2026-08-11",
       "entry_price": 10.01,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6249,7 +6249,7 @@
     "PR": {
       "date_added": "2026-08-17",
       "entry_price": 22.18,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6299,7 +6299,34 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CORT": {
+      "date_added": "2026-08-20",
+      "entry_price": 121.05,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CYRX": {
+      "date_added": "2026-08-20",
+      "entry_price": 16.71,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BYND": {
+      "date_added": "2026-08-20",
+      "entry_price": 14.48,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-19T22:13:09.898395"
+  "last_updated": "2026-08-20T22:10:46.016040"
 }

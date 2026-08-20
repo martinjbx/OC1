@@ -1,28 +1,13 @@
 {
-  "check_date": "2026-08-19T22:13:09.904419",
-  "watchlist_size": 700,
-  "active_positions": 638,
-  "newly_added": 2,
+  "check_date": "2026-08-20T22:10:46.022509",
+  "watchlist_size": 703,
+  "active_positions": 641,
+  "newly_added": 3,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [
-    {
-      "ticker": "VSH",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 31.96,
-      "ma_50": 44.18,
-      "pct_vs_ma50": -27.65,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.49,
-      "vol_elevated": false,
-      "entry_price": 34.94,
-      "pnl_pct": -8.5,
-      "date_added": "2026-05-11"
-    }
-  ],
-  "holds": 0,
-  "errors": 637,
+  "below_ma50_lingering": [],
+  "holds": 2,
+  "errors": 639,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
