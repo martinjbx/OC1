@@ -2073,7 +2073,7 @@
     "DAC": {
       "date_added": "2026-05-11",
       "entry_price": 133.34,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3243,7 +3243,7 @@
     "ILMN": {
       "date_added": "2026-05-30",
       "entry_price": 162.96,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3324,7 +3324,7 @@
     "MGA": {
       "date_added": "2026-06-03",
       "entry_price": 68.83,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3504,7 +3504,7 @@
     "TBBB": {
       "date_added": "2026-06-09",
       "entry_price": 39.6,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6123,7 +6123,7 @@
     "HALO": {
       "date_added": "2026-08-10",
       "entry_price": 102.62,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6312,7 +6312,7 @@
     "CYRX": {
       "date_added": "2026-08-20",
       "entry_price": 16.71,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6326,7 +6326,61 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "WBT-USD": {
+      "date_added": "2026-08-21",
+      "entry_price": 73.04,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "VREX": {
+      "date_added": "2026-08-21",
+      "entry_price": 18.51,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "EQNR": {
+      "date_added": "2026-08-21",
+      "entry_price": 42.86,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "FCX": {
+      "date_added": "2026-08-21",
+      "entry_price": 76.66,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ERO": {
+      "date_added": "2026-08-21",
+      "entry_price": 39.42,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ABNB": {
+      "date_added": "2026-08-21",
+      "entry_price": 187.3,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-20T22:10:46.016040"
+  "last_updated": "2026-08-21T22:18:45.614372"
 }
