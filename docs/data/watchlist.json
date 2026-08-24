@@ -445,7 +445,7 @@
       "date_added": "2026-05-10",
       "entry_price": 185.29,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2154,7 +2154,7 @@
     "IMO": {
       "date_added": "2026-05-13",
       "entry_price": 133.42,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2271,7 +2271,7 @@
     "SHIP": {
       "date_added": "2026-05-13",
       "entry_price": 16.47,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3243,7 +3243,7 @@
     "ILMN": {
       "date_added": "2026-05-30",
       "entry_price": 162.96,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3909,7 +3909,7 @@
     "LYV": {
       "date_added": "2026-06-15",
       "entry_price": 175.85,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-07-31",
@@ -4467,7 +4467,7 @@
     "CHMG": {
       "date_added": "2026-06-24",
       "entry_price": 74.4,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5682,7 +5682,7 @@
     "KRT": {
       "date_added": "2026-07-24",
       "entry_price": 39.52,
-      "rs_rating": 75,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6380,7 +6380,43 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "FCFS": {
+      "date_added": "2026-08-24",
+      "entry_price": 236.43,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "RELY": {
+      "date_added": "2026-08-24",
+      "entry_price": 26.59,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ZYME": {
+      "date_added": "2026-08-24",
+      "entry_price": 28.77,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "IDT": {
+      "date_added": "2026-08-24",
+      "entry_price": 68.29,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-21T22:18:45.614372"
+  "last_updated": "2026-08-24T22:09:56.614857"
 }
