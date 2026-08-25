@@ -1,6 +1,31 @@
 {
-  "scan_date": "2026-08-24T22:06:24.088467",
+  "scan_date": "2026-08-25T22:05:31.690591",
   "total_scanned": 3761,
-  "signals_found": 0,
-  "signals": []
+  "signals_found": 3,
+  "signals": [
+    {
+      "ticker": "RNA",
+      "price": 14.0,
+      "smma15": 12.655120720714326,
+      "smma29": 12.628756763385475,
+      "rsi": 63.97420157818543,
+      "volume_surge": false
+    },
+    {
+      "ticker": "EXOD",
+      "price": 9.6899995803833,
+      "smma15": 6.392395578978287,
+      "smma29": 6.2554281423276485,
+      "rsi": 69.58925204376975,
+      "volume_surge": false
+    },
+    {
+      "ticker": "RCKT",
+      "price": 3.7799999713897705,
+      "smma15": 3.4695346596017482,
+      "smma29": 3.461921465308836,
+      "rsi": 58.088324555865185,
+      "volume_surge": false
+    }
+  ]
 }

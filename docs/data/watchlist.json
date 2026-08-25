@@ -1561,7 +1561,7 @@
       "date_added": "2026-05-11",
       "entry_price": 4.43,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5538,7 +5538,7 @@
     "CDNA": {
       "date_added": "2026-07-16",
       "entry_price": 40.34,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5862,7 +5862,7 @@
     "TCBX": {
       "date_added": "2026-07-31",
       "entry_price": 43.84,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6366,8 +6366,8 @@
     "ERO": {
       "date_added": "2026-08-21",
       "entry_price": 39.42,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 85,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6416,7 +6416,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "WPM": {
+      "date_added": "2026-08-25",
+      "entry_price": 163.72,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TK": {
+      "date_added": "2026-08-25",
+      "entry_price": 13.36,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-24T22:09:56.614857"
+  "last_updated": "2026-08-25T22:10:03.994345"
 }

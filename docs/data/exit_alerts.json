@@ -1,29 +1,27 @@
 {
-  "check_date": "2026-08-24T22:09:56.620728",
-  "watchlist_size": 713,
-  "active_positions": 651,
-  "newly_added": 4,
+  "check_date": "2026-08-25T22:10:04.000460",
+  "watchlist_size": 715,
+  "active_positions": 653,
+  "newly_added": 2,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [
+  "below_ma50_lingering": [],
+  "holds": 0,
+  "errors": 653,
+  "climactic_sells": [],
+  "partial_profits": [
     {
-      "ticker": "RL",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 370.82,
-      "ma_50": 389.41,
-      "pct_vs_ma50": -4.77,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.93,
-      "vol_elevated": false,
-      "entry_price": 391.16,
-      "pnl_pct": -5.2,
-      "date_added": "2026-06-09"
+      "ticker": "TGB",
+      "tp_signal": "PARTIAL_PROFIT",
+      "current_price": 9.51,
+      "ma_50": 7.54,
+      "pct_above_ma50": 26.19,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 27.0,
+      "entry_price": 7.49,
+      "date_added": "2026-05-10"
     }
   ],
-  "holds": 1,
-  "errors": 649,
-  "climactic_sells": [],
-  "partial_profits": [],
   "extended_watch": []
 }
