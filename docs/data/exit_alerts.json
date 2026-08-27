@@ -1,27 +1,27 @@
 {
-  "check_date": "2026-08-25T22:10:04.000460",
-  "watchlist_size": 715,
-  "active_positions": 653,
-  "newly_added": 2,
+  "check_date": "2026-08-27T01:13:03.225056",
+  "watchlist_size": 716,
+  "active_positions": 654,
+  "newly_added": 1,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [],
   "holds": 0,
-  "errors": 653,
+  "errors": 654,
   "climactic_sells": [],
-  "partial_profits": [
+  "partial_profits": [],
+  "extended_watch": [
     {
-      "ticker": "TGB",
-      "tp_signal": "PARTIAL_PROFIT",
-      "current_price": 9.51,
-      "ma_50": 7.54,
-      "pct_above_ma50": 26.19,
+      "ticker": "RNG",
+      "tp_signal": "EXTENDED_WATCH",
+      "current_price": 66.06,
+      "ma_50": 49.75,
+      "pct_above_ma50": 32.79,
       "climactic": false,
       "wide_up_days": 0,
-      "gain_pct": 27.0,
-      "entry_price": 7.49,
-      "date_added": "2026-05-10"
+      "gain_pct": 16.0,
+      "entry_price": 56.93,
+      "date_added": "2026-07-28"
     }
-  ],
-  "extended_watch": []
+  ]
 }

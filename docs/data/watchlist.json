@@ -2218,7 +2218,7 @@
       "date_added": "2026-05-13",
       "entry_price": 107.76,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -3909,7 +3909,7 @@
     "LYV": {
       "date_added": "2026-06-15",
       "entry_price": 175.85,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-07-31",
@@ -6434,7 +6434,16 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "URBN": {
+      "date_added": "2026-08-27",
+      "entry_price": 82.95,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-25T22:10:03.994345"
+  "last_updated": "2026-08-27T01:13:03.219261"
 }
