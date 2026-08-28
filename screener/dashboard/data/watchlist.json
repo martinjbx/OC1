@@ -1381,7 +1381,7 @@
       "date_added": "2026-05-10",
       "entry_price": 217.45,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5412,7 +5412,7 @@
     "NMR": {
       "date_added": "2026-07-10",
       "entry_price": 9.66,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5538,7 +5538,7 @@
     "CDNA": {
       "date_added": "2026-07-16",
       "entry_price": 40.34,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5610,8 +5610,8 @@
     "KARO": {
       "date_added": "2026-07-20",
       "entry_price": 63.77,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 85,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6078,7 +6078,7 @@
     "HZO": {
       "date_added": "2026-08-10",
       "entry_price": 52.12,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6195,7 +6195,7 @@
     "OKTA": {
       "date_added": "2026-08-13",
       "entry_price": 154.95,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6443,7 +6443,34 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "RMNI": {
+      "date_added": "2026-08-28",
+      "entry_price": 5.37,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "DB": {
+      "date_added": "2026-08-28",
+      "entry_price": 40.07,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "OPY": {
+      "date_added": "2026-08-28",
+      "entry_price": 120.0,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-27T01:13:03.219261"
+  "last_updated": "2026-08-28T05:53:53.067082"
 }
