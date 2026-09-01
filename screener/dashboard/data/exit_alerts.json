@@ -1,26 +1,55 @@
 {
-  "check_date": "2026-09-01T00:57:16.037643",
-  "watchlist_size": 724,
-  "active_positions": 662,
-  "newly_added": 1,
+  "check_date": "2026-09-01T23:41:46.917734",
+  "watchlist_size": 731,
+  "active_positions": 669,
+  "newly_added": 7,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [],
-  "holds": 4,
-  "errors": 658,
+  "below_ma50_lingering": [
+    {
+      "ticker": "LSCC",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 111.68,
+      "ma_50": 129.28,
+      "pct_vs_ma50": -13.62,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 0.67,
+      "vol_elevated": false,
+      "entry_price": 127.19,
+      "pnl_pct": -12.2,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "BAND",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 50.79,
+      "ma_50": 56.24,
+      "pct_vs_ma50": -9.69,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 1.12,
+      "vol_elevated": false,
+      "entry_price": 49.89,
+      "pnl_pct": 1.8,
+      "date_added": "2026-05-10"
+    }
+  ],
+  "holds": 1,
+  "errors": 666,
   "climactic_sells": [],
   "partial_profits": [
     {
-      "ticker": "ROKU",
+      "ticker": "TBBB",
       "tp_signal": "TARGET_HIT",
-      "current_price": 156.93,
-      "ma_50": 146.7,
-      "pct_above_ma50": 6.97,
+      "current_price": 49.9,
+      "ma_50": 43.48,
+      "pct_above_ma50": 14.76,
       "climactic": false,
       "wide_up_days": 0,
-      "gain_pct": 21.2,
-      "entry_price": 129.53,
-      "date_added": "2026-05-10"
+      "gain_pct": 26.0,
+      "entry_price": 39.6,
+      "date_added": "2026-06-09"
     }
   ],
   "extended_watch": []

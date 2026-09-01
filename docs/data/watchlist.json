@@ -1030,7 +1030,7 @@
       "date_added": "2026-05-10",
       "entry_price": 9.75,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-07-20",
       "exit_reason": "MA50_CROSS_HIGH_VOL"
@@ -2154,7 +2154,7 @@
     "IMO": {
       "date_added": "2026-05-13",
       "entry_price": 133.42,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3954,7 +3954,7 @@
     "FHI": {
       "date_added": "2026-06-15",
       "entry_price": 58.21,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5809,7 +5809,7 @@
       "date_added": "2026-07-30",
       "entry_price": 14.77,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6348,7 +6348,7 @@
     "EQNR": {
       "date_added": "2026-08-21",
       "entry_price": 42.86,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6515,7 +6515,70 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CVX": {
+      "date_added": "2026-09-01",
+      "entry_price": 211.05,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CVI": {
+      "date_added": "2026-09-01",
+      "entry_price": 42.87,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CF": {
+      "date_added": "2026-09-01",
+      "entry_price": 135.6,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "AHR": {
+      "date_added": "2026-09-01",
+      "entry_price": 56.54,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MD": {
+      "date_added": "2026-09-01",
+      "entry_price": 26.47,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PVLA": {
+      "date_added": "2026-09-01",
+      "entry_price": 150.55,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "LGVN": {
+      "date_added": "2026-09-01",
+      "entry_price": 6.75,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-09-01T00:57:16.032789"
+  "last_updated": "2026-09-01T23:41:46.911718"
 }
