@@ -1,23 +1,6 @@
 {
-  "scan_date": "2026-08-29T03:32:37.746897",
+  "scan_date": "2026-09-01T00:53:11.597274",
   "total_scanned": 3761,
-  "signals_found": 2,
-  "signals": [
-    {
-      "ticker": "RCKT",
-      "price": 3.859999895095825,
-      "smma15": 3.515990777222377,
-      "smma29": 3.4863665033751956,
-      "rsi": 58.75960019045405,
-      "volume_surge": false
-    },
-    {
-      "ticker": "ASUR",
-      "price": 9.069999694824219,
-      "smma15": 8.51567469885222,
-      "smma29": 8.4647783384014,
-      "rsi": 59.56811917428785,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }

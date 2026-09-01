@@ -1488,7 +1488,7 @@
     "UGP": {
       "date_added": "2026-05-10",
       "entry_price": 6.11,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-05-20",
@@ -2092,7 +2092,7 @@
       "date_added": "2026-05-11",
       "entry_price": 49.71,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-08-07",
       "exit_reason": "MA50_CROSS_HIGH_VOL"
@@ -2397,7 +2397,7 @@
     "WMB": {
       "date_added": "2026-05-15",
       "entry_price": 77.69,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4386,7 +4386,7 @@
     "LFST": {
       "date_added": "2026-06-22",
       "entry_price": 9.2,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5457,7 +5457,7 @@
     "PSX": {
       "date_added": "2026-07-13",
       "entry_price": 198.29,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5520,7 +5520,7 @@
     "LQDT": {
       "date_added": "2026-07-15",
       "entry_price": 39.65,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6506,7 +6506,16 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "DE": {
+      "date_added": "2026-09-01",
+      "entry_price": 654.91,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-08-29T03:37:43.061266"
+  "last_updated": "2026-09-01T00:57:16.032789"
 }
