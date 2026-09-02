@@ -1,56 +1,43 @@
 {
-  "check_date": "2026-09-01T23:41:46.917734",
-  "watchlist_size": 731,
-  "active_positions": 669,
-  "newly_added": 7,
+  "check_date": "2026-09-02T23:40:49.684375",
+  "watchlist_size": 733,
+  "active_positions": 671,
+  "newly_added": 2,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [
     {
-      "ticker": "LSCC",
+      "ticker": "BAND",
       "signal": "ALREADY_BELOW_MA50",
-      "current_price": 111.68,
-      "ma_50": 129.28,
-      "pct_vs_ma50": -13.62,
+      "current_price": 47.55,
+      "ma_50": 56.21,
+      "pct_vs_ma50": -15.41,
       "below_ma50": true,
       "just_crossed_under": false,
-      "vol_ratio": 0.67,
+      "vol_ratio": 0.76,
       "vol_elevated": false,
-      "entry_price": 127.19,
-      "pnl_pct": -12.2,
+      "entry_price": 49.89,
+      "pnl_pct": -4.7,
       "date_added": "2026-05-10"
     },
     {
-      "ticker": "BAND",
+      "ticker": "NTB",
       "signal": "ALREADY_BELOW_MA50",
-      "current_price": 50.79,
-      "ma_50": 56.24,
-      "pct_vs_ma50": -9.69,
+      "current_price": 59.58,
+      "ma_50": 60.33,
+      "pct_vs_ma50": -1.25,
       "below_ma50": true,
       "just_crossed_under": false,
-      "vol_ratio": 1.12,
+      "vol_ratio": 0.93,
       "vol_elevated": false,
-      "entry_price": 49.89,
-      "pnl_pct": 1.8,
-      "date_added": "2026-05-10"
+      "entry_price": 56.96,
+      "pnl_pct": 4.6,
+      "date_added": "2026-05-29"
     }
   ],
   "holds": 1,
-  "errors": 666,
+  "errors": 668,
   "climactic_sells": [],
-  "partial_profits": [
-    {
-      "ticker": "TBBB",
-      "tp_signal": "TARGET_HIT",
-      "current_price": 49.9,
-      "ma_50": 43.48,
-      "pct_above_ma50": 14.76,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 26.0,
-      "entry_price": 39.6,
-      "date_added": "2026-06-09"
-    }
-  ],
+  "partial_profits": [],
   "extended_watch": []
 }

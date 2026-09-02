@@ -597,8 +597,8 @@
     "PTEN": {
       "date_added": "2026-05-10",
       "entry_price": 11.42,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 75,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2218,7 +2218,7 @@
       "date_added": "2026-05-13",
       "entry_price": 107.76,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2631,7 +2631,7 @@
     "ACNB": {
       "date_added": "2026-05-19",
       "entry_price": 53.34,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2793,7 +2793,7 @@
     "THFF": {
       "date_added": "2026-05-21",
       "entry_price": 68.19,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3082,7 +3082,7 @@
       "date_added": "2026-05-28",
       "entry_price": 127.51,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -3720,7 +3720,7 @@
     "FBIZ": {
       "date_added": "2026-06-10",
       "entry_price": 60.09,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5017,7 +5017,7 @@
       "date_added": "2026-07-02",
       "entry_price": 279.32,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6222,7 +6222,7 @@
     "SBLK": {
       "date_added": "2026-08-17",
       "entry_price": 30.09,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6578,7 +6578,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "MG": {
+      "date_added": "2026-09-02",
+      "entry_price": 19.39,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ZIM": {
+      "date_added": "2026-09-02",
+      "entry_price": 28.02,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-09-01T23:41:46.911718"
+  "last_updated": "2026-09-02T23:40:49.678367"
 }

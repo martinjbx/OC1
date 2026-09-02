@@ -1,15 +1,6 @@
 {
-  "scan_date": "2026-09-01T23:38:08.070368",
+  "scan_date": "2026-09-02T23:37:25.965983",
   "total_scanned": 3761,
-  "signals_found": 1,
-  "signals": [
-    {
-      "ticker": "VBIO",
-      "price": 3.069999933242798,
-      "smma15": 0.6406125276810215,
-      "smma29": 0.5766689782211667,
-      "rsi": 81.11942018111527,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }
