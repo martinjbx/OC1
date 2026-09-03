@@ -1,6 +1,15 @@
 {
-  "scan_date": "2026-09-02T23:37:25.965983",
+  "scan_date": "2026-09-03T23:35:07.218588",
   "total_scanned": 3761,
-  "signals_found": 0,
-  "signals": []
+  "signals_found": 1,
+  "signals": [
+    {
+      "ticker": "YSXT",
+      "price": 1.3700000047683716,
+      "smma15": 1.0648790622263475,
+      "smma29": 1.0498632265929941,
+      "rsi": 66.93125390923768,
+      "volume_surge": false
+    }
+  ]
 }

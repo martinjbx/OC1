@@ -2667,7 +2667,7 @@
     "REPX": {
       "date_added": "2026-05-20",
       "entry_price": 41.21,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2811,7 +2811,7 @@
     "PKBK": {
       "date_added": "2026-05-22",
       "entry_price": 31.16,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2955,7 +2955,7 @@
     "OBK": {
       "date_added": "2026-05-27",
       "entry_price": 48.16,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6596,7 +6596,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "OSCR": {
+      "date_added": "2026-09-03",
+      "entry_price": 32.24,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "HRTG": {
+      "date_added": "2026-09-03",
+      "entry_price": 34.94,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-09-02T23:40:49.678367"
+  "last_updated": "2026-09-03T23:38:51.977080"
 }
