@@ -2451,7 +2451,7 @@
     "CVE": {
       "date_added": "2026-05-16",
       "entry_price": 30.82,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2631,7 +2631,7 @@
     "ACNB": {
       "date_added": "2026-05-19",
       "entry_price": 53.34,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2955,7 +2955,7 @@
     "OBK": {
       "date_added": "2026-05-27",
       "entry_price": 48.16,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3567,7 +3567,7 @@
     "SMBK": {
       "date_added": "2026-06-09",
       "entry_price": 43.55,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3720,7 +3720,7 @@
     "FBIZ": {
       "date_added": "2026-06-10",
       "entry_price": 60.09,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3783,7 +3783,7 @@
     "UBS": {
       "date_added": "2026-06-12",
       "entry_price": 48.97,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3982,7 +3982,7 @@
       "date_added": "2026-06-16",
       "entry_price": 50.54,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5052,7 +5052,7 @@
     "LIVN": {
       "date_added": "2026-07-02",
       "entry_price": 83.62,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-08-05",
@@ -5412,7 +5412,7 @@
     "NMR": {
       "date_added": "2026-07-10",
       "entry_price": 9.66,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6614,7 +6614,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CMDB": {
+      "date_added": "2026-09-04",
+      "entry_price": 23.95,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PCRX": {
+      "date_added": "2026-09-04",
+      "entry_price": 26.35,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-09-03T23:38:51.977080"
+  "last_updated": "2026-09-04T23:27:35.153408"
 }
