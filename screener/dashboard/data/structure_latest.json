@@ -1,7 +1,7 @@
 {
-  "scan_date": "2026-09-04T23:23:43.273838",
+  "scan_date": "2026-09-07T23:53:08.296378",
   "total_scanned": 3761,
-  "signals_found": 2,
+  "signals_found": 3,
   "signals": [
     {
       "ticker": "SNDK",
@@ -17,6 +17,14 @@
       "smma15": 1.0978906306661842,
       "smma29": 1.0674968948239894,
       "rsi": 72.47282176618968,
+      "volume_surge": false
+    },
+    {
+      "ticker": "XLM-USD",
+      "price": 0.19370099902153015,
+      "smma15": 0.179707245050703,
+      "smma29": 0.17915835122498128,
+      "rsi": 58.41213735463234,
       "volume_surge": false
     }
   ]
