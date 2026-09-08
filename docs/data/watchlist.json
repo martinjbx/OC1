@@ -508,7 +508,7 @@
       "date_added": "2026-05-10",
       "entry_price": 18.39,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2181,7 +2181,7 @@
     "WELL": {
       "date_added": "2026-05-13",
       "entry_price": 217.5,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6643,5 +6643,5 @@
       "exit_reason": null
     }
   },
-  "last_updated": "2026-09-07T23:56:47.077576"
+  "last_updated": "2026-09-08T23:47:16.076154"
 }
