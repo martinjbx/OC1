@@ -1076,9 +1076,9 @@
       "entry_price": 15.68,
       "rs_rating": 95,
       "criteria_passed": 7,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-09-10",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "NEXA": {
       "date_added": "2026-05-10",
@@ -1695,7 +1695,7 @@
     "LPG": {
       "date_added": "2026-05-11",
       "entry_price": 40.54,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2064,7 +2064,7 @@
     "TRST": {
       "date_added": "2026-05-11",
       "entry_price": 48.51,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2667,7 +2667,7 @@
     "REPX": {
       "date_added": "2026-05-20",
       "entry_price": 41.21,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3209,9 +3209,9 @@
       "entry_price": 9.2,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-09-10",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "CNOB": {
       "date_added": "2026-05-30",
@@ -4386,7 +4386,7 @@
     "LFST": {
       "date_added": "2026-06-22",
       "entry_price": 9.2,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4467,7 +4467,7 @@
     "CHMG": {
       "date_added": "2026-06-24",
       "entry_price": 74.4,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4980,7 +4980,7 @@
     "MVBF": {
       "date_added": "2026-07-01",
       "entry_price": 29.84,
-      "rs_rating": 85,
+      "rs_rating": 75,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6411,7 +6411,7 @@
     "IDT": {
       "date_added": "2026-08-24",
       "entry_price": 68.29,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6645,7 +6645,7 @@
     "BRBS": {
       "date_added": "2026-09-09",
       "entry_price": 4.04,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
@@ -6688,5 +6688,5 @@
       "exit_reason": null
     }
   },
-  "last_updated": "2026-09-09T23:55:09.087871"
+  "last_updated": "2026-09-10T23:48:01.047761"
 }
