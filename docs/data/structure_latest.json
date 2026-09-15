@@ -1,6 +1,15 @@
 {
-  "scan_date": "2026-09-15T00:03:36.657729",
+  "scan_date": "2026-09-15T23:45:52.379257",
   "total_scanned": 3761,
-  "signals_found": 0,
-  "signals": []
+  "signals_found": 1,
+  "signals": [
+    {
+      "ticker": "PGNY",
+      "price": 27.760000228881836,
+      "smma15": 27.167971782814455,
+      "smma29": 27.160677003003357,
+      "rsi": 52.75193071803319,
+      "volume_surge": false
+    }
+  ]
 }
