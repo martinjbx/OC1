@@ -1,42 +1,14 @@
 {
-  "check_date": "2026-09-11T23:46:42.820134",
+  "check_date": "2026-09-15T00:07:33.433608",
   "watchlist_size": 748,
   "active_positions": 674,
-  "newly_added": 5,
+  "newly_added": 0,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [
-    {
-      "ticker": "FTNT",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 156.07,
-      "ma_50": 158.98,
-      "pct_vs_ma50": -1.83,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.64,
-      "vol_elevated": false,
-      "entry_price": 117.69,
-      "pnl_pct": 32.6,
-      "date_added": "2026-05-14"
-    }
-  ],
-  "holds": 0,
-  "errors": 673,
+  "below_ma50_lingering": [],
+  "holds": 4,
+  "errors": 670,
   "climactic_sells": [],
-  "partial_profits": [
-    {
-      "ticker": "KYMR",
-      "tp_signal": "TARGET_HIT",
-      "current_price": 114.96,
-      "ma_50": 114.4,
-      "pct_above_ma50": 0.49,
-      "climactic": false,
-      "wide_up_days": 0,
-      "gain_pct": 33.6,
-      "entry_price": 86.08,
-      "date_added": "2026-05-10"
-    }
-  ],
+  "partial_profits": [],
   "extended_watch": []
 }
