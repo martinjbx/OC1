@@ -4962,8 +4962,8 @@
     "ARGX": {
       "date_added": "2026-06-30",
       "entry_price": 927.77,
-      "rs_rating": 95,
-      "criteria_passed": 7,
+      "rs_rating": 85,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -5520,7 +5520,7 @@
     "LQDT": {
       "date_added": "2026-07-15",
       "entry_price": 39.65,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6105,7 +6105,7 @@
     "NTAP": {
       "date_added": "2026-08-10",
       "entry_price": 198.72,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6403,7 +6403,7 @@
       "date_added": "2026-08-24",
       "entry_price": 28.77,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6411,7 +6411,7 @@
     "IDT": {
       "date_added": "2026-08-24",
       "entry_price": 68.29,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6556,7 +6556,7 @@
       "date_added": "2026-09-01",
       "entry_price": 26.47,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6790,7 +6790,7 @@
       "date_added": "2026-09-15",
       "entry_price": 204.86,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6812,7 +6812,88 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "ADM": {
+      "date_added": "2026-09-17",
+      "entry_price": 88.09,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "VRSN": {
+      "date_added": "2026-09-17",
+      "entry_price": 302.05,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MGNI": {
+      "date_added": "2026-09-17",
+      "entry_price": 25.63,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "PDEX": {
+      "date_added": "2026-09-17",
+      "entry_price": 69.47,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TIGO": {
+      "date_added": "2026-09-17",
+      "entry_price": 95.69,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "DXPE": {
+      "date_added": "2026-09-17",
+      "entry_price": 184.14,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "GEO": {
+      "date_added": "2026-09-17",
+      "entry_price": 32.14,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MBX": {
+      "date_added": "2026-09-17",
+      "entry_price": 63.89,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "LGND": {
+      "date_added": "2026-09-17",
+      "entry_price": 284.7,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-09-17T00:11:24.909626"
+  "last_updated": "2026-09-17T23:49:51.717859"
 }
