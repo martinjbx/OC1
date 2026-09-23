@@ -1,18 +1,18 @@
 {
-  "scan_date": "2026-09-22T00:24:35.166687",
+  "scan_date": "2026-09-23T00:04:03.249472",
   "tickers": [
     {
       "display": "BTCUSD",
       "yf_ticker": "BTC-USD",
       "name": "Bitcoin",
       "status": "HOLD",
-      "price": 86343.7734,
-      "ma50": 73665.922,
-      "ma200": 70581.8282,
+      "price": 86236.9062,
+      "ma50": 74126.625,
+      "ma200": 70673.6259,
       "criteria_passed": 5,
       "rs_rating": 30,
-      "pct_from_high": -11.8,
-      "stock_return_1y": -9.4,
+      "pct_from_high": -11.9,
+      "stock_return_1y": -11.0,
       "score": 43
     },
     {
@@ -20,13 +20,13 @@
       "yf_ticker": "SOL-USD",
       "name": "Solana",
       "status": "EXTENDED",
-      "price": 118.91,
-      "ma50": 93.1773,
-      "ma200": 83.9153,
+      "price": 118.6,
+      "ma50": 94.0766,
+      "ma200": 84.0841,
       "criteria_passed": 5,
       "rs_rating": 30,
-      "pct_from_high": -19.8,
-      "stock_return_1y": -18.2,
+      "pct_from_high": -20.0,
+      "stock_return_1y": -19.2,
       "score": 38
     },
     {
@@ -34,14 +34,14 @@
       "yf_ticker": "ETH-USD",
       "name": "Ethereum",
       "status": "HOLD",
-      "price": 2769.4199,
-      "ma50": 2291.1656,
-      "ma200": 2079.6194,
+      "price": 2754.1101,
+      "ma50": 2309.2237,
+      "ma200": 2083.5315,
       "criteria_passed": 5,
       "rs_rating": 30,
-      "pct_from_high": -18.5,
-      "stock_return_1y": -16.6,
-      "score": 39
+      "pct_from_high": -18.9,
+      "stock_return_1y": -17.9,
+      "score": 38
     },
     {
       "display": "HYPEUSD",
