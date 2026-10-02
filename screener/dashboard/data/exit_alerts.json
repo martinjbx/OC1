@@ -1,13 +1,13 @@
 {
-  "check_date": "2026-10-01T00:57:07.274035",
+  "check_date": "2026-10-02T01:19:51.966624",
   "watchlist_size": 772,
   "active_positions": 687,
   "newly_added": 0,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [],
-  "holds": 1,
-  "errors": 686,
+  "holds": 5,
+  "errors": 682,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
