@@ -345,7 +345,7 @@
     "NVDA": {
       "date_added": "2026-05-10",
       "entry_price": 215.29,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3127,7 +3127,7 @@
       "date_added": "2026-05-28",
       "entry_price": 58.88,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -4170,7 +4170,7 @@
     "MSM": {
       "date_added": "2026-06-18",
       "entry_price": 118.51,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6304,7 +6304,7 @@
       "date_added": "2026-08-20",
       "entry_price": 121.05,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6411,7 +6411,7 @@
     "IDT": {
       "date_added": "2026-08-24",
       "entry_price": 68.29,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6717,7 +6717,7 @@
     "INFU": {
       "date_added": "2026-09-11",
       "entry_price": 12.15,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6947,7 +6947,70 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CRL": {
+      "date_added": "2026-10-06",
+      "entry_price": 310.77,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TRMD": {
+      "date_added": "2026-10-06",
+      "entry_price": 41.05,
+      "rs_rating": 75,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "HTFL": {
+      "date_added": "2026-10-06",
+      "entry_price": 52.21,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ITUB": {
+      "date_added": "2026-10-06",
+      "entry_price": 9.92,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "ANDG": {
+      "date_added": "2026-10-06",
+      "entry_price": 56.0,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "IBEX": {
+      "date_added": "2026-10-06",
+      "entry_price": 43.33,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "RSKD": {
+      "date_added": "2026-10-06",
+      "entry_price": 7.81,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-10-03T00:57:27.475894"
+  "last_updated": "2026-10-06T02:11:28.933104"
 }
