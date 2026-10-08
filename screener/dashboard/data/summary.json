@@ -1,14 +1,14 @@
 {
-  "last_update": "2026-10-07T01:15:52.670377",
+  "last_update": "2026-10-08T01:27:27.495366",
   "structure": {
     "signals": 0,
     "scanned": 3761
   },
   "minervini": {
-    "candidates_7_plus": 248,
-    "candidates_all_8": 80,
-    "sweet_spot_count": 66,
-    "scanned": 2409
+    "candidates_7_plus": 0,
+    "candidates_all_8": 0,
+    "sweet_spot_count": 0,
+    "scanned": 1025
   },
   "exits": {
     "strong": 0,
