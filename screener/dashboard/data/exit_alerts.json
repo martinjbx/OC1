@@ -1,42 +1,14 @@
 {
-  "check_date": "2026-10-09T01:40:23.101772",
+  "check_date": "2026-10-10T01:28:08.872518",
   "watchlist_size": 787,
   "active_positions": 702,
-  "newly_added": 7,
+  "newly_added": 0,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [
-    {
-      "ticker": "CGAU",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 21.82,
-      "ma_50": 21.91,
-      "pct_vs_ma50": -0.43,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 1.08,
-      "vol_elevated": false,
-      "entry_price": 18.39,
-      "pnl_pct": 18.7,
-      "date_added": "2026-05-10"
-    }
-  ],
+  "below_ma50_lingering": [],
   "holds": 2,
-  "errors": 699,
+  "errors": 700,
   "climactic_sells": [],
   "partial_profits": [],
-  "extended_watch": [
-    {
-      "ticker": "SBS",
-      "tp_signal": "EXTENDED_WATCH",
-      "current_price": 6.59,
-      "ma_50": 5.2,
-      "pct_above_ma50": 26.75,
-      "climactic": false,
-      "wide_up_days": 1,
-      "gain_pct": 0.0,
-      "entry_price": 6.59,
-      "date_added": "2026-10-09"
-    }
-  ]
+  "extended_watch": []
 }
