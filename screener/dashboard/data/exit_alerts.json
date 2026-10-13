@@ -1,14 +1,84 @@
 {
-  "check_date": "2026-10-10T01:28:08.872518",
-  "watchlist_size": 787,
-  "active_positions": 702,
-  "newly_added": 0,
+  "check_date": "2026-10-13T02:59:08.622288",
+  "watchlist_size": 790,
+  "active_positions": 705,
+  "newly_added": 3,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [],
-  "holds": 2,
-  "errors": 700,
+  "below_ma50_lingering": [
+    {
+      "ticker": "NTR",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 68.0,
+      "ma_50": 72.24,
+      "pct_vs_ma50": -5.87,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 0.64,
+      "vol_elevated": false,
+      "entry_price": 78.72,
+      "pnl_pct": -13.6,
+      "date_added": "2026-09-15"
+    },
+    {
+      "ticker": "ROIV",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 34.59,
+      "ma_50": 36.7,
+      "pct_vs_ma50": -5.74,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 0.64,
+      "vol_elevated": false,
+      "entry_price": 39.5,
+      "pnl_pct": -12.4,
+      "date_added": "2026-09-15"
+    },
+    {
+      "ticker": "CTOS",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 9.22,
+      "ma_50": 9.67,
+      "pct_vs_ma50": -4.62,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 1.23,
+      "vol_elevated": false,
+      "entry_price": 9.7,
+      "pnl_pct": -4.9,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "FFBC",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 31.11,
+      "ma_50": 32.48,
+      "pct_vs_ma50": -4.23,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 0.61,
+      "vol_elevated": false,
+      "entry_price": 31.38,
+      "pnl_pct": -0.9,
+      "date_added": "2026-06-09"
+    }
+  ],
+  "holds": 6,
+  "errors": 695,
   "climactic_sells": [],
-  "partial_profits": [],
+  "partial_profits": [
+    {
+      "ticker": "FTNT",
+      "tp_signal": "TARGET_HIT",
+      "current_price": 192.94,
+      "ma_50": 167.99,
+      "pct_above_ma50": 14.85,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 63.9,
+      "entry_price": 117.69,
+      "date_added": "2026-05-14"
+    }
+  ],
   "extended_watch": []
 }
