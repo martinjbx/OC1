@@ -1,8 +1,8 @@
 {
-  "scan_date": "2026-10-22T00:22:27.159089",
+  "scan_date": "2026-10-23T00:34:58.994716",
   "total_attempted": 3761,
-  "total_scanned": 1105,
-  "candidates_7_plus": 2,
+  "total_scanned": 3581,
+  "candidates_7_plus": 12,
   "candidates_all_8": 0,
   "sweet_spot_count": 0,
   "top_candidates": []
