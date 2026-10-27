@@ -1,18 +1,18 @@
 {
-  "last_update": "2026-10-24T00:22:20.865771",
+  "last_update": "2026-10-27T00:57:18.085440",
   "structure": {
     "signals": 0,
     "scanned": 3761
   },
   "minervini": {
-    "candidates_7_plus": 11,
+    "candidates_7_plus": 4,
     "candidates_all_8": 0,
     "sweet_spot_count": 0,
-    "scanned": 3581
+    "scanned": 1204
   },
   "exits": {
     "strong": 0,
-    "weak": 1,
+    "weak": 0,
     "climactic_sells": 0,
     "partial_profits": 0,
     "watchlist_size": 793

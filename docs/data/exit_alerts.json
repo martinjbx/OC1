@@ -1,28 +1,13 @@
 {
-  "check_date": "2026-10-24T00:22:18.037583",
+  "check_date": "2026-10-27T00:57:15.919414",
   "watchlist_size": 793,
   "active_positions": 708,
   "newly_added": 0,
   "strong_exits": [],
-  "weak_exits": [
-    {
-      "ticker": "CNO",
-      "signal": "WEAK_EXIT",
-      "current_price": 53.66,
-      "ma_50": 54.36,
-      "pct_vs_ma50": -1.28,
-      "below_ma50": true,
-      "just_crossed_under": true,
-      "vol_ratio": 0.64,
-      "vol_elevated": false,
-      "entry_price": 45.68,
-      "pnl_pct": 17.5,
-      "date_added": "2026-05-11"
-    }
-  ],
+  "weak_exits": [],
   "below_ma50_lingering": [],
-  "holds": 328,
-  "errors": 379,
+  "holds": 2,
+  "errors": 706,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
