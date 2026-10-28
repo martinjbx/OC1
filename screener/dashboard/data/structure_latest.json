@@ -1,6 +1,15 @@
 {
-  "scan_date": "2026-10-27T00:54:46.593558",
+  "scan_date": "2026-10-28T00:55:57.946377",
   "total_scanned": 3761,
-  "signals_found": 0,
-  "signals": []
+  "signals_found": 1,
+  "signals": [
+    {
+      "ticker": "WPRT",
+      "price": 2.1600000858306885,
+      "smma15": 1.936775515509802,
+      "smma29": 1.918567513472267,
+      "rsi": 62.97663237437445,
+      "volume_surge": false
+    }
+  ]
 }
