@@ -1,42 +1,13 @@
 {
-  "check_date": "2026-11-06T02:07:44.401717",
+  "check_date": "2026-11-07T01:20:28.882028",
   "watchlist_size": 811,
   "active_positions": 720,
   "newly_added": 0,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [
-    {
-      "ticker": "WBT-USD",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 73.1,
-      "ma_50": 80.78,
-      "pct_vs_ma50": -9.5,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 2.04,
-      "vol_elevated": true,
-      "entry_price": 73.04,
-      "pnl_pct": 0.1,
-      "date_added": "2026-08-21"
-    },
-    {
-      "ticker": "FDSB",
-      "signal": "ALREADY_BELOW_MA50",
-      "current_price": 17.67,
-      "ma_50": 17.77,
-      "pct_vs_ma50": -0.55,
-      "below_ma50": true,
-      "just_crossed_under": false,
-      "vol_ratio": 0.69,
-      "vol_elevated": false,
-      "entry_price": 16.0,
-      "pnl_pct": 10.4,
-      "date_added": "2026-06-16"
-    }
-  ],
-  "holds": 677,
-  "errors": 41,
+  "below_ma50_lingering": [],
+  "holds": 4,
+  "errors": 716,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
