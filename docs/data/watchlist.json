@@ -976,7 +976,7 @@
       "date_added": "2026-05-10",
       "entry_price": 82.85,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2019,7 +2019,7 @@
     "RY": {
       "date_added": "2026-05-11",
       "entry_price": 180.85,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3559,7 +3559,7 @@
       "date_added": "2026-06-09",
       "entry_price": 391.16,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -3604,7 +3604,7 @@
       "date_added": "2026-06-09",
       "entry_price": 82.69,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -4467,7 +4467,7 @@
     "CHMG": {
       "date_added": "2026-06-24",
       "entry_price": 74.4,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5898,7 +5898,7 @@
     "RCKY": {
       "date_added": "2026-08-03",
       "entry_price": 50.78,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6582,8 +6582,8 @@
     "MG": {
       "date_added": "2026-09-02",
       "entry_price": 19.39,
-      "rs_rating": 85,
-      "criteria_passed": 8,
+      "rs_rating": 95,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6906,8 +6906,8 @@
     "GILD": {
       "date_added": "2026-09-18",
       "entry_price": 150.11,
-      "rs_rating": 85,
-      "criteria_passed": 8,
+      "rs_rating": 95,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -7379,7 +7379,43 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "COKE": {
+      "date_added": "2026-11-11",
+      "entry_price": 214.28,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "MEOH": {
+      "date_added": "2026-11-11",
+      "entry_price": 68.07,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "CPA": {
+      "date_added": "2026-11-11",
+      "entry_price": 148.22,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TBI": {
+      "date_added": "2026-11-11",
+      "entry_price": 12.68,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-11-10T04:06:14.182378"
+  "last_updated": "2026-11-11T01:37:30.997307"
 }
