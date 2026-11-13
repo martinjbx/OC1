@@ -1,23 +1,6 @@
 {
-  "scan_date": "2026-11-12T02:43:29.894383",
+  "scan_date": "2026-11-13T02:23:52.946682",
   "total_scanned": 3761,
-  "signals_found": 2,
-  "signals": [
-    {
-      "ticker": "RMNI",
-      "price": 5.639999866485596,
-      "smma15": 4.685871570429826,
-      "smma29": 4.580930367271315,
-      "rsi": 74.19712463499167,
-      "volume_surge": false
-    },
-    {
-      "ticker": "MDLN",
-      "price": 42.15999984741211,
-      "smma15": 36.46213653432548,
-      "smma29": 35.948989152403584,
-      "rsi": 69.87497207517397,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }

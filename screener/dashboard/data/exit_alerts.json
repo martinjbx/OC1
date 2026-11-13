@@ -1,29 +1,54 @@
 {
-  "check_date": "2026-11-12T02:46:58.214753",
+  "check_date": "2026-11-13T02:27:51.065949",
   "watchlist_size": 827,
   "active_positions": 734,
-  "newly_added": 3,
+  "newly_added": 0,
   "strong_exits": [],
   "weak_exits": [],
   "below_ma50_lingering": [
     {
-      "ticker": "FHB",
+      "ticker": "WBT-USD",
       "signal": "ALREADY_BELOW_MA50",
-      "current_price": 24.87,
-      "ma_50": 25.27,
-      "pct_vs_ma50": -1.6,
+      "current_price": 68.24,
+      "ma_50": 79.08,
+      "pct_vs_ma50": -13.7,
       "below_ma50": true,
       "just_crossed_under": false,
-      "vol_ratio": 0.76,
+      "vol_ratio": 0.97,
       "vol_elevated": false,
-      "entry_price": 28.69,
-      "pnl_pct": -13.3,
-      "date_added": "2026-06-12"
+      "entry_price": 73.04,
+      "pnl_pct": -6.6,
+      "date_added": "2026-08-21"
     }
   ],
-  "holds": 0,
-  "errors": 733,
+  "holds": 708,
+  "errors": 25,
   "climactic_sells": [],
-  "partial_profits": [],
+  "partial_profits": [
+    {
+      "ticker": "ROKU",
+      "tp_signal": "TARGET_HIT",
+      "current_price": 160.52,
+      "ma_50": 155.33,
+      "pct_above_ma50": 3.34,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 23.9,
+      "entry_price": 129.53,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "CNO",
+      "tp_signal": "TARGET_HIT",
+      "current_price": 57.44,
+      "ma_50": 54.98,
+      "pct_above_ma50": 4.47,
+      "climactic": false,
+      "wide_up_days": 0,
+      "gain_pct": 25.7,
+      "entry_price": 45.68,
+      "date_added": "2026-05-11"
+    }
+  ],
   "extended_watch": []
 }
