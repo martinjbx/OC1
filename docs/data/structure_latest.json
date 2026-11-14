@@ -1,6 +1,15 @@
 {
-  "scan_date": "2026-11-13T02:23:52.946682",
+  "scan_date": "2026-11-14T01:51:38.130094",
   "total_scanned": 3761,
-  "signals_found": 0,
-  "signals": []
+  "signals_found": 1,
+  "signals": [
+    {
+      "ticker": "EXTR",
+      "price": 26.75,
+      "smma15": 23.865591307812917,
+      "smma29": 23.863668691549574,
+      "rsi": 61.4957813572969,
+      "volume_surge": false
+    }
+  ]
 }
