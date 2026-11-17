@@ -3720,7 +3720,7 @@
     "FBIZ": {
       "date_added": "2026-06-10",
       "entry_price": 60.09,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -4728,7 +4728,7 @@
     "XHR": {
       "date_added": "2026-06-26",
       "entry_price": 20.81,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5520,7 +5520,7 @@
     "LQDT": {
       "date_added": "2026-07-15",
       "entry_price": 39.65,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6078,7 +6078,7 @@
     "HZO": {
       "date_added": "2026-08-10",
       "entry_price": 52.12,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6834,7 +6834,7 @@
     "MGNI": {
       "date_added": "2026-09-17",
       "entry_price": 25.63,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7149,7 +7149,7 @@
     "GKOS": {
       "date_added": "2026-10-30",
       "entry_price": 242.48,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7176,7 +7176,7 @@
     "LH": {
       "date_added": "2026-10-30",
       "entry_price": 368.16,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7487,7 +7487,16 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "BIIB": {
+      "date_added": "2026-11-17",
+      "entry_price": 251.65,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-11-14T01:54:15.297797"
+  "last_updated": "2026-11-17T04:16:52.039951"
 }
