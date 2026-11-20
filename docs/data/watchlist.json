@@ -1381,7 +1381,7 @@
       "date_added": "2026-05-10",
       "entry_price": 217.45,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -3272,9 +3272,9 @@
       "entry_price": 44.43,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-11-20",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "SXI": {
       "date_added": "2026-06-02",
@@ -3298,7 +3298,7 @@
       "date_added": "2026-06-02",
       "entry_price": 253.83,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -3936,7 +3936,7 @@
     "DRH": {
       "date_added": "2026-06-15",
       "entry_price": 11.94,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5378,9 +5378,9 @@
       "entry_price": 323.77,
       "rs_rating": 75,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-11-20",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "PAYS": {
       "date_added": "2026-07-09",
@@ -5522,9 +5522,9 @@
       "entry_price": 39.65,
       "rs_rating": 85,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-11-20",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "EPR": {
       "date_added": "2026-07-16",
@@ -5880,7 +5880,7 @@
     "M": {
       "date_added": "2026-08-03",
       "entry_price": 25.95,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5909,9 +5909,9 @@
       "entry_price": 239.8,
       "rs_rating": 95,
       "criteria_passed": 8,
-      "exited": false,
-      "exit_date": null,
-      "exit_reason": null
+      "exited": true,
+      "exit_date": "2026-11-20",
+      "exit_reason": "MA50_CROSS_HIGH_VOL"
     },
     "EXPE": {
       "date_added": "2026-08-04",
@@ -6889,7 +6889,7 @@
       "date_added": "2026-09-17",
       "entry_price": 284.7,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -7167,7 +7167,7 @@
     "PEB": {
       "date_added": "2026-10-30",
       "entry_price": 21.72,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7203,7 +7203,7 @@
     "GIC": {
       "date_added": "2026-10-30",
       "entry_price": 44.27,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7568,7 +7568,25 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CBRL": {
+      "date_added": "2026-11-20",
+      "entry_price": 71.67,
+      "rs_rating": 85,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "SENEB": {
+      "date_added": "2026-11-20",
+      "entry_price": 35.25,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-11-19T02:56:02.839737"
+  "last_updated": "2026-11-20T02:53:08.340607"
 }
