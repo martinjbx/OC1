@@ -1381,7 +1381,7 @@
       "date_added": "2026-05-10",
       "entry_price": 217.45,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -2739,7 +2739,7 @@
     "AAPL": {
       "date_added": "2026-05-21",
       "entry_price": 302.25,
-      "rs_rating": 75,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": true,
       "exit_date": "2026-09-09",
@@ -3712,7 +3712,7 @@
       "date_added": "2026-06-10",
       "entry_price": 70.62,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -3936,7 +3936,7 @@
     "DRH": {
       "date_added": "2026-06-15",
       "entry_price": 11.94,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6591,8 +6591,8 @@
     "ZIM": {
       "date_added": "2026-09-02",
       "entry_price": 28.02,
-      "rs_rating": 85,
-      "criteria_passed": 8,
+      "rs_rating": 95,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6825,7 +6825,7 @@
     "VRSN": {
       "date_added": "2026-09-17",
       "entry_price": 302.05,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7023,7 +7023,7 @@
     "AII": {
       "date_added": "2026-10-09",
       "entry_price": 26.97,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7149,7 +7149,7 @@
     "GKOS": {
       "date_added": "2026-10-30",
       "entry_price": 242.48,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7186,7 +7186,7 @@
       "date_added": "2026-10-30",
       "entry_price": 119.57,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -7586,7 +7586,16 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "CRCT": {
+      "date_added": "2026-11-21",
+      "entry_price": 8.35,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-11-20T02:53:08.340607"
+  "last_updated": "2026-11-21T02:57:58.632757"
 }
