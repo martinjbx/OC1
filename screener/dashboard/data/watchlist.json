@@ -1893,7 +1893,7 @@
     "CBOE": {
       "date_added": "2026-05-11",
       "entry_price": 350.48,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -2568,7 +2568,7 @@
     "SPNT": {
       "date_added": "2026-05-19",
       "entry_price": 23.86,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3936,7 +3936,7 @@
     "DRH": {
       "date_added": "2026-06-15",
       "entry_price": 11.94,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6277,7 +6277,7 @@
       "date_added": "2026-08-18",
       "entry_price": 147.26,
       "rs_rating": 95,
-      "criteria_passed": 8,
+      "criteria_passed": 7,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6592,7 +6592,7 @@
       "date_added": "2026-09-02",
       "entry_price": 28.02,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -7086,7 +7086,7 @@
     "ABBV": {
       "date_added": "2026-10-13",
       "entry_price": 281.12,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7149,7 +7149,7 @@
     "GKOS": {
       "date_added": "2026-10-30",
       "entry_price": 242.48,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7597,5 +7597,5 @@
       "exit_reason": null
     }
   },
-  "last_updated": "2026-11-21T02:57:58.632757"
+  "last_updated": "2026-11-24T05:37:20.289863"
 }
