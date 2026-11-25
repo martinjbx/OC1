@@ -3297,7 +3297,7 @@
     "R": {
       "date_added": "2026-06-02",
       "entry_price": 253.83,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -5835,7 +5835,7 @@
     "ESQ": {
       "date_added": "2026-07-30",
       "entry_price": 129.62,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6078,7 +6078,7 @@
     "HZO": {
       "date_added": "2026-08-10",
       "entry_price": 52.12,
-      "rs_rating": 95,
+      "rs_rating": 85,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -6907,7 +6907,7 @@
       "date_added": "2026-09-18",
       "entry_price": 150.11,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -7086,7 +7086,7 @@
     "ABBV": {
       "date_added": "2026-10-13",
       "entry_price": 281.12,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7597,5 +7597,5 @@
       "exit_reason": null
     }
   },
-  "last_updated": "2026-11-24T05:37:20.289863"
+  "last_updated": "2026-11-25T04:54:12.696436"
 }
