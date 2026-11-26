@@ -1,15 +1,6 @@
 {
-  "scan_date": "2026-11-25T04:50:13.497357",
+  "scan_date": "2026-11-26T03:49:54.456827",
   "total_scanned": 3761,
-  "signals_found": 1,
-  "signals": [
-    {
-      "ticker": "TISI",
-      "price": 25.479999542236328,
-      "smma15": 24.009001566821606,
-      "smma29": 23.93765568923001,
-      "rsi": 55.54058474886347,
-      "volume_surge": false
-    }
-  ]
+  "signals_found": 0,
+  "signals": []
 }

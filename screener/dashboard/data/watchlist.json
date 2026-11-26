@@ -2568,7 +2568,7 @@
     "SPNT": {
       "date_added": "2026-05-19",
       "entry_price": 23.86,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3297,7 +3297,7 @@
     "R": {
       "date_added": "2026-06-02",
       "entry_price": 253.83,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -3559,7 +3559,7 @@
       "date_added": "2026-06-09",
       "entry_price": 391.16,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6277,7 +6277,7 @@
       "date_added": "2026-08-18",
       "entry_price": 147.26,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -6889,7 +6889,7 @@
       "date_added": "2026-09-17",
       "entry_price": 284.7,
       "rs_rating": 95,
-      "criteria_passed": 7,
+      "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
       "exit_reason": null
@@ -7518,7 +7518,7 @@
     "AMGN": {
       "date_added": "2026-11-18",
       "entry_price": 457.93,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7595,7 +7595,34 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "KSS": {
+      "date_added": "2026-11-26",
+      "entry_price": 26.7,
+      "rs_rating": 95,
+      "criteria_passed": 8,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "BBIO": {
+      "date_added": "2026-11-26",
+      "entry_price": 89.79,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
+    },
+    "TLS": {
+      "date_added": "2026-11-26",
+      "entry_price": 7.93,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-11-25T04:54:12.696436"
+  "last_updated": "2026-11-26T03:52:34.570991"
 }
