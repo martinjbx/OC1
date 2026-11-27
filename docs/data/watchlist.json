@@ -7401,7 +7401,7 @@
     "CPA": {
       "date_added": "2026-11-11",
       "entry_price": 148.22,
-      "rs_rating": 85,
+      "rs_rating": 95,
       "criteria_passed": 8,
       "exited": false,
       "exit_date": null,
@@ -7622,7 +7622,16 @@
       "exited": false,
       "exit_date": null,
       "exit_reason": null
+    },
+    "TAK": {
+      "date_added": "2026-11-27",
+      "entry_price": 23.01,
+      "rs_rating": 95,
+      "criteria_passed": 7,
+      "exited": false,
+      "exit_date": null,
+      "exit_reason": null
     }
   },
-  "last_updated": "2026-11-26T03:52:34.570991"
+  "last_updated": "2026-11-27T03:56:16.617872"
 }
