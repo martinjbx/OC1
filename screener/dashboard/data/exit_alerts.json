@@ -1,13 +1,42 @@
 {
-  "check_date": "2026-11-27T03:56:16.625217",
-  "watchlist_size": 848,
-  "active_positions": 751,
+  "check_date": "2026-11-28T03:38:44.958321",
+  "watchlist_size": 849,
+  "active_positions": 752,
   "newly_added": 1,
   "strong_exits": [],
   "weak_exits": [],
-  "below_ma50_lingering": [],
+  "below_ma50_lingering": [
+    {
+      "ticker": "CMI",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 431.16,
+      "ma_50": 492.56,
+      "pct_vs_ma50": -12.47,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 0.3,
+      "vol_elevated": false,
+      "entry_price": 682.04,
+      "pnl_pct": -36.8,
+      "date_added": "2026-05-10"
+    },
+    {
+      "ticker": "CVX",
+      "signal": "ALREADY_BELOW_MA50",
+      "current_price": 212.45,
+      "ma_50": 213.56,
+      "pct_vs_ma50": -0.52,
+      "below_ma50": true,
+      "just_crossed_under": false,
+      "vol_ratio": 0.53,
+      "vol_elevated": false,
+      "entry_price": 211.05,
+      "pnl_pct": 0.7,
+      "date_added": "2026-09-01"
+    }
+  ],
   "holds": 0,
-  "errors": 751,
+  "errors": 750,
   "climactic_sells": [],
   "partial_profits": [],
   "extended_watch": []
